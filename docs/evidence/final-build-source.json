@@ -1,0 +1,74 @@
+{
+  "utc": "2026-09-20T02:08:39.200866+00:00",
+  "runtime_sources_match": true,
+  "files": [
+    {
+      "path": "app/flyreflex/CMakeLists.txt",
+      "source_git_blob": "a9a360943a795ef47b7a5fa6d291192140716e47",
+      "official_git_blob": "a9a360943a795ef47b7a5fa6d291192140716e47",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/Kconfig",
+      "source_git_blob": "fbb7cd2a88ad91877641ba5429c6917614f3c21f",
+      "official_git_blob": "fbb7cd2a88ad91877641ba5429c6917614f3c21f",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/Makefile",
+      "source_git_blob": "fd96253d3ce96dd80581c5d7a78d5fe02b1c14c0",
+      "official_git_blob": "fd96253d3ce96dd80581c5d7a78d5fe02b1c14c0",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/include/flyreflex.h",
+      "source_git_blob": "ed8838016f0f12cb2f36f3551e9f75f2848b33c0",
+      "official_git_blob": "ed8838016f0f12cb2f36f3551e9f75f2848b33c0",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/src/flyreflex_main.c",
+      "source_git_blob": "2bb42b916dede259c785f20ea1546e44c44f3a1c",
+      "official_git_blob": "2bb42b916dede259c785f20ea1546e44c44f3a1c",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/src/flyreflex_runtime.c",
+      "source_git_blob": "ae7c3e2b57cbbde9c4daec1cd9102447a40231d6",
+      "official_git_blob": "ae7c3e2b57cbbde9c4daec1cd9102447a40231d6",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/src/flyreflex_ui.c",
+      "source_git_blob": "53c52bc10a1ada833a4a4c54cd62290fe0cb27d0",
+      "official_git_blob": "53c52bc10a1ada833a4a4c54cd62290fe0cb27d0",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/src/looming_input.c",
+      "source_git_blob": "1ad0c7c51258b9be2f79ec91939e2b3654942871",
+      "official_git_blob": "1ad0c7c51258b9be2f79ec91939e2b3654942871",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/src/reflex_engine.c",
+      "source_git_blob": "f49676b4aabfa18b9efe89ae52861d49d714d96c",
+      "official_git_blob": "f49676b4aabfa18b9efe89ae52861d49d714d96c",
+      "match": true
+    },
+    {
+      "path": "app/flyreflex/src/safety_arbiter.c",
+      "source_git_blob": "ecf081128434a8c2c79a7e026c9cb0c545d5d022",
+      "official_git_blob": "ecf081128434a8c2c79a7e026c9cb0c545d5d022",
+      "match": true
+    },
+    {
+      "path": "runtime_skills/flyreflex-guard.md",
+      "source_git_blob": "2676b6108f0732a98738f1a538f81fe51bf0c44b",
+      "official_git_blob": "2676b6108f0732a98738f1a538f81fe51bf0c44b",
+      "match": true
+    }
+  ],
+  "build_source_head": "70db07b10ba3c10d7d2c36c3160debaebd05ebcf",
+  "note": "Final C/runtime Skill source is identical in development and official workspace; build-only Kconfig repair is separately tracked."
+}

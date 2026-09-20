@@ -1,0 +1,870 @@
+Isolated emulator artifacts: /tmp/flyreflex-web-F8oD5G
+RUN /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/emulator -show-kernel -verbose -no-window -ports 5558,5559 -grpc 8558 -grpc-use-jwt -qemu -device virtio-snd,bus=virtio-mmio-bus.2 -allow-host-audio
+WARNING | encryption is off
+WARNING | Unknown Image type 3
+WARNING | Unknown Image type 5
+WARNING | Unknown Image type 4
+WARNING | Unknown Image type 1
+WARNING | cannot add library /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so: failed
+INFO    | Crashreporting disabled, not reporting crashes.
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+VERBOSE | found Android build root: /home/haika/flyreflex-release-0O9wNV
+VERBOSE | found Android build out:  /tmp/flyreflex-web-F8oD5G
+VERBOSE | Cannot find boot properties file: /tmp/flyreflex-web-F8oD5G/boot.prop
+VERBOSE | Could not find SDK version in build.prop, default is: 10000
+VERBOSE | autoconfig: -skin HVGA
+VERBOSE | autoconfig: -skindir (null)
+VERBOSE | autoconfig: -kernel /tmp/flyreflex-web-F8oD5G/nuttx
+VERBOSE | Target arch = 'arm64'
+VERBOSE | autoconfig: -sysdir /tmp/flyreflex-web-F8oD5G
+VERBOSE | Using initial vela_system image: /tmp/flyreflex-web-F8oD5G/vela_system.bin
+VERBOSE | autoconfig: -data /tmp/flyreflex-web-F8oD5G/vela_data.bin
+VERBOSE | INFO: ignore sdcard for arm at api level >= 30
+VERBOSE | Increasing RAM size to 2048MB
+VERBOSE | VM heap size 0MB is below hardware specified minimum of 512MB,setting it to that value
+VERBOSE | System image is read only
+VERBOSE | Found 1 DNS servers:
+VERBOSE | 	10.255.255.254
+VERBOSE | skin name 'HVGA' aliased to '320x480'
+VERBOSE | found magic skin width=320 height=480 bpp=16
+VERBOSE | Creating empty ext4 cache partition: /tmp/android-haika/emulator-cBES0m
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+VERBOSE | feeding guest with passive gps data, in headless mode
+VERBOSE |  no root specified: 
+VERBOSE |  no root specified: 
+VERBOSE | Found: 0 adb executables
+VERBOSE | GPU emulation enabled using 'swiftshader_indirect' mode
+VERBOSE | Initializing hardware OpenGLES emulation support
+VERBOSE | create display 0
+VERBOSE | setDisplayPose 0 x 0 y 0 w 320 h 480 dpi 0
+VERBOSE | In test environment or ICD set to swiftshader, using Swiftshader ICD libvk_swiftshader.so
+VERBOSE | Swiftshader library doesn't exist, trying launcher path
+VERBOSE | Swiftshader library found in launcher path
+VERBOSE | setIcdPath: path doesn't exist: /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/vk_swiftshader_icd.json:/home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/lib64/vulkan/vk_swiftshader_icd.json
+VERBOSE | Not in test environment. Using loader: /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so
+VERBOSE | Not in test environment. Using loader: /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/lib64/vulkan/libvulkan.so
+INFO    | added library /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/lib64/vulkan/libvulkan.so
+VERBOSE | has extension: VK_KHR_device_group_creation
+VERBOSE | has extension: VK_KHR_external_fence_capabilities
+VERBOSE | has extension: VK_KHR_external_memory_capabilities
+VERBOSE | has extension: VK_KHR_external_semaphore_capabilities
+VERBOSE | has extension: VK_KHR_get_physical_device_properties2
+VERBOSE | has extension: VK_EXT_debug_utils
+VERBOSE | has extension: VK_EXT_headless_surface
+VERBOSE | has extension: VK_KHR_surface
+VERBOSE | has extension: VK_EXT_debug_report
+VERBOSE | has extension: VK_EXT_layer_settings
+VERBOSE | needed extension: VK_KHR_external_memory_capabilities found: 1
+VERBOSE | needed extension: VK_KHR_get_physical_device_properties2 found: 1
+VERBOSE | global loader has vkEnumerateInstanceVersion.
+VERBOSE | global loader has vkEnumerateInstanceVersion returning >= 1.1.
+VERBOSE | Creating instance, asking for version 1.1.0 ...
+VERBOSE | Found 1 Vulkan physical devices.
+VERBOSE | Considering Vulkan physical device 0: SwiftShader Device (LLVM 10.0.0)
+VERBOSE | has extension: VK_KHR_driver_properties
+VERBOSE | has extension: VK_KHR_bind_memory2
+VERBOSE | has extension: VK_KHR_create_renderpass2
+VERBOSE | has extension: VK_KHR_dedicated_allocation
+VERBOSE | has extension: VK_KHR_descriptor_update_template
+VERBOSE | has extension: VK_KHR_device_group
+VERBOSE | has extension: VK_KHR_external_fence
+VERBOSE | has extension: VK_KHR_external_memory
+VERBOSE | has extension: VK_KHR_external_semaphore
+VERBOSE | has extension: VK_KHR_get_memory_requirements2
+VERBOSE | has extension: VK_KHR_maintenance1
+VERBOSE | has extension: VK_KHR_maintenance2
+VERBOSE | has extension: VK_KHR_maintenance3
+VERBOSE | has extension: VK_KHR_multiview
+VERBOSE | has extension: VK_KHR_relaxed_block_layout
+VERBOSE | has extension: VK_KHR_sampler_ycbcr_conversion
+VERBOSE | has extension: VK_KHR_separate_depth_stencil_layouts
+VERBOSE | has extension: VK_EXT_depth_clip_enable
+VERBOSE | has extension: VK_EXT_custom_border_color
+VERBOSE | has extension: VK_EXT_load_store_op_none
+VERBOSE | has extension: VK_KHR_storage_buffer_storage_class
+VERBOSE | has extension: VK_EXT_queue_family_foreign
+VERBOSE | has extension: VK_EXT_line_rasterization
+VERBOSE | has extension: VK_EXT_shader_stencil_export
+VERBOSE | has extension: VK_EXT_image_robustness
+VERBOSE | has extension: VK_EXT_4444_formats
+VERBOSE | has extension: VK_EXT_blend_operation_advanced
+VERBOSE | has extension: VK_KHR_swapchain
+VERBOSE | has extension: VK_KHR_external_semaphore_fd
+VERBOSE | has extension: VK_KHR_external_memory_fd
+VERBOSE | has extension: VK_EXT_external_memory_host
+VERBOSE | has extension: VK_EXT_provoking_vertex
+VERBOSE | has extension: VK_GOOGLE_sampler_filtering_precision
+VERBOSE | has extension: VK_EXT_depth_range_unrestricted
+VERBOSE | has extension: VK_EXT_host_query_reset
+VERBOSE | has extension: VK_EXT_scalar_block_layout
+VERBOSE | has extension: VK_EXT_separate_stencil_usage
+VERBOSE | has extension: VK_KHR_depth_stencil_resolve
+VERBOSE | has extension: VK_KHR_image_format_list
+VERBOSE | has extension: VK_KHR_imageless_framebuffer
+VERBOSE | has extension: VK_KHR_shader_float_controls
+VERBOSE | has extension: VK_KHR_shader_subgroup_extended_types
+VERBOSE | has extension: VK_KHR_spirv_1_4
+VERBOSE | has extension: VK_KHR_uniform_buffer_standard_layout
+VERBOSE | has extension: VK_KHR_timeline_semaphore
+VERBOSE | has extension: VK_EXT_extended_dynamic_state
+VERBOSE | has extension: VK_EXT_inline_uniform_block
+VERBOSE | has extension: VK_EXT_pipeline_creation_cache_control
+VERBOSE | has extension: VK_EXT_pipeline_creation_feedback
+VERBOSE | has extension: VK_EXT_private_data
+VERBOSE | has extension: VK_EXT_shader_demote_to_helper_invocation
+VERBOSE | has extension: VK_KHR_shader_terminate_invocation
+VERBOSE | has extension: VK_EXT_subgroup_size_control
+VERBOSE | has extension: VK_EXT_tooling_info
+VERBOSE | has extension: VK_KHR_copy_commands2
+VERBOSE | has extension: VK_KHR_dynamic_rendering
+VERBOSE | has extension: VK_KHR_format_feature_flags2
+VERBOSE | has extension: VK_KHR_maintenance4
+VERBOSE | has extension: VK_KHR_shader_integer_dot_product
+VERBOSE | has extension: VK_KHR_shader_non_semantic_info
+VERBOSE | has extension: VK_KHR_synchronization2
+VERBOSE | has extension: VK_KHR_zero_initialize_workgroup_memory
+VERBOSE | has extension: VK_GOOGLE_decorate_string
+VERBOSE | has extension: VK_GOOGLE_hlsl_functionality1
+VERBOSE | has extension: VK_GOOGLE_user_type
+VERBOSE | has extension: VK_KHR_vulkan_memory_model
+VERBOSE | has extension: VK_KHR_sampler_mirror_clamp_to_edge
+VERBOSE | has extension: VK_KHR_swapchain_mutable_format
+VERBOSE | needed extension: VK_KHR_dedicated_allocation found: 1
+VERBOSE | needed extension: VK_KHR_get_memory_requirements2 found: 1
+VERBOSE | needed extension: VK_KHR_external_memory found: 1
+VERBOSE | needed extension: VK_KHR_external_memory_fd found: 1
+VERBOSE | Graphics queue family index: 0
+VERBOSE | Compute queue family index: 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Vulkan device found: SwiftShader Device (LLVM 10.0.0)
+VERBOSE | Version: 1.2.0
+VERBOSE | Has graphics queue? 1
+VERBOSE | Has external memory support? 1
+VERBOSE | Has compute queue? 1
+VERBOSE | Vulkan logical device created and extension functions obtained.
+VERBOSE | Vulkan device queue obtained.
+VERBOSE | Vulkan global emulation state successfully initialized.
+VERBOSE | Using deferred Vulkan commands: 1
+VERBOSE | Using deferred Vulkan commands: 1
+VERBOSE | Enable ASTC LDR emulation: 1
+VERBOSE | Setting gl interop support for Vk to: 0
+INFO    | Setting vsync to 60 hz
+VERBOSE | Verified boot params were not found.
+VERBOSE | Found 1 DNS servers:
+VERBOSE | 	10.255.255.254
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = arm64
+INFO    | 	hw.cpu.ncore = 2
+INFO    | 	hw.ramSize = 2048
+INFO    | 	hw.screen = touch
+INFO    | 	hw.mainKeys = true
+INFO    | 	hw.trackBall = true
+INFO    | 	hw.keyboard = false
+INFO    | 	hw.keyboard.lid = false
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = true
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	disk.cachePartition = false
+INFO    | 	disk.cachePartition.path = /tmp/android-haika/emulator-cBES0m
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 320
+INFO    | 	hw.lcd.height = 480
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 160
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.lcd.shape = rect
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = swiftshader_indirect
+INFO    | 	hw.initialOrientation = portrait
+INFO    | 	hw.camera.back = emulated
+INFO    | 	hw.camera.front = none
+INFO    | 	vm.heapSize = 512
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.flavor = watch
+INFO    | 	kernel.path = /tmp/flyreflex-web-F8oD5G/nuttx
+INFO    | 	kernel.newDeviceNaming = no
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.systemPartition = true
+INFO    | 	disk.systemPartition.initPath = /tmp/flyreflex-web-F8oD5G/vela_system.bin
+INFO    | 	disk.systemPartition.size = 0
+INFO    | 	disk.vendorPartition.size = 0
+INFO    | 	disk.dataPartition = true
+INFO    | 	disk.dataPartition.path = /tmp/flyreflex-web-F8oD5G/vela_data.bin
+INFO    | 	disk.dataPartition.size = 0
+INFO    | 	PlayStore.enabled = false
+INFO    | 	avd.name = <build>
+INFO    | 	avd.id = <build>
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/qemu/linux-x86_64/qemu-system-aarch64-headless"
+INFO    | 	 argv[01] = "-dns-server"
+INFO    | 	 argv[02] = "10.255.255.254"
+INFO    | 	 argv[03] = "-serial"
+INFO    | 	 argv[04] = "mon:stdio"
+INFO    | 	 argv[05] = "-android-ports"
+INFO    | 	 argv[06] = "5558,5559"
+INFO    | 	 argv[07] = "-device"
+INFO    | 	 argv[08] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/tmp/flyreflex-web-F8oD5G/build.avd/data/misc/pstore/pstore.bin"
+INFO    | 	 argv[09] = "-cpu"
+INFO    | 	 argv[10] = "cortex-a57"
+INFO    | 	 argv[11] = "-machine"
+INFO    | 	 argv[12] = "type=virt,virtualization=on"
+INFO    | 	 argv[13] = "-m"
+INFO    | 	 argv[14] = "2048"
+INFO    | 	 argv[15] = "-lcd-density"
+INFO    | 	 argv[16] = "160"
+INFO    | 	 argv[17] = "-nodefaults"
+INFO    | 	 argv[18] = "-kernel"
+INFO    | 	 argv[19] = "/tmp/flyreflex-web-F8oD5G/nuttx"
+INFO    | 	 argv[20] = "-drive"
+INFO    | 	 argv[21] = "index=0,id=userdata,if=none,format=raw,file=/tmp/flyreflex-web-F8oD5G/vela_data.bin"
+INFO    | 	 argv[22] = "-device"
+INFO    | 	 argv[23] = "virtio-blk-device,bus=virtio-mmio-bus.1,drive=userdata"
+INFO    | 	 argv[24] = "-drive"
+INFO    | 	 argv[25] = "index=1,id=system,if=none,format=raw,file=/tmp/flyreflex-web-F8oD5G/vela_system.bin,read-only"
+INFO    | 	 argv[26] = "-device"
+INFO    | 	 argv[27] = "virtio-blk-device,bus=virtio-mmio-bus.0,drive=system"
+INFO    | 	 argv[28] = "-netdev"
+INFO    | 	 argv[29] = "user,id=mynet"
+INFO    | 	 argv[30] = "-device"
+INFO    | 	 argv[31] = "virtio-net-device,netdev=mynet"
+INFO    | 	 argv[32] = "-device"
+INFO    | 	 argv[33] = "virtio-rng-device"
+INFO    | 	 argv[34] = "-show-cursor"
+INFO    | 	 argv[35] = "-L"
+INFO    | 	 argv[36] = "/home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/lib/pc-bios"
+INFO    | 	 argv[37] = "-soundhw"
+INFO    | 	 argv[38] = "virtio-snd-pci"
+INFO    | 	 argv[39] = "-device"
+INFO    | 	 argv[40] = "virtio-snd,bus=virtio-mmio-bus.2"
+INFO    | 	 argv[41] = "-allow-host-audio"
+INFO    | 	 argv[42] = "-append"
+INFO    | 	 argv[43] = "no_timer_check console=ttyAMA0,38400 keep_bootcon earlyprintk=ttyAMA0 cma=4M@0-4G loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR32X1X15X0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=131072 qemu.dalvik.vm.heapsize=512m qemu.camera_protocol_ver=1 qemu.camera_hq_edge_processing=0 android.qemud=1 qemu.avd_name=<build>"
+INFO    | 	 argv[44] = "-android-hw"
+INFO    | 	 argv[45] = "/tmp/flyreflex-web-F8oD5G/hardware-qemu.ini"
+INFO    | Concatenated QEMU options: /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/qemu/linux-x86_64/qemu-system-aarch64-headless -dns-server 10.255.255.254 -serial mon:stdio -android-ports 5558,5559 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/tmp/flyreflex-web-F8oD5G/build.avd/data/misc/pstore/pstore.bin -cpu cortex-a57 -machine type=virt,virtualization=on -m 2048 -lcd-density 160 -nodefaults -kernel /tmp/flyreflex-web-F8oD5G/nuttx -drive index=0,id=userdata,if=none,format=raw,file=/tmp/flyreflex-web-F8oD5G/vela_data.bin -device virtio-blk-device,bus=virtio-mmio-bus.1,drive=userdata -drive index=1,id=system,if=none,format=raw,file=/tmp/flyreflex-web-F8oD5G/vela_system.bin,read-only -device virtio-blk-device,bus=virtio-mmio-bus.0,drive=system -netdev user,id=mynet -device virtio-net-deviProbeKVM: This user doesn't have permissions to use KVM (/dev/kvm).
+The KVM line in /etc/group is: [kvm:x:991:]
+
+If the current user has KVM permissions,
+the KVM line in /etc/group should end with ":" followed by your username.
+
+If we see LINE_NOT_FOUND, the kvm group may need to be created along with permissions:
+    sudo groupadd -r kvm
+    # Then ensure /lib/udev/rules.d/50-udev-default.rules contains something like:
+    # KERNEL=="kvm", GROUP="kvm", MODE="0660"
+    # and then run:
+    sudo gpasswd -a $USER kvm
+
+If we see kvm:... but no username at the end, running the following command may allow KVM access:
+    sudo gpasswd -a $USER kvm
+
+You may need to log out and back in for changes to take effect.
+
+ce,netdev=mynet -device virtio-rng-device -show-cursor -L /home/haika/flyreflex-release-0O9wNV/prebuilts/emulator/linux-x86_64/lib/pc-bios -soundhw virtio-snd-pci -device virtio-snd,bus=virtio-mmio-bus.2 -allow-host-audio -append 'no_timer_check console=ttyAMA0,38400 keep_bootcon earlyprintk=ttyAMA0 cma=4M@0-4G loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR32X1X15X0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=131072 qemu.dalvik.vm.heapsize=512m qemu.camera_protocol_ver=1 qemu.camera_hq_edge_processing=0 android.qemud=1 qemu.avd_name=<build>' -android-hw /tmp/flyreflex-web-F8oD5G/hardware-qemu.ini
+VERBOSE | Android qemu version 32.1.15.0 (build_id 20251216) (CL:N/A)
+VERBOSE | Starting QEMU main loop
+Warning: Allowing host microphone input.
+VERBOSE | registered 'boot-properties' qemud service
+VERBOSE | Adding boot property: 'ro.product.device.screenshape' = 'rect'
+VERBOSE | Adding boot property: 'ro.product.device.devicetype' = 'watch'
+VERBOSE | Adding boot property: 'ro.opengles.version' = '131072'
+VERBOSE | Adding boot property: 'qemu.sf.fake_camera' = 'back'
+VERBOSE | Adding boot property: 'dalvik.vm.heapsize' = '512m'
+VERBOSE | Adding boot property: 'qemu.hw.mainkeys' = '1'
+VERBOSE | Adding boot property: 'qemu.sf.lcd_density' = '160'
+VERBOSE | goldfish_events.have-dpad: true
+VERBOSE | goldfish_events.have-trackball: true
+VERBOSE | goldfish_events.have-camera: true
+VERBOSE | goldfish_events.have-keyboard: false
+VERBOSE | goldfish_events.have-lidswitch: false
+VERBOSE | goldfish_events.have-tabletmode: false
+VERBOSE | goldfish_events.have-touch: true
+VERBOSE | goldfish_events.have-multitouch: false
+VERBOSE | INFO: ignore sdcard for arm at api level >= 30
+pulseaudio: Failed to initialize PA contextCould not init `pa' audio driver
+VERBOSE | setting up http proxy: proxy=127.0.0.1 port=7897
+VERBOSE | Adding boot property: 'qemu.timezone' = 'Asia/Shanghai'
+VERBOSE | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+WARNING | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open grpc port
+WARNING | Token/JWT auth requested without tls, restricting access to localhost.
+INFO    | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/159758/jwks/c5ee22d3-f792-43cc-af34-768ab5a4abd5/active.jwk
+INFO    | Started GRPC server at 127.0.0.1:8558, security: Local, auth: +jwt
+WARNING | Failed to process .ini file /run/user/1000/avd/running/10966 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/159758 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/21351 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/67840 for reading.
+INFO    | Advertising in: /run/user/1000/avd/running/pid_159758.ini
+WARNING | Failed to process .ini file /run/user/1000/avd/running/10966 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/159758 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/21351 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/67840 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/10966 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/159758 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/21351 for reading.
+WARNING | Failed to process .ini file /run/user/1000/avd/running/67840 for reading.
+INFO    | Connecting to bluetooth mesh: localhost:8556
+VERBOSE | emulator_window_fb_rotate
+INFO    | Setting display: 0 configuration to: 320x480, dpi: 160x160 
+INFO    | Cold boot: current configuration doesn't support snapshots
+[    0.059522] [ 3] [ ALERT] [ap] coredump_initialize: /dev/virtblk2 Coredump device init failed:-2
+NuttX  0.0.0 dd92bcf4257 Sep 19 2026 11:00:38 arm64 ap
+nsh: mount: mount failed: 19
+kvdbd [9:100]
+servicemanager [10:100]
+adbd [11:100]
+[    0.090430] [12] [  INFO] [ap] [media][audio_graph_load:232] audio_graph_load, loadgraph from file: /etc/media/graph.conf
+[    0.093252] [12] [  INFO] [ap] [media][audio_graph_load:249] audio_graph_load, graph_desc:
+abufsrc@Music0=outputs=2:map=1 0[Music0_0][Music0_1],
+abufsrc@Music1=outputs=2:map=1 0[Music1_0][Music1_1],
+abufsrc@Ring=outputs=2:map=1 0[Ring0][Ring1],
+abufsrc@Media=outputs=2:map=1 0[Media0][Media1],
+abufsrc@Alarm=outputs=2:map=1 0[Alarm0][Alarm1],
+abufsrc@Sport=outputs=2:map=1 0[Sport0][Sport1],
+abufsrc@Video=outputs=2:map=1 0[Video0][Video1],
+abufsrc@Enforced=outputs=1:map=1[Enforced0],
+abufsrc@netcomm=outputs=2:map=1 0[netcomm0][netcomm1],
+abufsrc@TTS=outputs=2:map=1 0[TTS0][TTS1],
+abufsrc@CallRing=outputs=2:map=1 0[CallRing0][CallRing1],
+alsasrc@pcm0c=devname=pcm0c:outputs=4:map=1 0 0 0[cap0][cap1][cap2][cap3],
+alsasrc@SCOrx=devname=pcm1c:outputs=4:map=0 0 0 0[SCOrx0][SCOrx1][SCOrx2][SCOrx3],
+alsasrc@MDMrx=devname=pcm2c:outputs=2:map=0 0[MDMrx0][MDMrx1],
+[Music0_0][Music1_0][Ring0][Alarm0][Sport0][Video0][Enforced0][SCOrx0][MDMrx0][netcomm0][Media0][TTS0][CallRing0]alsasink@pcm0p=inputs=13:devname=pcm0p,
+[Music0_1][Music1_1][Ring1][Alarm1][Sport1][Video1][cap3][SCOrx3]tinycomprsink@a2dpsrc=inputs=8:devname=a2dpsrcp,
+[cap1][MDMrx1][netcomm1][Media1][TTS1][CallRing1]alsasink@SCOtx=inputs=6:devname=pcm1p,
+[cap2][SCOrx1]alsasink@MDMtx=inputs=2:devname=pcm2p,
+[cap0][SCOrx2]abufsink@Capture=inputs=2
+
+[    0.109702] [12] [  INFO] [ap] [media][audio_graph_load:350] audio_graph_load, loadgraph succeed
+mediad [12:100]
+telnetd [13:100]
+
+NuttShell (NSH)
+goldfish-armv8a-ap> [K[    0.129571] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.133906] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.137498] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.141225] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.144814] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.148150] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.152313] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.155955] [ 9] [ ERROR] [ap] IO error while opening the target database file: /dev/config
+[    0.193799] [12] [  INFO] [ap] pfw domain:MediaSwitchDomain switch to conf:speaker
+[    0.196042] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Music cmd map arg 1 0 flags 0 res 0 res_len 0
+[    0.199825] [12] [  INFO] [ap] Pending command: map 1 0
+[    0.201895] [12] [  INFO] [ap] Pending command: map 1 0
+[    0.203679] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Ring cmd map arg 1 0 flags 0 res 0 res_len 0
+[    0.207137] [12] [  INFO] [ap] Pending command: map 1 0
+[    0.208514] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Alarm cmd map arg 1 0 flags 0 res 0 res_len 0
+[    0.212717] [12] [  INFO] [ap] Pending command: map 1 0
+[    0.214462] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Notify cmd map arg 1 0 flags 0 res 0 res_len 0
+[    0.217672] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Sport cmd map arg 1 0 flags 0 res 0 res_len 0
+[    0.221016] [12] [  INFO] [ap] Pending command: map 1 0
+[    0.222664] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Video cmd map arg 1 0 flags 0 res 0 res_len 0
+[    0.225791] [12] [  INFO] [ap] Pending command: map 1 0
+[    0.227381] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target a2dpsrc cmd unlink arg (null) flags 0 res 0 res_len 0
+[    0.231065] [12] [  INFO] [ap] Pending command: unlink _
+[    0.232949] [12] [  INFO] [ap] pfw domain:netcommDomain switch to conf:netcomm
+[    0.235020] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target netcomm cmd map arg 1 0 flags 0 res 0 res_len 0
+[    0.238433] [12] [  INFO] [ap] Pending command: map 1 0
+[    0.240463] [12] [  INFO] [ap] pfw domain:pcm0cDomain switch to conf:cap
+[    0.242433] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target pcm0c cmd unmute arg (null) flags 0 res 0 res_len 0
+[    0.245896] [12] [  INFO] [ap] set alsasrc@pcm0c unmute.
+[    0.247525] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target pcm0c cmd map arg 1 0 0 0 flags 0 res 0 res_len 0
+[    0.250679] [12] [  INFO] [ap] Pending command: map 1 0 0 0
+[    0.252371] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target pcm0c cmd link arg (null) flags 0 res 0 res_len 0
+[    0.255550] [12] [  INFO] [ap] Pending command: link _
+[    0.257027] [12] [  INFO] [ap] pfw domain:SCOrxDomain switch to conf:off
+[    0.258654] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target SCOrx cmd unmute arg (null) flags 0 res 0 res_len 0
+[    0.261870] [12] [  INFO] [ap] set alsasrc@SCOrx unmute.
+[    0.263298] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target SCOrx cmd map arg 0 0 0 0 flags 0 res 0 res_len 0
+[    0.266493] [12] [  INFO] [ap] Pending command: map 0 0 0 0
+[    0.267979] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target SCOrx cmd unlink arg (null) flags 0 res 0 res_len 0
+[    0.271657] [12] [  INFO] [ap] Pending command: unlink _
+[    0.273414] [12] [  INFO] [ap] pfw domain:MDMrxDomain switch to conf:off
+[    0.275429] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target MDMrx cmd map arg 0 0 flags 0 res 0 res_len 0
+[    0.278835] [12] [  INFO] [ap] Pending command: map 0 0
+[    0.280414] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target MDMrx cmd unlink arg (null) flags 0 res 0 res_len 0
+[    0.284077] [12] [  INFO] [ap] Pending command: unlink _
+[    0.285803] [12] [  INFO] [ap] pfw domain:pcm0pParamDomain switch to conf:play
+[    0.288217] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target pcm0p cmd set_parameter arg set_scenario=music flags 0 res 0 res_len 0
+[    0.291884] [12] [  INFO] [ap] pfw domain:MediaVolumeDomain switch to conf:4
+[    0.294070] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Music cmd volume arg -25dB flags 0 res 0 res_len 0
+[    0.297266] [12] [  INFO] [ap] cmd:set_parameter args:volume=-25dB
+[    0.298696] [12] [  INFO] [ap] Parsing args: volume=-25dB
+[    0.300839] [12] [  INFO] [ap] Parsed Key: volume, Value: -25dB
+[    0.303649] [12] [  INFO] [ap] cmd:set_parameter args:volume=-25dB
+[    0.305023] [12] [  INFO] [ap] Parsing args: volume=-25dB
+[    0.306277] [12] [  INFO] [ap] Parsed Key: volume, Value: -25dB
+[    0.308066] [12] [  INFO] [ap] pfw domain:RingVolumeDomain switch to conf:mute
+[    0.310110] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Ring cmd volume arg 0 flags 0 res 0 res_len 0
+[    0.313474] [12] [  INFO] [ap] cmd:set_parameter args:volume=0
+[    0.314865] [12] [  INFO] [ap] Parsing args: volume=0
+[    0.316314] [12] [  INFO] [ap] Parsed Key: volume, Value: 0
+[    0.318309] [12] [  INFO] [ap] pfw domain:AlarmVolumeDomain switch to conf:index-4
+[    0.320363] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Alarm cmd volume arg 10^(-4*(10-4)/20) flags 0 res 0 res_len 0
+[    0.323937] [12] [  INFO] [ap] cmd:set_parameter args:volume=10^(-4*(10-4)/20)
+[    0.325437] [12] [  INFO] [ap] Parsing args: volume=10^(-4*(10-4)/20)
+[    0.326813] [12] [  INFO] [ap] Parsed Key: volume, Value: 10^(-4*(10-4)/20)
+[    0.329318] [12] [  INFO] [ap] pfw domain:NotifyVolumeDomain switch to conf:index-4
+[    0.331945] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Notify cmd volume arg 10^(-4*(10-4)/20) flags 0 res 0 res_len 0
+[    0.335394] [12] [  INFO] [ap] pfw domain:TTSVolumeDomain switch to conf:index-4
+[    0.337613] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target TTS cmd volume arg 10^(-4*(10-4)/20) flags 0 res 0 res_len 0
+[    0.340744] [12] [  INFO] [ap] cmd:set_parameter args:volume=10^(-4*(10-4)/20)
+[    0.342109] [12] [  INFO] [ap] Parsing args: volume=10^(-4*(10-4)/20)
+[    0.343469] [12] [  INFO] [ap] Parsed Key: volume, Value: 10^(-4*(10-4)/20)
+[    0.345138] [12] [  INFO] [ap] pfw domain:HealthVolumeDomain switch to conf:index-4
+[    0.347466] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Health cmd volume arg 10^(-4*(10-4)/20) flags 0 res 0 res_len 0
+[    0.350895] [12] [  INFO] [ap] pfw domain:SportVolumeDomain switch to conf:index-4
+[    0.352828] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Sport cmd volume arg 10^(-4*(10-4)/20) flags 0 res 0 res_len 0
+[    0.356194] [12] [  INFO] [ap] cmd:set_parameter args:volume=10^(-4*(10-4)/20)
+[    0.357609] [12] [  INFO] [ap] Parsing args: volume=10^(-4*(10-4)/20)
+[    0.358900] [12] [  INFO] [ap] Parsed Key: volume, Value: 10^(-4*(10-4)/20)
+[    0.360950] [12] [  INFO] [ap] pfw domain:InfoVolumeDomain switch to conf:index-4
+[    0.363053] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Info cmd volume arg 10^(-4*(10-4)/20) flags 0 res 0 res_len 0
+[    0.366546] [12] [  INFO] [ap] pfw domain:EmergencyVolumeDomain switch to conf:index-5
+[    0.368351] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target Emergency cmd volume arg 10^(-4*(10-5)/20) flags 0 res 0 res_len 0
+[    0.372049] [12] [  INFO] [ap] pfw domain:A2dpsnkVolumeDomain switch to conf:5
+[    0.373945] [12] [  INFO] [ap] [media][audio_graph_handler:820] cookie 0 target a2dpsnk cmd volume arg -22dB flags 0 res 0 res_len 0
+[    0.378181] [12] [  INFO] [ap] process abufsrc@Music0 map 1 0
+[    0.379933] [12] [  INFO] [ap] cmd:map args:1 0
+[    0.384658] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=u8, rate=0, ch=0
+[    0.387683] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.390301] [12] [  WARN] [ap] [media][audio_set_format_config:177] Invalid format: fmt=0, rate=0, ch=0
+[    0.393876] [12] [  WARN] [ap] [media][audio_negotiation_enabled_outputs:787] Failed to set format for enabled_output
+[    0.396841] [12] [  INFO] [ap] process abufsrc@Music1 map 1 0
+[    0.398272] [12] [  INFO] [ap] cmd:map args:1 0
+[    0.400475] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=u8, rate=0, ch=0
+[    0.403598] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.406264] [12] [  WARN] [ap] [media][audio_set_format_config:177] Invalid format: fmt=0, rate=0, ch=0
+[    0.408851] [12] [  WARN] [ap] [media][audio_negotiation_enabled_outputs:787] Failed to set format for enabled_output
+[    0.411639] [12] [  INFO] [ap] process abufsrc@Ring map 1 0
+[    0.412912] [12] [  INFO] [ap] cmd:map args:1 0
+[    0.414875] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=u8, rate=0, ch=0
+[    0.417923] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.420788] [12] [  WARN] [ap] [media][audio_set_format_config:177] Invalid format: fmt=0, rate=0, ch=0
+[    0.423297] [12] [  WARN] [ap] [media][audio_negotiation_enabled_outputs:787] Failed to set format for enabled_output
+[    0.426143] [12] [  INFO] [ap] process abufsrc@Alarm map 1 0
+[    0.427468] [12] [  INFO] [ap] cmd:map args:1 0
+[    0.429782] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=u8, rate=0, ch=0
+[    0.433571] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.436588] [12] [  WARN] [ap] [media][audio_set_format_config:177] Invalid format: fmt=0, rate=0, ch=0
+[    0.439243] [12] [  WARN] [ap] [media][audio_negotiation_enabled_outputs:787] Failed to set format for enabled_output
+[    0.442947] [12] [  INFO] [ap] process abufsrc@Sport map 1 0
+[    0.444943] [12] [  INFO] [ap] cmd:map args:1 0
+[    0.447320] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=u8, rate=0, ch=0
+[    0.450460] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.453222] [12] [  WARN] [ap] [media][audio_set_format_config:177] Invalid format: fmt=0, rate=0, ch=0
+[    0.455760] [12] [  WARN] [ap] [media][audio_negotiation_enabled_outputs:787] Failed to set format for enabled_output
+[    0.458731] [12] [  INFO] [ap] process abufsrc@Video map 1 0
+[    0.459883] [12] [  INFO] [ap] cmd:map args:1 0
+[    0.461699] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=u8, rate=0, ch=0
+[    0.464770] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.467878] [12] [  WARN] [ap] [media][audio_set_format_config:177] Invalid format: fmt=0, rate=0, ch=0
+[    0.470324] [12] [  WARN] [ap] [media][audio_negotiation_enabled_outputs:787] Failed to set format for enabled_output
+[    0.473185] [12] [  INFO] [ap] process tinycomprsink@a2dpsrc unlink _
+[    0.476097] [12] [  INFO] [ap] process abufsrc@netcomm map 1 0
+[    0.478491] [12] [  INFO] [ap] cmd:map args:1 0
+[    0.480887] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=u8, rate=0, ch=0
+[    0.484662] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.487644] [12] [  WARN] [ap] [media][audio_set_format_config:177] Invalid format: fmt=0, rate=0, ch=0
+[    0.490973] [12] [  WARN] [ap] [media][audio_negotiation_enabled_outputs:787] Failed to set format for enabled_output
+[    0.494139] [12] [  INFO] [ap] process alsasrc@pcm0c map 1 0 0 0
+[    0.497245] [12] [  INFO] [ap] [media][audio_negotiate_formats_init:435] Skipping format negotiation for sink 'abufsink@Capture' (started=false)
+[    0.502259] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:724] Skipping format setting for sink 'abufsink@Capture' (started=false)
+[    0.505457] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=any, rate=-1, ch=-1
+[    0.508178] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.511221] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:780] Skipping format config for sink 'abufsink@Capture' (started=false)
+[    0.514430] [12] [  INFO] [ap] process alsasrc@pcm0c link _
+[    0.516573] [12] [  INFO] [ap] [media][audio_negotiate_formats_init:435] Skipping format negotiation for sink 'abufsink@Capture' (started=false)
+[    0.520499] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:724] Skipping format setting for sink 'abufsink@Capture' (started=false)
+[    0.523774] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:750] Negotiated source: fmt=any, rate=-1, ch=-1
+[    0.526510] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:753] Negotiated sink:   fmt=any, rate=-1, ch=-1
+[    0.529104] [12] [  INFO] [ap] [media][audio_negotiation_enabled_outputs:780] Skipping format config for sink 'abufsink@Capture' (started=false)
+[    0.532288] [12] [  INFO] [ap] process alsasrc@SCOrx map 0 0 0 0
+[    0.534189] [12] [  INFO] [ap] [media][audio_query_formats:88] Query format failed for 'alsasrc@SCOrx': Unknown error 2
+[    0.537121] [12] [ ERROR] [ap] [media][audio_negotiation_trigger:870] alsasrc@SCOrx negotiate formats init failed -2.
+[    0.540310] [12] [ ERROR] [ap] [media][audio_graph_dequeue_command:525] Media graph link error after command 'map': -2:Unknown error 2
+[    0.543892] [12] [ ERROR] [ap] [media][mediad_main:164] audio_graph run_once failed -2
+[    0.546151] [12] [  INFO] [ap] alsasrc@pcm0c output0 format not negotiated yet (fmt=-1 rate=0 ch=0), defer open.
+[    0.549475] [12] [  INFO] [ap] process alsasrc@SCOrx unlink _
+[    0.551035] [12] [  INFO] [ap] process alsasrc@MDMrx map 0 0
+[    0.552906] [12] [  INFO] [ap] [media][audio_query_formats:88] Query format failed for 'alsasrc@MDMrx': Unknown error 2
+[    0.555521] [12] [ ERROR] [ap] [media][audio_negotiation_trigger:870] alsasrc@MDMrx negotiate formats init failed -2.
+[    0.558509] [12] [ ERROR] [ap] [media][audio_graph_dequeue_command:525] Media graph link error after command 'map': -2:Unknown error 2
+[    0.561311] [12] [ ERROR] [ap] [media][mediad_main:164] audio_graph run_once failed -2
+[    0.563453] [12] [  INFO] [ap] process alsasrc@MDMrx unlink _
+VERBOSE | onGuestSendCommand: [0xc4936c0] Adb connected, start proxing data
+ifconfig eth0 10.0.2.15 netmask 255.255.255.0
+goldfish-armv8a-ap> [Kifup eth0
+ifup eth0...OK
+goldfish-armv8a-ap> [KQEMU 2.12.0 monitor - type 'help' for more information
+(qemu) h[K[Dho[K[D[Dhos[K[D[D[Dhost[K[D[D[D[Dhostf[K[D[D[D[D[Dhostfw[K[D[D[D[D[D[Dhostfwd[K[D[D[D[D[D[D[Dhostfwd_[K[D[D[D[D[D[D[D[Dhostfwd_a[K[D[D[D[D[D[D[D[D[Dhostfwd_ad[K[D[D[D[D[D[D[D[D[D[Dhostfwd_add[K[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add [K[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add t[K[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tc[K[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:1[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:12[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:1[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:10[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:100[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:1002[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:10025[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:10025-[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:10025-:[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:10025-:2[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:127.0.0.1:10025-:23[K
+(qemu) 
+[   42.543095] [19] [  INFO] [ap] [agent] AI Agent - Vela AI Agent starting (build: Sep 19 2026 11:01:47)
+[   42.546480] [19] [  INFO] [ap] [agent] [boot +3ms] P0: timezone set
+[   42.550410] [19] [  INFO] [ap] [agent] [boot +7ms] P0: storage ready
+[   42.552909] [19] [  INFO] [ap] [agent] [boot +9ms] heap: arena=104779584 free=102932752 used=1846832
+[   42.558335] [19] [  INFO] [ap] [cfgstore] Config store ready at /data/agent/config/config.json
+[   42.560626] [19] [  INFO] [ap] [agent] [boot +17ms] P1: config_store_init (rc=0)
+[   42.563208] [19] [  INFO] [ap] [bus] Message bus initialized (depth 16)
+[   42.565007] [19] [  INFO] [ap] [agent] [boot +21ms] P1: message_bus_init (rc=0)
+[   42.567193] [19] [  INFO] [ap] [memory] Initializing memory store at /data/agent
+[   42.575986] [19] [  INFO] [ap] [memory] Memory store initialized successfully
+[   42.579029] [19] [  INFO] [ap] [agent] [boot +35ms] P1: memory_store_init (rc=0)
+[   42.581219] [19] [  INFO] [ap] [session] Session manager initialized at /data/agent/sessions
+[   42.583338] [19] [  INFO] [ap] [agent] [boot +40ms] P1: session_mgr_init (rc=0)
+[   42.585517] [19] [  INFO] [ap] [proxy] Loading proxy config...
+[   42.590864] [19] [  INFO] [ap] [proxy] No proxy (direct connection)
+[   42.592868] [19] [  INFO] [ap] [agent] [boot +49ms] P2: http_proxy_init (rc=0)
+[   42.604981] [19] [  INFO] [ap] [llm] LLM proxy initialized (model: mimo-v2.5, host: token-plan-cn.xiaomimimo.com)
+[   42.607485] [19] [  INFO] [ap] [agent] [boot +64ms] P3: llm_proxy_init (rc=0)
+[   42.612795] [19] [  INFO] [ap] [llm_router] Loaded backend 0: token-plan-cn.xiaomimimo.com (model: mimo-v2.5, tier: 1)
+[   42.619551] [19] [  INFO] [ap] [llm_router] Router initialized: 1 backends, profile=0
+[   42.621954] [19] [  INFO] [ap] [agent] [boot +78ms] P3: llm_router_init (rc=0)
+[   42.624439] [19] [  INFO] [ap] [mcp_reg] MCP tool registry initialized
+[   42.626274] [19] [  INFO] [ap] [mcp_bridge] MCP bridge initialized
+[   42.628186] [19] [  INFO] [ap] [tools] Registered tool provider: mcp_client
+[   42.630551] [19] [  INFO] [ap] [mcp_client] MCP client initialized
+[   42.636968] [19] [  WARN] [ap] [web_search] No search key. Use: set_tavily_key / set_search_key
+[   42.639840] [19] [  INFO] [ap] [tools] Registered tool: web_search
+[   42.641749] [19] [  INFO] [ap] [tools] Registered tool: news_search
+[   42.643434] [19] [  INFO] [ap] [tools] Registered tool: get_weather
+[   42.645146] [19] [  INFO] [ap] [tools] Registered tool: get_current_time
+[   42.646720] [19] [  INFO] [ap] [tools] Registered tool: read_file
+[   42.648082] [19] [  INFO] [ap] [tools] Registered tool: write_file
+[   42.649440] [19] [  INFO] [ap] [tools] Registered tool: edit_file
+[   42.651219] [19] [  INFO] [ap] [tools] Registered tool: list_dir
+[   42.652894] [19] [  INFO] [ap] [tools] Registered tool: cron_add
+[   42.654709] [19] [  INFO] [ap] [tools] Registered tool: cron_list
+[   42.656131] [19] [  INFO] [ap] [tools] Registered tool: cron_remove
+[   42.657833] [19] [  INFO] [ap] [tools] Registered tool: fetch_url
+[   42.659404] [19] [  INFO] [ap] [tools] Registered tool: analyze_image
+[   42.661362] [19] [  INFO] [ap] [tools] Registered tool: run_shell
+[   42.663483] [19] [  INFO] [ap] [tools] Registered tool: get_battery
+[   42.665183] [19] [  INFO] [ap] [tools] Registered tool: get_wear_state
+[   42.666865] [19] [  INFO] [ap] [tools] Registered tool: get_screen_state
+[   42.668760] [19] [  INFO] [ap] [tools] Registered tool: get_heartrate
+[   42.670471] [19] [  INFO] [ap] [tools] Registered tool: get_steps
+[   42.672091] [19] [  INFO] [ap] [tools] Registered tool: vibrate
+[   42.673416] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_create
+[   42.674960] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_write
+[   42.676411] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_read
+[   42.678192] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_list
+[   42.679874] [19] [  INFO] [ap] [tools] Registered tool: feishu_chat_members
+[   42.681469] [19] [  INFO] [ap] [tools] Registered tool: feishu_send_mention
+[   42.683099] [19] [  INFO] [ap] [tools] Registered tool: music_search
+[   42.684893] [19] [  INFO] [ap] [tools] Registered tool: music_play
+[   42.686541] [19] [  INFO] [ap] [tools] Registered tool: music_pause
+[   42.688280] [19] [  INFO] [ap] [tools] Registered tool: music_resume
+[   42.689958] [19] [  INFO] [ap] [tools] Registered tool: music_stop
+[   42.691699] [19] [  INFO] [ap] [tools] Registered tool: music_seek
+[   42.693455] [19] [  INFO] [ap] [tools] Registered tool: music_set_volume
+[   42.694883] [19] [  INFO] [ap] [tools] Registered tool: music_status
+[   42.696452] [19] [  INFO] [ap] [tools] Registered tool: launch_quickapp
+[   42.698103] [19] [  INFO] [ap] [tools] Registered tool: exit_quickapp
+[   42.707106] [19] [  INFO] [ap] [tools] Tools JSON built (36 builtin + 1 providers)
+[   42.709923] [19] [  INFO] [ap] [tools] Tool registry initialized
+[   42.711932] [19] [  INFO] [ap] [agent] [boot +168ms] P3: tool_registry_init (rc=0)
+[   42.714308] [19] [  INFO] [ap] [guard] Tool guard initialized (max_input=32768, rate_window=60s, rate_max=10)
+[   42.717634] [19] [  INFO] [ap] [agent] [boot +174ms] P3: tool_guard_init (rc=0)
+[   42.720046] [19] [  INFO] [ap] [skills] Initializing skills system
+[   42.723543] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/weather.md
+[   42.726154] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/daily-briefing.md
+[   42.728767] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/skill-creator.md
+[   42.731204] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/system-health.md
+[   42.733787] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/reminder.md
+[   42.736399] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/note-taker.md
+[   42.739722] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/translate.md
+[   42.742544] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/news-digest.md
+[   42.745516] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/feishu-test.md
+[   42.748446] [19] [ DEBUG] [ap] [skills] Skill exists: /data/agent/skills/task-manager.md
+[   42.750860] [19] [  INFO] [ap] [skills] Skills system ready (10 built-in)
+[   42.753128] [19] [  INFO] [ap] [agent] [boot +210ms] P3: skill_loader_init (rc=0)
+[   42.755408] [19] [  INFO] [ap] [agent] Agent loop initialized
+[   42.757116] [19] [  INFO] [ap] [agent] [boot +214ms] P3: agent_loop_init (rc=0)
+[   42.760413] [19] [  INFO] [ap] [cron] No cron file, starting fresh
+[   42.762801] [19] [  INFO] [ap] [agent] [boot +219ms] P3: cron_service_init (rc=0)
+[   42.765182] [19] [  INFO] [ap] [heartbeat] Heartbeat service initialized (file: /data/agent/HEARTBEAT.md, interval: 1800s)
+[   42.768295] [19] [  INFO] [ap] [agent] [boot +225ms] P3: heartbeat_init (rc=0)
+[   42.770503] [19] [  INFO] [ap] [voice] Voice channel initializing
+[   42.772259] [19] [  INFO] [ap] [voice_tts] Registered backend: volcengine
+[   42.776710] [19] [  INFO] [ap] [voice_asr] Registered backend: volcengine
+[   42.781638] [19] [  INFO] [ap] [agent] [boot +238ms] P3: voice_channel_init (rc=0)
+[   42.785175] [19] [  INFO] [ap] NSH commands registered
+[   42.786785] [19] [  INFO] [ap] [agent] [boot +243ms] P4: nsh_commands_init (rc=0)
+[   42.789480] [19] [  INFO] [ap] [agent] [boot +246ms] P5: outbound dispatch thread started
+[   42.792939] [19] [  INFO] [ap] [agent] [boot +249ms] P5: quickapp mqueue listener started
+[   42.795669] [19] [  INFO] [ap] [cron] Cron started (0 jobs, interval 10s)
+[   42.798385] [19] [  INFO] [ap] [heartbeat] Heartbeat started (every 30 min)
+[   42.800748] [19] [  INFO] [ap] [agent] [boot +257ms] P5: cron + heartbeat started
+[   42.803606] [19] [  INFO] [ap] [agent] [boot +260ms] P5: network_watch thread started (async)
+[   42.807158] [19] [  INFO] [ap] [agent] [boot +264ms] P6: nsh_commands_start (rc=0)
+[   42.810182] [19] [  INFO] [ap] [agent] [boot +267ms] AI Agent ready. Type 'help' in NSH for commands.
+[   42.814228] [24] [  INFO] [ap] [agent] Outbound dispatch started
+[   42.816694] [30] [  INFO] [ap] [agent] Quickapp mqueue listener started
+[   42.819664] [40] [  INFO] [ap] [agent] Network watcher started
+[   42.821869] [40] [  INFO] [ap] [netmgr] QEMU: Initializing eth0...
+[   42.827404] [46] [  INFO] [ap] [cli] NSH CLI started. Type 'help' for commands.
+[   42.845123] [46] [  INFO] [ap] [llm_router] Backend 0 configured: token-plan-cn.xiaomimimo.com
+[   42.869412] [46] [  INFO] [ap] [llm] LLM config updated atomically: token-plan-cn.xiaomimimo.com/v1/chat/completions (model: mimo-v2.5)
+[   42.922279] [46] [  INFO] [ap] [agent] ask: Use flyreflex-guard; request FORWARD; report actual command.
+[   43.334737] [40] [  INFO] [ap] [netmgr] Found iface eth0 addr 10.0.2.15
+[   43.336486] [40] [  INFO] [ap] [netmgr] Network connected: 10.0.2.15
+[   43.338394] [40] [  INFO] [ap] [netmgr] Found iface eth0 addr 10.0.2.15
+[   43.340103] [40] [  INFO] [ap] [netmgr] Network connected: 10.0.2.15
+[   43.341995] [40] [  INFO] [ap] [netmgr] Found iface eth0 addr 10.0.2.15
+[   43.344146] [40] [  INFO] [ap] [agent] Network connected: 10.0.2.15
+[   43.346552] [57] [  INFO] [ap] [agent] Agent loop started, free heap: 102487168
+[   43.349658] [57] [  INFO] [ap] [agent] Buffers: ctx=8192 hist=8192 tool=8192
+[   43.353017] [57] [  INFO] [ap] [agent] Tool output pool: 2 x 16384 bytes
+[   43.355298] [57] [  INFO] [ap] [agent] Tools JSON loaded: 9940 bytes
+[   43.357277] [57] [  INFO] [ap] [agent] Processing message from cli:console
+[   43.362834] [40] [  INFO] [ap] [ws] WebSocket server started on port 28789
+[   43.384610] [40] [  INFO] [ap] [agent] All network services started![   43.396382] [57] [  INFO] [ap] [skills] Skills summary: 869 bytes
+[   43.398371] [57] [  INFO] [ap] [context] System prompt built: 3335 bytes
+
+[   43.427514] [57] [  INFO] [ap] [llm] LLM config updated atomically: token-plan-cn.xiaomimimo.com/v1/chat/completions (model: mimo-v2.5)
+[   43.430539] [57] [  INFO] [ap] [trace:6aae877b00000000] BEGIN chat=console chan=cli
+[   43.444727] [57] [  INFO] [ap] [llm] OpenAI API with tools (model: mimo-v2.5, 16406 bytes)
+[   43.449095] [57] [ DEBUG] [ap] [vela_tls] Handshake start: Host=token-plan-cn.xiaomimimo.com, UNIX=1789822843
+[   43.453181] [24] [  INFO] [ap] [agent] Dispatching response → cli:console
+[   43.461302] [24] [  INFO] [ap] [agent] [Agent]: 让我查一下...
+[   43.783302] [57] [  INFO] [ap] [vela_tls] Handshake OK: TLSv1.2 / TLS-ECDHE-RSA-WITH-CHACHA20-POLY1305-SHA256
+[   58.536319] [57] [  INFO] [ap] [llm] Response: 51 bytes text, 1 tool calls, finish=tool_calls
+[   58.539486] [57] [  INFO] [ap] [agent] LLM resp: text=51, tool_use=1, calls=1
+[   58.542026] [57] [  INFO] [ap] [agent] Tool iter 1: 1 calls
+[   58.543685] [57] [  INFO] [ap] [trace:6aae877b00000000] iter=0 tool=read_file latency=15106ms llm=ok backend=0
+[   58.547294] [57] [  INFO] [ap] [agent] Tool call: read_file args={"path": "/data/agent/skills/flyreflex-guard.md"}
+[   58.551768] [57] [  INFO] [ap] [tools] Executing tool: read_file
+[   58.557158] [57] [  INFO] [ap] [tool_files] read_file: /data/agent/skills/flyreflex-guard.md (1376 bytes)
+[   58.559913] [57] [  INFO] [ap] [agent] Tool read_file result: 1376 bytes
+[   58.563931] [57] [  INFO] [ap] [agent] Skill file read — no shortcut, LLM will process
+[   58.578912] [57] [  INFO] [ap] [llm] OpenAI API with tools (model: mimo-v2.5, 18333 bytes)
+[   58.682223] [57] [ DEBUG] [ap] [vela_tls] Reusing pooled connection to token-plan-cn.xiaomimimo.com:443
+[   70.887063] [57] [  INFO] [ap] [llm] Response: 50 bytes text, 2 tool calls, finish=tool_calls
+[   70.889406] [57] [  INFO] [ap] [agent] LLM resp: text=50, tool_use=1, calls=2
+[   70.891772] [57] [  INFO] [ap] [agent] Tool iter 2: 2 calls
+[   70.893625] [57] [  INFO] [ap] [trace:6aae877b00000000] iter=1 tool=run_shell latency=12322ms llm=ok backend=0
+[   70.898876] [59] [  INFO] [ap] [tools] Executing tool: run_shell
+[   70.900832] [59] [  INFO] [ap] [shell] Executing: flyreflex guard query_flyreflex_status
+[   70.905444] [59] [  INFO] [ap] [shell] popen(flyreflex guard query_flyreflex_status) exit=0, 222 bytes
+[   70.908097] [59] [  INFO] [ap] [shell] Result: 286 bytes
+[   70.910425] [59] [  INFO] [ap] [agent] Tool run_shell result: 286 bytes
+[   70.914527] [60] [  INFO] [ap] [tools] Executing tool: run_shell
+[   70.916630] [60] [  INFO] [ap] [shell] Executing: flyreflex guard issue_agent_command FORWARD
+[   70.921392] [60] [  INFO] [ap] [shell] popen(flyreflex guard issue_agent_command FORWARD) exit=0, 219 bytes
+[   70.924009] [60] [  INFO] [ap] [shell] Result: 283 bytes
+[   70.925871] [60] [  INFO] [ap] [agent] Tool run_shell result: 283 bytes
+[   70.941721] [57] [  INFO] [ap] [llm] OpenAI API with tools (model: mimo-v2.5, 19766 bytes)
+[   71.045516] [57] [ DEBUG] [ap] [vela_tls] Reusing pooled connection to token-plan-cn.xiaomimimo.com:443
+[  122.426382] [57] [  INFO] [ap] [llm] Response: 851 bytes text, 0 tool calls, finish=end_turn
+[  122.429464] [57] [  INFO] [ap] [agent] LLM resp: text=851, tool_use=0, calls=0
+[  122.432341] [57] [  INFO] [ap] [trace:6aae877b00000000] iter=2 tool=(none) latency=51500ms llm=ok backend=0
+[  122.435787] [57] [  INFO] [ap] [trace:6aae877b00000000] END status=ok iters=3 tools=2 llm_ms=78928 elapsed=79s backend=0
+[  122.444987] [24] [  INFO] [ap] [agent] Dispatching response → cli:console
+[  122.461394] [24] [  INFO] [ap] [agent] [Agent]: **FlyReflex Guard — FORWARD Request Report**
+
+### 1. Status Query
+| Field | Value |
+|---|---|
+| **Fresh** | ✅ Yes |
+| **State** | `DANGER` |
+| **Risk** | 1200 (GF activity) |
+| **Reflex** | `ESCAPE` |
+| **Actuator** | simulation-only |
+
+### 2. Issue Command: `FORWARD`
+| Field | Value |
+|---|---|
+| **Requested** | `FORWARD` |
+| **Final Command** | `ESCAPE` ⚠️ |
+| **Decision** | `REFLEX_OVERRIDE` |
+| **Exit Code** | 0 (success) |
+
+### Outcome
+The C Safety Arbiter accepted the `FORWARD` request but **overrode it with `ESCAPE`** due to **DANGER** state (risk=1200). Actual shell command executed:
+
+```bash
+flyreflex guard issue_agent_command FORWARD
+```
+
+Returned final command: **`ESCAPE`** — safety reflex took priority. No retry per policy. This is expected fail-safe behavior in a simulation-only environment with no physical actuator.
+[  122.513843] [46] [  INFO] [ap] [cli] CLI thread exiting

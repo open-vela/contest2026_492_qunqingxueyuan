@@ -1,3 +1,5 @@
+> 历史阶段记录，原测试与问题保持原样。当前发布状态以 [FINAL_RELEASE_REPORT.md](FINAL_RELEASE_REPORT.md) 为准。
+
 # FlyReflex Final Acceptance
 
 验收日期：2026-09-19。最终判定：**BLOCKED**。

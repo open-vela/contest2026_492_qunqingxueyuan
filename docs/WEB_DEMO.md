@@ -1,15 +1,18 @@
 # 交互避障对比
 
+最终集成的实测端口、启动命令及验收见 [FINAL_INTEGRATION](FINAL_INTEGRATION.md)。页面默认 openvela 实时；未启动目标时会断线暂停。本机 C 演示需显式选择 DEMO MODE。
+
+
 ## 启动
 
 先在 Linux / WSL 按 README 编译 `build/flyreflex_host`。本机演示也运行 C 核心，不再播放固定样本。
 
 ```powershell
 npm ci --prefix web
-python tools/web_bridge.py
+wsl -d Ubuntu-D -- python3 /mnt/d/openvela/tools/web_bridge.py --port 8090 --target-port 10025
 ```
 
-打开 <http://127.0.0.1:8088>。Windows 桥接通过默认 WSL 发行版运行本项目的 `build/flyreflex_host control`；可用环境变量 `FLYREFLEX_WSL_DISTRO` 指定发行版。Linux 直接启动同一二进制。依赖安装后无需 CDN。
+打开 <http://127.0.0.1:8090>。Windows 桥接通过默认 WSL 发行版运行本项目的 `build/flyreflex_host control`；可用环境变量 `FLYREFLEX_WSL_DISTRO` 指定发行版。Linux 直接启动同一二进制。依赖安装后无需 CDN。
 
 ## 操作
 
@@ -41,7 +44,7 @@ python tools/web_bridge.py
 编译包含 `flyreflex control` 的固件。在 openvela 工作区根目录启动独立模拟器：
 
 ```bash
-bash contest2026_492_qunqingxueyuan/tools/run_web_emulator.sh "$PWD"
+FLYREFLEX_EMULATOR_PORTS=5558,5559 FLYREFLEX_GRPC_PORT=8558 bash contest2026_492_qunqingxueyuan/tools/run_web_emulator.sh "$PWD"
 ```
 
 NSH 中：
@@ -54,10 +57,10 @@ ifup eth0
 若启动日志没有 telnetd，则执行 `telnetd`。按 Ctrl+A 再按 C 进入 QEMU 控制台：
 
 ```text
-hostfwd_add tcp:127.0.0.1:10023-:23
+hostfwd_add tcp:127.0.0.1:10025-:23
 ```
 
-网页选择「openvela 实时」。桥接自动启动交互控制命令。脚本使用独立临时固件目录与 5556/5557、8556 端口；不影响原有 GUI 实例。NSH/Telnet 仅用于本机开发，不要向公网开放。关闭本次实例可在其 QEMU 控制台输入 `quit`。
+网页选择「openvela 实时」。桥接自动启动交互控制命令。脚本使用独立临时固件目录与 5558/5559、8558 端口；不影响原有 GUI 实例。NSH/Telnet 仅用于本机开发，不要向公网开放。关闭本次实例可在其 QEMU 控制台输入 `quit`。
 
 ## 通信
 

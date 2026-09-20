@@ -12,8 +12,12 @@ from web_bridge import TelnetFilter
 parser = argparse.ArgumentParser()
 parser.add_argument('--port', type=int, default=10024)
 parser.add_argument('--skill-installed', action='store_true')
+parser.add_argument('--key-file', type=Path, help='Existing private key file, outside the repository')
+parser.add_argument('--output', type=Path, default=Path('docs/evidence/agent-guard-runtime.txt'))
 args = parser.parse_args()
-key = getpass.getpass('MiMo API key (hidden): ')
+key = args.key_file.read_text(encoding='utf-8-sig').strip() if args.key_file else getpass.getpass('MiMo API key (hidden): ')
+if not key or any(c.isspace() for c in key):
+    raise ValueError('Expected one credential without whitespace')
 records = []
 
 class Session:
@@ -50,7 +54,7 @@ def sanitize(value):
 def record(value):
     records.append(sanitize(value))
     print(sanitize(value), flush=True)
-    Path('docs/evidence/agent-guard-runtime.txt').write_text('\n'.join(records), encoding='utf-8')
+    args.output.write_text('\n'.join(records), encoding='utf-8')
 
 stop = threading.Event()
 feed_ready = threading.Event()

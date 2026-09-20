@@ -1,3 +1,5 @@
+> 旧版视频准备资料。当前录制使用 [FINAL_VIDEO_SCRIPT.md](FINAL_VIDEO_SCRIPT.md) 和 [FINAL_VIDEO_PREP.md](FINAL_VIDEO_PREP.md)。
+
 # 人工录制检查
 
 ## 开始前

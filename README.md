@@ -12,11 +12,15 @@ FlyReflex 是一个运行在 openvela 上的独立安全反射层：上层 AI �
 
 **自定方向：面向具身智能设备的端侧安全反射。** 项目使用 openvela 的 NuttX 应用运行环境、LVGL 图形能力、framebuffer、NSH 命令和单调时钟，在模拟器固件内完成本地感知计算、指令仲裁、实时可视化与延迟测量。反射核心不依赖云端推理；另提供官方 `ai_agent` 的运行时 Guard Skill，通过小米 MiMo 发起安全状态查询和模拟前进请求。该集成的实测状态和限制见 [Guard 接入与验收](docs/AGENT_GUARD.md)，不能把浏览器里的固定延迟 Agent 模型当成真实 LLM。
 
+## 最终真实闭环验收
+
+2026-09-19 集成：浏览器默认实时 openvela，显示 Agent requested / actual action，并在通信失败时暂停。完整启动命令、同一核心的 MiMo Guard 验收及当前限制见 [最终集成记录](docs/FINAL_INTEGRATION.md)。当前本地演示地址为 http://127.0.0.1:8090；不要把历史主机演示模式当作目标执行。
+
 ## 浏览器 3D 演示
 
-浏览器提供双场地交互避障对比：左侧 Agent 延迟模型，右侧同一模型加即时神经反射。拖动蓄力发射相同障碍球，调节速度与加速度，统计两侧碰撞和躲避结果。本机演示与 openvela 实时模式均调用 C 核心，原有 LVGL 界面与安全判断逻辑保持不变。
+浏览器提供双场地交互避障对比：左侧 Agent 延迟模型，右侧在相同输入下叠加 FlyReflex 安全反射。拖动蓄力发射相同障碍球，调节速度与加速度，统计两侧碰撞和躲避结果。host-reference 模式调用主机 C 核心；openvela 实时模式通过 HTTP bridge → Telnet/NSH → 目标端 `flyreflex control` 调用模拟器中的真实 C 核心。原有 LVGL 界面与安全判断逻辑保持不变。
 
-先完成下文主机 C 编译，再在项目根目录执行 `npm ci --prefix web` 和 `python tools/web_bridge.py`，访问 <http://127.0.0.1:8088>。实时连接、数据定义及验收步骤见 [Web 演示说明](docs/WEB_DEMO.md)。
+先完成下文主机 C 编译，再在项目根目录执行 `npm ci --prefix web` 和 `wsl -d Ubuntu-D -- python3 /mnt/d/openvela/tools/web_bridge.py --port 8090 --target-port 10025`，访问 <http://127.0.0.1:8090>。实时连接、数据定义及验收步骤见 [Web 演示说明](docs/WEB_DEMO.md)。
 
 ## Problem
 
@@ -38,7 +42,7 @@ AI Agent 擅长任务理解和规划，但推理耗时、网络依赖和偶发�
 
 安全与缓慢接近场景保持 final=FORWARD。输入非法时 fail-safe 输出 STOP。
 
-既有候选版 openvela ARM64 模拟器实测：reflex compute median 1.280 us、P95 1.360 us、P99 2.816 us；event-to-arbiter median 2.320 us、P95 2.448 us、P99 5.312 us。它们是历史候选结果，不是 MCU latency，也不是最终 RC 验收。最终结果以 `benchmark/final_*.log` 与 [RC 记录](docs/RELEASE_CANDIDATE.md) 为准。
+既有候选版 openvela ARM64 模拟器实测：reflex compute median 1.280 us、P95 1.360 us、P99 2.816 us；event-to-arbiter median 2.320 us、P95 2.448 us、P99 5.312 us。它们是历史候选结果，不是 MCU latency，也不是最终 RC 验收。最终构建与测试状态见 [最终发布报告](docs/FINAL_RELEASE_REPORT.md)。
 
 ## Biological Basis
 
@@ -154,24 +158,14 @@ openvela 不是标签：FlyReflex 作为 NSH 内建应用被交叉编译进现�
       -b dev-ai-contest-2026 -m contest2026_492_qunqingxueyuan.xml
     repo sync -c -j8
 
-启用 Application Configuration → Packages → Demos → FlyReflex，然后构建：
-
-    ./build.sh vendor/openvela/boards/vela/configs/goldfish-arm64-v8a-ap/ --cmake menuconfig
-    ./build.sh vendor/openvela/boards/vela/configs/goldfish-arm64-v8a-ap/ --cmake -j2
-
-启动模拟器：
-
-    ./emulator.sh cmake_out/vela_goldfish-arm64-v8a-ap/
-
-Guard 版本在初始配置后执行（已实际执行此配置与构建路径）：
+在 Linux / WSL 内完成 repo sync，避免 Windows checkout 把符号链接写成文本或把脚本转换为 CRLF。下载官方库，然后执行赛事仓可重放的构建脚本：
 
 ```bash
-bash contest2026_492_qunqingxueyuan/tools/configure_agent_guard.sh
 git -C vendor/openvela/boards/vela/libs lfs pull
-source build/envsetup.sh
-lunch vendor/openvela/boards/vela/configs/goldfish-arm64-v8a-ap cmake_out/vela_goldfish-arm64-v8a-ap
-cmake --build cmake_out/vela_goldfish-arm64-v8a-ap -j4
+bash contest2026_492_qunqingxueyuan/tools/build_final_openvela.sh "$PWD"
 ```
+
+脚本使用官方 build/envsetup.sh、lunch 与 CMake，启用 FlyReflex / ai_agent，并应用仓库公开的两个 ai_agent 补丁。公共仓差异和精确版本记录见 [最终发布报告](docs/FINAL_RELEASE_REPORT.md)。本地最终工作区为 `D:/openvela_official`。录制演示可直接运行 `tools/start_final_demo.ps1`，详见 [录制准备](docs/FINAL_VIDEO_PREP.md)。
 
 此 manifest 的上游默认仓是 open-vela；仅克隆个人 fork 不会自动替换完整工作区中的项目 revision。最终发布以正式分支实际 SHA 为准。
 
@@ -197,10 +191,10 @@ UI 自动循环 SAFE → SLOW → DANGER → RECOVERY，也可以直接点击顶
 
 ```bash
 npm ci --prefix web
-python tools/web_bridge.py --target-port 10023
+wsl -d Ubuntu-D -- python3 /mnt/d/openvela/tools/web_bridge.py --port 8090 --target-port 10025
 ```
 
-打开 http://127.0.0.1:8088，选择 openvela 实时。独立模拟器、NSH 网络与本机端口转发见 [WEB_DEMO](docs/WEB_DEMO.md)。本机演示只代表 host-reference，不是 ARM64 数据。
+打开 http://127.0.0.1:8090。页面默认选择 openvela 实时模式。独立模拟器、NSH 网络与本机端口转发见 [WEB_DEMO](docs/WEB_DEMO.md)。host-reference 仅用于本机参考，不代表 ARM64 openvela 目标结果。
 
 ### MiMo Guard（专用测试实例）
 
@@ -217,8 +211,8 @@ ctest --test-dir build --output-on-failure
 npm test --prefix web
 python -m unittest discover -s tests -p test_web_bridge.py
 python tools/release_validation.py build/flyreflex_host
-python tools/capture_target_acceptance.py --port 10023
-python tools/soak_target.py --port 10023 --seconds 1800 --output docs/evidence/soak-target.json
+python tools/capture_target_acceptance.py --port 10025
+python tools/soak_target.py --port 10025 --seconds 1800 --output docs/evidence/soak-target.json
 ```
 
 运行目标验收时暂停网页，避免竞争同一目标。synthetic validation 是固定 seed=492 的 100 danger + 100 safe 合成场景，不是相机识别率。目标 NSH 另执行 `flyreflex bench 1000`。最终冻结对应证据见 RC 文档；历史 PASS 不自动升级为 RC PASS。
@@ -240,7 +234,7 @@ python tools/soak_target.py --port 10023 --seconds 1800 --output docs/evidence/s
     data/connectome/        raw response, direct edges, aggregate edges and query
     data/engineering/       explicit model parameters and classifications
     docs/                   architecture, science, provenance, benchmark and demo
-    logs/                   development log; official AI export still required
+    logs/                   contest AI Coding JSONL, manifest and development provenance
     skills/                 reusable FlyReflex provenance audit Skill
     tests/                  host regression tests
     tools/connectome/       deterministic neuPrint extraction script
@@ -253,7 +247,7 @@ python tools/soak_target.py --port 10023 --seconds 1800 --output docs/evidence/s
 - Three aggregate biological nodes, not a full neural simulation.
 - Synapse counts set relative structural weights; they are not physiological synaptic efficacy.
 - P0 AI command is simulated and no cloud LLM is required for the safety loop.
-- Release acceptance and remaining submission blockers are tracked in docs/FINAL_ACCEPTANCE.md; a running local demo does not imply the latest revision is published.
+- Final integration evidence and remaining submission blockers are tracked in `docs/STAGE_ACCEPTANCE_REPORT.md` and `docs/FINAL_INTEGRATION.md`; a running local demo does not imply the latest revision is already published to the contest repository.
 
 ## Future work
 
@@ -261,9 +255,15 @@ Add camera optical-flow input, validate on a low-power MCU/SoC, connect STOP/ESC
 
 ## AI Coding
 
-开发主要使用 Codex；运行时高层 AI 使用 Xiaomi MiMo，两者职责不同。[人工日志导出步骤](docs/AI_LOG_EXPORT_MANUAL.md) 说明官方采集工具、缺失历史会话的限制和隐私检查。
+开发主要使用 Codex；运行时高层 AI 使用 Xiaomi MiMo，两者职责不同。[AI Coding 日志说明](docs/AI_LOG_EXPORT_MANUAL.md) 记录官方采集兼容问题、透明转换方式、来源完整性与隐私检查。
 
-AI participated in requirement extraction, official-rule checking, primary-source research, neuPrint queries, architecture, C implementation, tests, openvela integration, benchmark design, debugging and documentation. The manually exported official AI Coding conversation package must still be placed in logs/ before submission; logs/development_log.md is an engineering summary, not a substitute.
+AI participated in requirement extraction, official-rule checking, primary-source research, neuPrint queries, architecture, C implementation, tests, openvela integration, benchmark design, debugging and documentation. <!-- AI_LOG_TOTALS -->
+Archived AI Coding logs: 2 sessions, 2 files, 2080 events. Official validator: ALL OK. Credential scan: PASS.
+<!-- /AI_LOG_TOTALS -->
+
+PENDING CURRENT SESSION FINALIZER. Close the final release session before running the one-command finalizer documented in AI_LOG_EXPORT_MANUAL.md.
+
+ `logs/development_log.md` remains an engineering summary rather than a substitute for the contest AI Coding logs.
 
 ## References
 

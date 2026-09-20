@@ -1,6 +1,6 @@
 # FlyReflex Guard 接入与验收
 
-当前候选版的模拟器端到端调用已通过：MiMo 读取 Skill，调用前进请求，收到 ESCAPE 并报告安全接管。串口证据见 `evidence/agent-guard-serial.txt`，调用前后快照及回答见 `evidence/agent-guard-runtime.txt`。这不代表最终远端发布或实体机器人已验收，完整状态见 [最终验收](FINAL_ACCEPTANCE.md)。
+历史最终集成阶段的模拟器端到端调用已通过：MiMo 读取 Skill，调用前进请求，收到 ESCAPE 并报告安全接管。串口证据见 `evidence/final-agent-tool-trace.txt`，调用前后快照及回答见 `evidence/final-agent-guard-runtime.txt`。这不代表最终远端发布或实体机器人已验收，完整状态见 [最终发布验收](FINAL_RELEASE_REPORT.md)。
 
 ## 配置
 

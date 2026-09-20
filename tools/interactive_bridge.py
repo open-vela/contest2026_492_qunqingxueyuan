@@ -9,6 +9,24 @@ import time
 from pathlib import Path
 
 
+def validate_reply(result, source, seq):
+    """Validate the wire contract, never derive a replacement safety action."""
+    if not isinstance(result, dict):
+        raise OSError('Invalid telemetry object')
+    if result.get('source') != source or type(result.get('seq')) is not int or result['seq'] != seq:
+        raise OSError('Unexpected telemetry source or sequence')
+    for field in ('agent_a', 'agent_b', 'action'):
+        if result.get(field) not in ('FORWARD', 'ESCAPE', 'STOP'):
+            raise OSError('Invalid telemetry action')
+    if result.get('state') not in ('SAFE', 'CAUTION', 'DANGER', 'INVALID'):
+        raise OSError('Invalid telemetry state')
+    for field, maximum in (('lplc2', 1000), ('lc4', 1000), ('gf', 1200),
+                           ('latency_ns', 10000000000)):
+        if type(result.get(field)) is not int or not 0 <= result[field] <= maximum:
+            raise OSError('Invalid telemetry ' + field)
+    return result
+
+
 class Controller:
     def __init__(self, host, port, decoder):
         self.host, self.port, self.decoder_class = host, port, decoder
@@ -116,10 +134,12 @@ class Controller:
                         marker = line.find(b'FR2 {')
                         if marker < 0:
                             continue
-                        result = json.loads(line[marker + 4:])
+                        try:
+                            result = json.loads(line[marker + 4:])
+                        except ValueError as exc:
+                            raise OSError('Malformed target JSON') from exc
                         expected = 'openvela' if data['mode'] == 'live' else 'host-reference'
-                        if result.get('seq') != data['seq'] or result.get('source') != expected:
-                            raise OSError('Unexpected telemetry source or sequence')
+                        validate_reply(result, expected, data['seq'])
                         result['restarted'] = fresh
                         return result
                     self.pending += self.read_chunk()
