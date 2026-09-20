@@ -3,12 +3,12 @@
 初始两次开发会话已从原始 Codex rollout 透明转换。新 rollout 使用 response_item / event_msg，现有 collector 不直接兼容；公开 converter 保留实际事件、时间和工具调用，不解密或伪造 reasoning，不修改 source。来源 SHA256 见 codex_rollout_sha256.txt，转换限制见 AI_CODING_LOG_PROVENANCE.md。
 
 <!-- AI_LOG_TOTALS -->
-Archived AI Coding logs: 2 sessions, 2 files, 2080 events. Official validator: ALL OK. Credential scan: PASS.
+Archived AI Coding logs: 3 sessions, 3 files, 3332 events. Official validator: ALL OK. Credential scan: PASS.
 <!-- /AI_LOG_TOTALS -->
 
 ## 本次 release 会话
 
-状态：PENDING CURRENT SESSION FINALIZER。
+状态：CURRENT SESSION ARCHIVED 01a0b9ec-8ebc-7dc1-bd5a-b6f05daa889c。
 当前会话尚在写入，不可声称已最终归档。关闭此 Codex 会话后，在 PowerShell 执行唯一归档命令：
 
 ```powershell
