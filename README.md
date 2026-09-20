@@ -258,10 +258,10 @@ Add camera optical-flow input, validate on a low-power MCU/SoC, connect STOP/ESC
 开发主要使用 Codex；运行时高层 AI 使用 Xiaomi MiMo，两者职责不同。[AI Coding 日志说明](docs/AI_LOG_EXPORT_MANUAL.md) 记录官方采集兼容问题、透明转换方式、来源完整性与隐私检查。
 
 AI participated in requirement extraction, official-rule checking, primary-source research, neuPrint queries, architecture, C implementation, tests, openvela integration, benchmark design, debugging and documentation. <!-- AI_LOG_TOTALS -->
-Archived AI Coding logs: 2 sessions, 2 files, 2080 events. Official validator: ALL OK. Credential scan: PASS.
+Archived AI Coding logs: 3 sessions, 3 files, 3332 events. Official validator: ALL OK. Credential scan: PASS.
 <!-- /AI_LOG_TOTALS -->
 
-PENDING CURRENT SESSION FINALIZER. Close the final release session before running the one-command finalizer documented in AI_LOG_EXPORT_MANUAL.md.
+CURRENT SESSION ARCHIVED 01a0b9ec-8ebc-7dc1-bd5a-b6f05daa889c. Close the final release session before running the one-command finalizer documented in AI_LOG_EXPORT_MANUAL.md.
 
  `logs/development_log.md` remains an engineering summary rather than a substitute for the contest AI Coding logs.
 
