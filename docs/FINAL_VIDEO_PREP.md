@@ -1,11 +1,8 @@
 # 最终录制准备
 
-在 PowerShell 启动最终工作区固件与 bridge：
+录制前先确认正在使用的是已实际验证可运行的 openvela candidate。由于本次 final clean-first 构建未产出完整新镜像，不要在视频或讲解中把该 candidate 描述为“本次 clean build 新固件”。
 
-```powershell
-cd D:/openvela
-powershell -ExecutionPolicy Bypass -File tools/start_final_demo.ps1
-```
+`tools/start_final_demo.ps1` 仅在它能够找到可启动且已验证的目标固件时使用；若启动器因本次新固件缺失而拒绝启动，不要绕过检查或伪造新固件状态，改用此前已实际验证的 candidate 演示路径。
 
 打开 http://127.0.0.1:8090。WSL Ubuntu-D 目标 Telnet 为 10025，模拟器为 5558/5559，gRPC 为 8558。启动器会检查端口冲突，不会杀死其他模拟器。已经运行本次最终演示时直接使用现有实例。
 

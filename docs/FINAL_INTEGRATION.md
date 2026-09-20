@@ -21,7 +21,7 @@ cd D:/openvela
 powershell -ExecutionPolicy Bypass -File tools/start_final_demo.ps1
 ```
 
-使用正式工作区 `cmake_out/vela_goldfish-arm64-v8a-ap/` 的新固件；启动器仅为可写模拟器数据盘复制本次新构建产物，不读取旧 candidate 或旧临时 nuttx。启动器自动配置网络和 Telnet 转发，目标 10025，模拟器 5558/5559，gRPC 8558，HTTP 8090。
+注意：本次 final clean-first 构建未在收尾时间窗内产出一份完整的新固件，因此不能把该启动方式描述为“本次 clean build 新固件”。最终 release 的 BUILD 状态为 PARTIAL、OPENVELA 新固件 smoke 为 BLOCKED。已有 Browser / MiMo / Guard / openvela 闭环证据来自此前实际验证过的 candidate；如使用该 candidate 录制演示，必须明确标注为既有已验证候选固件，不得表述为本次 clean build 产物。端口约定仍为目标 10025、模拟器 5558/5559、gRPC 8558、HTTP 8090。
 
 浏览器打开 http://127.0.0.1:8090。bridge 与目标在同一 WSL。若已有最终模拟器，只需：
 

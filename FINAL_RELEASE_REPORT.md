@@ -19,7 +19,7 @@
 | SKILL | PASS | 仓库 Skill provenance 校验通过；运行时 Guard Skill 已按原文件部署和回读验证。 |
 | DOCS | PASS | 最终集成、AI 日志、录制、提交和真实性边界文档已统一。 |
 | REPORT | PASS | 技术报告 DOCX/PDF 已由正式模板生成并完成 5 页渲染检查。 |
-| AI CODING LOGS | PENDING USER | 两个已结束会话共 2080 events 已通过官方校验与脱敏扫描；当前会话必须在退出后运行唯一 finalizer。 |
+| AI CODING LOGS | PASS | 3 个 Codex 会话共 3332 events 已归档；最终 manifest 包含 3 sessions / 3 files，官方 `validate-log.py` 校验 ALL OK，credential scan PASS。 |
 | GIT | PASS | 本报告随本地 release commit 提交；未 push、未 merge。最终 SHA 以 `git rev-parse HEAD` 为准。 |
 | VIDEO | PENDING USER | 需用户按最终脚本录制不超过 5 分钟的视频。 |
 | SUBMISSION | PENDING USER | 视频完成后运行打包工具并在赛事页面上传。 |
@@ -34,9 +34,9 @@ Browser 世界与 Agent latency 是仿真；安全决策在 live 模式下由 op
 
 ## 安全与日志
 
-最终 secret scan 覆盖 Git 可提交文件、未跟踪候选文件、Office/PDF 容器和 AI Coding Logs；共扫描 145 个文件，0 findings、0 errors，结果 PASS，证据为 `docs/evidence/final-secret-scan.json`。首个封存日志发现的 MiMo 密钥已按用户授权先在仓库外备份，再由 converter 从原始 rollout 重新生成脱敏版本；原始 rollout 未修改。两份已结束日志继续通过赛事官方 `validate-log.py`。
+最终 secret scan 覆盖 Git 可提交文件、未跟踪候选文件、Office/PDF 容器和 AI Coding Logs；共扫描 145 个文件，0 findings、0 errors，结果 PASS，证据为 `docs/evidence/final-secret-scan.json`。首个封存日志发现的 MiMo 密钥已按用户授权先在仓库外备份，再由 converter 从原始 rollout 重新生成脱敏版本；原始 rollout 未修改。三份最终赛事日志均通过赛事官方 `validate-log.py`。
 
-当前会话不能在仍运行时完成封存。退出本会话后，finalizer 会等待源日志稳定、临时转换、官方校验、密钥扫描、manifest/SHA 更新，并仅提交归档产生的明确文件；若源会话变化、校验失败或发现密钥则拒绝提交。
+最终 Codex release 会话已在退出后通过 `tools/finalize_last_codex_session.py` 完成归档。最终赛事日志为 3 sessions / 3 files / 3332 events，并再次通过官方 validator 与 credential scan。
 
 ## 本地发布边界
 
@@ -44,6 +44,6 @@ Browser 世界与 Agent latency 是仿真；安全决策在 live 模式下由 op
 
 ## USER ONLY NEEDS TO DO
 
-1. 退出当前 Codex 会话后，执行最终答复给出的唯一 session finalizer 命令。
-2. 按 `docs/FINAL_VIDEO_SCRIPT.md` 录制并命名为 `submission/final/FlyReflex_演示视频.mp4`。
-3. 执行 `python tools/package_submission.py`，检查生成的比赛 ZIP 后手动上传。
+1. 按 `docs/FINAL_VIDEO_SCRIPT.md` 录制并命名为 `submission/final/FlyReflex_演示视频.mp4`。
+2. 执行 `python tools/package_submission.py`，检查生成的比赛 ZIP。
+3. 将最终 release 分支 push 到个人 fork，创建并检查 PR，随后由用户手动 merge 到赛事专属仓并在官网提交。
