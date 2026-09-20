@@ -1,7 +1,7 @@
 {
   "source": "https://neuprint.janelia.org/api/custom/custom",
   "dataset": "male-cns:v1.0",
-  "fetched_at": "2026-09-18T05:25:50+00:00",
+  "fetched_at": "2026-09-18T08:33:07+00:00",
   "query": "MATCH (pre:Neuron)-[e:ConnectsTo]->(post:Neuron)\nWHERE pre.type IN [\"LPLC2\", \"LC4\"] AND post.type = \"DNp01\"\nRETURN pre.bodyId AS pre_body_id,\n       pre.instance AS pre_instance,\n       pre.type AS pre_cell_type,\n       post.bodyId AS post_body_id,\n       post.instance AS post_instance,\n       post.type AS post_cell_type,\n       e.weight AS synapse_count\nORDER BY pre.type, post.bodyId, e.weight DESC",
   "response": {
     "columns": [

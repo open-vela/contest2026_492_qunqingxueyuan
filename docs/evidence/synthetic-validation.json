@@ -1,0 +1,1016 @@
+{
+  "label": "SYNTHETIC SCENARIO VALIDATION",
+  "seed": 492,
+  "source": "host-reference",
+  "danger_scenarios": 100,
+  "safe_scenarios": 100,
+  "correct_triggers": 100,
+  "false_triggers": 0,
+  "missed_triggers": 0,
+  "trigger_rate": 1.0,
+  "false_positive_rate": 0.0,
+  "false_negative_rate": 0.0,
+  "limitation": "Hand-defined synthetic input families; not camera accuracy or generalization.",
+  "records": [
+    {
+      "id": 0,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 1,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 2,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 3,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 4,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 5,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 6,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 7,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 8,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 9,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 10,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 11,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 12,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 13,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 14,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 15,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 16,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 17,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 18,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 19,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 20,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 21,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 22,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 23,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 24,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 25,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 26,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 27,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 28,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 29,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 30,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 31,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 32,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 33,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 34,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 35,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 36,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 37,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 38,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 39,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 40,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 41,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 42,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 43,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 44,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 45,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 46,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 47,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 48,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 49,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 50,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 51,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 52,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 53,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 54,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 55,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 56,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 57,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 58,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 59,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 60,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 61,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 62,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 63,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 64,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 65,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 66,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 67,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 68,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 69,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 70,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 71,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 72,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 73,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 74,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 75,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 76,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 77,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 78,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 79,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 80,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 81,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 82,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 83,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 84,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 85,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 86,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 87,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 88,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 89,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 90,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 91,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 92,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 93,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 94,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 95,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 96,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 97,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 98,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 99,
+      "dangerous": false,
+      "triggered": false
+    },
+    {
+      "id": 100,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 101,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 102,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 103,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 104,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 105,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 106,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 107,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 108,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 109,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 110,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 111,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 112,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 113,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 114,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 115,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 116,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 117,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 118,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 119,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 120,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 121,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 122,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 123,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 124,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 125,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 126,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 127,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 128,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 129,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 130,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 131,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 132,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 133,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 134,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 135,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 136,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 137,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 138,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 139,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 140,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 141,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 142,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 143,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 144,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 145,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 146,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 147,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 148,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 149,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 150,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 151,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 152,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 153,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 154,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 155,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 156,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 157,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 158,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 159,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 160,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 161,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 162,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 163,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 164,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 165,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 166,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 167,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 168,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 169,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 170,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 171,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 172,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 173,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 174,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 175,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 176,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 177,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 178,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 179,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 180,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 181,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 182,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 183,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 184,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 185,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 186,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 187,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 188,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 189,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 190,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 191,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 192,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 193,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 194,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 195,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 196,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 197,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 198,
+      "dangerous": true,
+      "triggered": true
+    },
+    {
+      "id": 199,
+      "dangerous": true,
+      "triggered": true
+    }
+  ]
+}

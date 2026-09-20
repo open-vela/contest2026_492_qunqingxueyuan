@@ -6,6 +6,20 @@ FlyReflex sits between a slow AI command path and an actuator command path. It d
 
 ## Runtime data flow
 
+Deployment boundaries:
+
+| Layer | Responsibility | Not claimed |
+|---|---|---|
+| openvela | C reflex, arbiter, monotonic timing, NSH, LVGL, Guard snapshots | Physical sensing or motor control |
+| Host Python bridge | Transport, session management and validation | Running inside openvela |
+| Browser | Geometry simulation, shared attacks, input controls and rendering | Real-world robotics or independent safety decisions |
+
+Host-reference demo mode runs the same C implementation as a host process and
+is labelled separately. Live mode stops advancing on missing responses. The
+Agent Guard integration invokes the existing C arbiter; the cloud does not
+participate in the per-frame reflex. See `AGENT_GUARD.md` for current verification
+status and the narrow command allowlist patch.
+
     Scenario generator / future camera
                  |
                  v
@@ -71,4 +85,3 @@ The runtime uses CLOCK_MONOTONIC. The UI reports one event; the benchmark sorts 
 - No allocation in looming, engine or arbiter calls.
 - Benchmark allocation occurs outside the measured loop.
 - Core builds unchanged on a POSIX host and openvela/NuttX.
-

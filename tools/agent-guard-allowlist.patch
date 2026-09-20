@@ -1,0 +1,17 @@
+diff --git a/src/tools/tool_shell.c b/src/tools/tool_shell.c
+--- a/src/tools/tool_shell.c
++++ b/src/tools/tool_shell.c
+@@ -145,6 +145,13 @@ static int is_blocked(const char *cmd)
+     if (has_shell_meta(cmd))
+         return 1;
+ 
++    /* FlyReflex: exact, simulation-only arbiter operations, not a general
++     * permission to invoke arbitrary FlyReflex commands. */
++    if (strcmp(cmd, "flyreflex guard query_flyreflex_status") == 0 ||
++        strcmp(cmd, "flyreflex guard issue_agent_command FORWARD") == 0)
++        return 0;
++
++
+     /* Extract the first token (command name) */
+     char first[64];
+     int i = 0;

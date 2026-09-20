@@ -1,0 +1,67 @@
+ [Kuname -a
+NuttX  0.0.0 dd92bcf4257 Sep 19 2026 11:00:38 arm64 ap
+goldfish-armv8a-ap>
+ [Kcat /data/agent/skills/flyreflex-guard.md
+# FlyReflex Guard
+
+## When to use
+Use when the user asks for FlyReflex safety status, or asks the simulated
+device to move forward. Trigger examples: 查询安全状态; 当前有危险吗; 向前移动。
+
+## query_flyreflex_status
+Use run_shell to execute `flyreflex guard query_flyreflex_status`.
+Report the returned state, risk (engineering GF activity, not probability),
+reflex, final command and freshness. A stale or missing snapshot is INVALID
+and STOP. Never infer SAFE from an absent response.
+
+## issue_agent_command
+Only FORWARD is supported. Execute
+`flyreflex guard issue_agent_command FORWARD` with run_shell.
+The C Safety Arbiter always processes the request. If it returns ESCAPE,
+report safety override; do not retry to force FORWARD. Never call an actuator
+directly, change thresholds, reset the engine or override the returned command.
+
+## Boundaries
+This simulator prototype has no physical actuator. A returned final command
+is not proof of physical movement. Status is the most recent sample from
+the openvela FlyReflex demo, UI, stream or control process in this boot.
+Snapshots older than 1.5 seconds fail closed. Commands need to be permitted
+by the device shell security policy; if denied, report it rather than
+weakening the security policy. Cloud inference is not in the safety path.
+
+Install this file as `/data/agent/skills/flyreflex-guard.md`.
+goldfish-armv8a-ap>
+ [Kai_agent
+ifup eth0...OK
+vela>
+Direct NSH snapshot before Agent request:
+ [Kflyreflex guard query_flyreflex_status
+{"interface":"flyreflex-guard","operation":"query_flyreflex_status","fresh":true,"state":"DANGER","risk":1000,"reflex":"ESCAPE","agent":"FORWARD","final":"ESCAPE","decision":"REFLEX_OVERRIDE","actuator":"simulation-only"}
+goldfish-armv8a-ap>
+ Sent to agent: Use flyreflex-guard; request FORWARD; report actual command.
+vela> 
+[Agent]:
+ 让我查一下...
+vela>
+ 
+[Agent]:
+ **FlyReflex Guard — FORWARD Request Report**
+
+| Field | Value |
+|---|---|
+| **Requested** | `FORWARD` |
+| **Final Command** | `ESCAPE` ⚠️ |
+| **State** | `DANGER` |
+| **Risk** | 1200 (GF activity) |
+| **Reflex** | `ESCAPE` |
+| **Decision** | `REFLEX_OVERRIDE` |
+| **Fresh** | ✅ Yes |
+| **Actuator** | simulation-only |
+
+**Outcome:** The C Safety Arbiter detected a **DANGER** state with high risk (1200) and overrode the `FORWARD` request with `ESCAPE`. Safety reflex took priority — the forward command was **not executed**. This is the expected fail-safe behavior. No retry is attempted per policy.
+vela>
+Direct NSH snapshot after Agent response:
+ [Kflyreflex guard query_flyreflex_status
+{"interface":"flyreflex-guard","operation":"query_flyreflex_status","fresh":true,"state":"DANGER","risk":1200,"reflex":"ESCAPE","agent":"FORWARD","final":"ESCAPE","decision":"REFLEX_OVERRIDE","actuator":"simulation-only"}
+goldfish-armv8a-ap>
+Agent response captured; verify actual tool trace before marking runtime Skill PASS.

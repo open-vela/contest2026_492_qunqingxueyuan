@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(flyreflex C)
+find_package(Threads REQUIRED)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -11,6 +12,7 @@ add_library(flyreflex_core
   app/flyreflex/src/safety_arbiter.c
   app/flyreflex/src/flyreflex_runtime.c)
 target_include_directories(flyreflex_core PUBLIC app/flyreflex/include)
+target_link_libraries(flyreflex_core PUBLIC Threads::Threads)
 target_compile_definitions(flyreflex_core PUBLIC _POSIX_C_SOURCE=200809L)
 target_compile_options(flyreflex_core PRIVATE -Wall -Wextra -Wpedantic -Werror)
 
@@ -23,4 +25,3 @@ add_executable(test_flyreflex tests/test_flyreflex.c)
 target_link_libraries(test_flyreflex PRIVATE flyreflex_core)
 target_compile_options(test_flyreflex PRIVATE -Wall -Wextra -Wpedantic -Werror)
 add_test(NAME flyreflex_core_tests COMMAND test_flyreflex)
-

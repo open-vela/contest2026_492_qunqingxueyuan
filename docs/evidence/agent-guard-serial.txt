@@ -1,0 +1,261 @@
+[   40.418492] [11] [  INFO] [ap] adb_register_service (338)
+): id=1, peer=21
+[   63.529786] [19] [  INFO] [ap] [agent] AI Agent - Vela AI Agent starting (bui
+ild: Sep 19 2026 11:01:47)
+[   63.533622] [19] [  INFO] [ap] [agent] [boot +3ms] P0: timezone set
+[   63.543844] [19] [  INFO] [ap] [agent] [boot +14ms] P0: storage ready
+[   63.547448] [19] [  INFO] [ap] [agent] [boot +17ms] heap: arena=104779584 fre
+ee=102932160 used=1847424
+[   63.554296] [19] [  INFO] [ap] [cfgstore] Config storeready at /data/agent/c
+config/config.json
+[   63.556926] [19] [  INFO] [ap] [agent] [boot +27ms] P1: config_store_init (rc
+c=0)
+[   63.560643] [19] [  INFO] [ap] [bus] Message bus initialized (depth 16)      
+[   63.563121] [19] [  INFO] [ap] [agent] [boot +33ms] P1: message_bus_init (rc=
+=0)
+[   63.565698] [19] [  INFO] [ap] [memory] Initializing memory store at /data/ag
+gent
+[   63.573760] [19] [  INFO] [ap] [memory] Created file: /data/agent/config/SOUL
+L.md
+[   63.580041] [19] [  INFO] [ap] [memory] Created file: /data/agent/config/USER
+R.md
+[   63.585438] [19] [  INFO] [ap] [memory] Created file: /data/agent/memory/MEMO
+ORY.md
+[   63.590097] [19] [  INFO] [ap] [memory] Created file: /data/agent/config/HEAR
+RTBEAT.md
+[   63.595778] [19] [  INFO] [ap] [memory] Created file: /data/agent/config/cron
+n.json
+[   63.602236] [19] [  INFO] [ap] [memory] Created directory: /data/agent/memory
+y/daily
+[   63.604467] [19] [  INFO] [ap] [memory] Memory store initialized successfully
+[   63.607166] [19] [  INFO] [ap] [agent] [boot +77ms] P1: memory_store_init (rc
+c=0)
+[   63.609982] [19] [  INFO] [ap] [session] Session manager initialized at /data
+a/agent/sessions
+[   63.612613] [19] [  INFO] [ap] [agent] [boot +82ms] P1: session_mgr_init (rc=
+=0)
+[   63.615216] [19] [  INFO] [ap] [proxy] Loading proxy config...
+[   63.619040] [19] [  INFO] [ap] [proxy] No proxy (direct connection)
+[   63.621877] [19] [  INFO] [ap] [agent] [boot +92ms] P2: http_proxy_init (rc=0
+0)
+[   63.630626] [19] [  WARN] [ap] [llm] No API key. Use CLI: set_llm <preset> <k
+key>
+[   63.633761] [19] [  INFO] [ap] [agent] [boot +103ms] P3: llm_proxy_init (rc=0
+0)
+[   63.641936] [19] [  INFO] [ap] [llm_router] Router initialized: 0 backends, p
+profile=0
+[   63.644746] [19] [  INFO] [ap] [agent] [boot +114ms] P3: llm_router_init (rc=
+=0)
+[   63.647782] [19] [  INFO] [ap] [mcp_reg] MCP tool registry initialized
+[   63.650353] [19] [  INFO] [ap] [mcp_bridge] MCP bridge initialized
+[   63.652592] [19] [  INFO] [ap] [tools] Registered tool provider: mcp_client  
+[   63.654758] [19] [  INFO] [ap] [mcp_client] MCP client initialized
+[   63.660605] [19] [  WARN] [ap] [web_search] No search key. Use: set_tavily_ke
+ey / set_search_key
+[   63.664435] [19] [  INFO] [ap] [tools] Registered tool: web_search
+[   63.667154] [19] [  INFO] [ap] [tools] Registered tool: news_search
+[   63.669744] [19] [  INFO] [ap] [tools] Registered tool: get_weather
+[   63.672128] [19] [  INFO] [ap] [tools] Registered tool: get_current_time     
+[   63.674530] [19] [  INFO] [ap] [tools] Registered tool: read_file
+[   63.677458] [19] [  INFO] [ap] [tools] Registered tool: write_file
+[   63.679843] [19] [  INFO] [ap] [tools] Registered tool: edit_file
+[   63.682282] [19] [  INFO] [ap] [tools] Registered tool: list_dir
+[   63.685205] [19] [  INFO] [ap] [tools] Registered tool: cron_add
+[   63.688047] [19] [  INFO] [ap] [tools] Registered tool: cron_list
+[   63.690544] [19] [  INFO] [ap] [tools] Registered tool: cron_remove
+[   63.692441] [19] [  INFO] [ap] [tools] Registered tool: fetch_url
+[   63.694207] [19] [  INFO] [ap] [tools] Registered tool: analyze_image        
+[   63.696077] [19] [  INFO] [ap] [tools] Registered tool: run_shell
+[   63.698165] [19] [  INFO] [ap] [tools] Registered tool: get_battery
+[   63.700138] [19] [  INFO] [ap] [tools] Registered tool: get_wear_state       
+[   63.702264] [19] [  INFO] [ap] [tools] Registered tool: get_screen_state     
+[   63.704049] [19] [  INFO] [ap] [tools] Registered tool: get_heartrate        
+[   63.705975] [19] [  INFO] [ap] [tools] Registered tool: get_steps
+[   63.707727] [19] [  INFO] [ap] [tools] Registered tool: vibrate
+[   63.710415] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_create
+[   63.712856] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_write     
+[   63.715358] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_read      
+[   63.717389] [19] [  INFO] [ap] [tools] Registered tool: feishu_doc_list      
+[   63.719461] [19] [  INFO] [ap] [tools] Registered tool: feishu_chat_members  
+[   63.722045] [19] [  INFO] [ap] [tools] Registered tool: feishu_send_mention  
+[   63.724221] [19] [  INFO] [ap] [tools] Registered tool: music_search
+[   63.727096] [19] [  INFO] [ap] [tools] Registered tool: music_play
+[   63.729624] [19] [  INFO] [ap] [tools] Registered tool: music_pause
+[   63.732085] [19] [  INFO] [ap] [tools] Registered tool: music_resume
+[   63.734819] [19] [  INFO] [ap] [tools] Registered tool: music_stop
+[   63.737038] [19] [  INFO] [ap] [tools] Registered tool: music_seek
+[   63.739199] [19] [  INFO] [ap] [tools] Registered tool: music_set_volume     
+[   63.741479] [19] [  INFO] [ap] [tools] Registered tool: music_status
+[   63.744387] [19] [  INFO] [ap] [tools] Registered tool: launch_quickapp      
+[   63.746876] [19] [  INFO] [ap] [tools] Registered tool: exit_quickapp        
+[   63.758348] [19] [  INFO] [ap] [tools] Tools JSON built (36 builtin + 1 provi
+iders)
+[   63.761213] [19] [  INFO] [ap] [tools] Tool registry initialized
+[   63.763458] [19] [  INFO] [ap] [agent] [boot +233ms] P3: tool_registry_init (
+(rc=0)
+[   63.766195] [19] [  INFO] [ap] [guard] Tool guard initialized (max_input=3276
+68, rate_window=60s, rate_max=10)
+[   63.769995] [19] [  INFO] [ap] [agent] [boot +240ms] P3: tool_guard_init (rc=
+=0)
+[   63.772707] [19] [  INFO] [ap] [skills] Initializing skills system
+[   63.779222] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/weather.md
+[   63.785338] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/daily-briefing.md
+[   63.791694] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/skill-creator.md
+[   63.798342] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/system-health.md
+[   63.804258] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/reminder.md
+[   63.811100] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/note-taker.md
+[   63.818466] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/translate.md
+[   63.825405] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/news-digest.md
+[   63.833185] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/feishu-test.md
+[   63.841473] [19] [  INFO] [ap] [skills] Installed built-in skill: /data/agent
+t/skills/task-manager.md
+[   63.844050] [19] [  INFO] [ap] [skills] Skills system ready (10 built-in)    
+[   63.846311] [19] [  INFO] [ap] [agent] [boot +316ms] P3: skill_loader_init (r
+rc=0)
+[   63.849314] [19] [  INFO] [ap] [agent] Agent loop initialized
+[   63.851513] [19] [  INFO] [ap] [agent] [boot +321ms] P3: agent_loop_init (rc=
+=0)
+[   63.854836] [19] [  INFO] [ap] [cron] No cron file, starting fresh
+[   63.857323] [19] [  INFO] [ap] [agent] [boot +327ms] P3: cron_service_init (r
+rc=0)
+[   63.860504] [19] [  INFO] [ap] [heartbeat] Heartbeat service initialized (fil
+le: /data/agent/HEARTBEAT.md, interval: 1800s)
+[   63.864450] [19] [  INFO][ap] [agent] [boot +334ms] P3: heartbeat_init (rc=0
+0)
+[   63.867791] [19] [  INFO] [ap] [voice] Voice channel initializing
+[   63.871065] [19] [  INFO] [ap] [voice_tts] Registered backend: volcengine    
+[   63.874920] [19] [  INFO] [ap] [voice_asr] Registered backend: volcengine    
+[   63.879800] [19] [  INFO] [ap] [agent] [boot +350ms] P3: voice_channel_init (
+(rc=0)
+[   63.882846] [19] [  INFO] [ap] NSH commands registered
+[   63.884864] [19] [  INFO] [ap] [agent] [boot +355ms] P4: nsh_commands_init (r
+rc=0)
+[   63.887946] [19] [  INFO] [ap] [agent] [boot +358ms] P5: outbound dispatch th
+hread started
+[   63.891286] [19] [  INFO] [ap] [agent] [boot +361ms] P5: quickapp mqueue list
+tener started
+[   63.895076] [19] [  INFO] [ap] [cron] Cron started (0 jobs, interval 10s)
+[   63.898456] [19] [  INFO] [ap] [heartbeat] Heartbeat started (every 30 min)  
+[   63.900953] [19] [  INFO] [ap] [agent] [boot +371ms] P5: cron + heartbeat sta
+arted
+[   63.903760] [19] [  INFO] [ap] [agent] [boot +373ms] P5: network_watch thread
+d started (async)
+[   63.906955] [19] [  INFO] [ap] [agent] [boot +377ms] P6: nsh_commands_start (
+(rc=0)
+[   63.909645] [19] [  INFO] [ap] [agent] [boot +379ms] AI Agent ready. Type 'he
+elp' in NSH for commands.
+[   63.913753] [24] [  INFO] [ap] [agent] Outbound dispatch started
+[   63.917355] [30] [  INFO] [ap] [agent] Quickapp mqueue listener started      
+[   63.920946] [40] [  INFO] [ap] [agent] Network watcher started
+[   63.923620] [40] [  INFO] [ap] [netmgr] QEMU: Initializing eth0...
+[   63.930319] [46] [  INFO] [ap] [cli] NSH CLI started. Type 'help' for command
+ds.
+[   63.945780] [46] [  INFO] [ap] [llm_router] Backend 0 configured: token-plan-
+-cn.xiaomimimo.com
+[   63.968477] [46] [  INFO] [ap] [llm] LLM config updated atomically: token-pla
+an-cn.xiaomimimo.com/v1/chat/completions (model: mimo-v2.5)
+[   64.046500] [46] [  INFO] [ap] [agent] ask: Use flyreflex-guard; request FORW
+WARD; report actual command.
+[   64.437489] [40] [  INFO] [ap] [netmgr] Found iface eth0 addr 10.0.2.15
+[   64.439633] [40] [  INFO] [ap] [netmgr] Network connected: 10.0.2.15
+[   64.442046] [40] [  INFO] [ap] [netmgr] Found iface eth0 addr 10.0.2.15      
+[   64.446620] [40] [  INFO] [ap] [netmgr] Network connected: 10.0.2.15
+[   64.449056] [40] [  INFO] [ap] [netmgr] Found iface eth0 addr 10.0.2.15      
+[   64.451054] [40] [  INFO] [ap] [agent] Network connected: 10.0.2.15
+[   64.453992] [57] [  INFO] [ap] [agent] Agent loop started, free heap: 1024864
+496
+[   64.456922] [57] [  INFO] [ap] [agent] Buffers: ctx=8192 hist=8192 tool=8192
+[   64.459942] [57] [  INFO] [ap] [agent] Tool output pool: 2 x 16384 bytes     
+[   64.462763] [57] [  INFO] [ap] [agent] Tools JSON loaded: 9940 bytes
+[   64.465106] [57] [  INFO] [ap] [agent] Processing message from cli:console   
+[   64.471286] [40] [  INFO] [ap] [ws] WebSocket server started on port 28789
+[   64.494914] [40] [  INFO] [ap] [agent] All network services sta[   64.508227]
+] [57] [  INFO] [ap] [skills] Skills summary: 869 bytes
+[   64.511045] [57] [  INFO] [ap] [context] System prompt built: 3335 bytes     
+rted!
+[   64.534497] [57] [  INFO] [ap] [llm] LLM config updated atomically: token-pla
+an-cn.xiaomimimo.com/v1/chat/completions (model: mimo-v2.5)
+[   64.538156] [57] [  INFO] [ap] [trace:6aadfc0800000000] BEGIN chat=console ch
+han=cli
+[   64.555771] [57] [  INFO] [ap] [llm] OpenAI API with tools (model: mimo-v2.5,
+, 14960 bytes)
+[   64.561621] [57] [ DEBUG] [ap] [vela_tls] Handshake start: Host=token-plan-cn
+n.xiaomimimo.com, UNIX=1789787144
+[   64.565621] [24] [  INFO] [ap] [agent] Dispatching response → cli:console
+[   64.572477] [24] [  INFO] [ap] [agent] [Agent]: 让我查一下...
+[   64.871764] [57] [  INFO] [ap] [vela_tls] Handshake OK: TLSv1.2 / TLS-ECDHE-R
+RSA-WITH-CHACHA20-POLY1305-SHA256
+[   67.521250] [57] [  INFO] [ap] [llm] Response: 0 bytes text, 1 tool calls, fi
+inish=tool_calls
+[   67.524509] [57] [  INFO] [ap] [agent] LLM resp: text=0, tool_use=1, calls=1 
+[   67.527517] [57] [  INFO] [ap] [agent] Tool iter 1: 1 calls
+[   67.529537] [57] [  INFO] [ap] [trace:6aadfc0800000000] iter=0 tool=read_file
+e latency=2983ms llm=ok backend=0
+[   67.533492] [57] [  INFO] [ap] [agent] Tool call: read_file args={"path": "/d
+data/agent/skills/flyreflex-guard.md"}
+[  67.537686] [57] [  INFO] [ap] [tools] Executing tool: read_file
+[   67.543143] [57] [  INFO] [ap] [tool_files] read_file: /data/agent/skills/fly
+yreflex-guard.md (1376 bytes)
+[   67.546327] [57] [  INFO] [ap] [agent] Tool read_file result: 1376 bytes     
+[   67.549313] [57] [  INFO] [ap] [agent] Skill file read — no shortcut, LLM wil
+ll process
+[   67.565527] [57] [  INFO] [ap] [llm] OpenAI API with tools (model: mimo-v2.5,
+, 16789 bytes)
+[   67.669940] [57] [ DEBUG] [ap] [vela_tls] Reusing pooled connection to token-
+-plan-cn.xiaomimimo.com:443
+[   70.947788] [57] [  INFO] [ap] [llm] Response: 0 bytes text, 1 tool calls, fi
+inish=tool_calls
+[   70.951597] [57] [  INFO] [ap] [agent] LLM resp: text=0, tool_use=1, calls=1 
+[   70.955189] [57] [  INFO] [ap] [agent] Tool iter 2: 1 calls
+[   70.957201][57] [  INFO] [ap] [trace:6aadfc0800000000] iter=1 tool=run_shell
+l latency=3398ms llm=ok backend=0
+[   70.960377] [57] [  INFO] [ap] [agent] Tool call: run_shell args={"command": 
+ "flyreflex guard issue_agent_command FORWARD"}
+[   70.964451] [57] [  INFO] [ap] [tools] Executing tool: run_shell
+[   70.966574] [57] [  INFO] [ap] [shell] Executing: flyreflex guard issue_agent
+t_command FORWARD
+[   70.972230] [57] [  INFO] [ap] [shell] popen(flyreflex guard issue_agent_comm
+mand FORWARD) exit=0, 219 bytes
+[   70.975890] [57] [  INFO] [ap] [shell] Result: 283 bytes
+[   70.978113] [57] [  INFO] [ap] [agent] Tool run_shell result: 283 bytes      
+[   70.994924] [57] [  INFO] [ap] [llm] OpenAI API with tools (model: mimo-v2.5,
+, 17689 bytes)
+[   71.098282] [57] [ DEBUG] [ap] [vela_tls] Reusing pooled connection to token-
+-plan-cn.xiaomimimo.com:443
+[   82.913486] [57] [  INFO] [ap] [llm] Response: 610 bytes text, 0 tool calls, 
+ finish=end_turn
+[   82.916838] [57] [  INFO] [ap] [agent] LLM resp: text=610, tool_use=0, calls=
+=0
+[   82.920651] [57] [  INFO] [ap] [trace:6aadfc0800000000] iter=2 tool=(none) la
+atency=11936ms llm=ok backend=0
+[   82.924285] [57] [  INFO] [ap] [trace:6aadfc0800000000] END status=ok iters=3
+3 tools=2 llm_ms=18317 elapsed=18s backend=0
+[   82.933726] [24] [  INFO] [ap] [agent] Dispatching response → cli:console
+[   82.942510] [24] [  INFO] [ap] [agent] [Agent]: **FlyReflex Guard — FORWARD R
+Request Report**
+
+| Field | Value |
+|---|---|
+| **Requested** | `FORWARD` |
+| **Final Command** | `ESCAPE` ⚠️ |
+| **State** | `DANGER` |
+| **Risk** | 1200 (GF activity) |
+| **Reflex** | `ESCAPE` |
+| **Decision** | `REFLEX_OVERRIDE` |
+| **Fresh** | ✅ Yes |
+| **Actuator** | simulation-only |
+
+**Outcome:** The C Safety Arbiter detected a **DANGER** state with high risk (12
+200) and overrode the `FORWARD` request with `ESCAPE`. Safety reflex took priorit
+ty — the forward command was **not executed**. This is the expected fail-safe beh
+havior. No retry is attempted per policy.
+[   82.978983] [46] [  INFO] [ap] [cli] CLI thread exiting

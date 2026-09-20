@@ -270,6 +270,7 @@ static void ui_timer_callback(lv_timer_t *timer)
   flyreflex_engine_step(&g_ui.engine, &input, &reflex);
   flyreflex_arbitrate(FLYREFLEX_CMD_FORWARD, &reflex, &arbitration);
   end = ui_monotonic_ns();
+  flyreflex_guard_publish(&reflex);
 
   latency_ns = end - start;
   latency_us = (latency_ns + 999) / 1000;
