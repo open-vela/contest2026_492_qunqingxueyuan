@@ -2,9 +2,9 @@
 
 发布日期：2026-09-20
 
-发布范围：本地 release commit；未 push，未 merge 官方仓
+发布范围：最终 release 分支、赛事 PR、AI Coding Logs 与提交资料；官方仓最终状态以 GitHub PR 为准
 
-源码基线：`70db07b10ba3c10d7d2c36c3160debaebd05ebcf`
+源码基线：本 PR 中的 release candidate tree；CLA 邮箱重写仅改变提交元数据，不改变源码内容
 
 ## 发布状态
 
@@ -20,7 +20,7 @@
 | DOCS | PASS | 最终集成、AI 日志、录制、提交和真实性边界文档已统一。 |
 | REPORT | PASS | 技术报告 DOCX/PDF 已由正式模板生成并完成 5 页渲染检查。 |
 | AI CODING LOGS | PASS | 3 个 Codex 会话共 3332 events 已归档；最终 manifest 包含 3 sessions / 3 files，官方 `validate-log.py` 校验 ALL OK，credential scan PASS。 |
-| GIT | PASS | 本报告随本地 release commit 提交；未 push、未 merge。最终 SHA 以 `git rev-parse HEAD` 为准。 |
+| GIT | PASS | 最终 release 分支已 push 至个人 fork 并创建赛事 PR；CLA 邮箱重写仅改变 commit 元数据，源码内容不变。最终官方状态以 GitHub PR 为准。 |
 | VIDEO | PENDING USER | 需用户按最终脚本录制不超过 5 分钟的视频。 |
 | SUBMISSION | PENDING USER | 视频完成后运行打包工具并在赛事页面上传。 |
 
@@ -38,12 +38,12 @@ Browser 世界与 Agent latency 是仿真；安全决策在 live 模式下由 op
 
 最终 Codex release 会话已在退出后通过 `tools/finalize_last_codex_session.py` 完成归档。最终赛事日志为 3 sessions / 3 files / 3332 events，并再次通过官方 validator 与 credential scan。
 
-## 本地发布边界
+## 发布边界
 
-本次只创建本地 `codex/final-release` 分支与 release commit。没有 push，没有创建或合并 PR，也没有改写官方 openvela 仓历史。`submission/final/`、视频、ZIP、`.qa/`、外部密钥与私有备份不进入源码 commit。
+最终 `codex/final-release` 分支已 push 至个人 fork 并创建赛事 PR。官方仓合并状态以 GitHub PR 为准；未改写官方 openvela 仓历史。`submission/final/`、视频、ZIP、`.qa/`、外部密钥与私有备份不进入源码 commit。
 
 ## USER ONLY NEEDS TO DO
 
 1. 按 `docs/FINAL_VIDEO_SCRIPT.md` 录制并命名为 `submission/final/FlyReflex_演示视频.mp4`。
 2. 执行 `python tools/package_submission.py`，检查生成的比赛 ZIP。
-3. 将最终 release 分支 push 到个人 fork，创建并检查 PR，随后由用户手动 merge 到赛事专属仓并在官网提交。
+3. 检查赛事 PR 的最终 checks，通过后由用户手动 merge 到赛事专属仓，并在官网完成最终提交。
