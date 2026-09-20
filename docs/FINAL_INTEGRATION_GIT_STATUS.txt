@@ -1,0 +1,33 @@
+ M README.md
+ M docs/AI_LOG_EXPORT_MANUAL.md
+ M docs/WEB_DEMO.md
+ M tests/test_web_bridge.py
+ M tools/interactive_bridge.py
+ M tools/run_web_emulator.sh
+ M tools/test_agent_guard.py
+ M web/app.js
+ M web/index.html
+?? FlyReflex_项目介绍.docx
+?? docs/AI_CODING_LOG_PROVENANCE.md
+?? docs/AI_CODING_SESSION_NOTES.md
+?? docs/FINAL_INTEGRATION.md
+?? docs/FINAL_INTEGRATION_GIT_STATUS.txt
+?? docs/RELEASE_CANDIDATE.md
+?? docs/codex_rollout_sha256.txt
+?? docs/evidence/final-agent-guard-runtime.txt
+?? docs/evidence/final-agent-tool-trace.txt
+?? docs/evidence/final-browser-acceptance.md
+?? docs/evidence/final-synthetic-validation.json
+?? docs/evidence/rc-synthetic-validation.json
+?? docs/evidence/real-openvela-integration.json
+?? logs/sdh12312/2026-09-18/
+?? logs/sdh12312/manifest.json
+?? mintty.2026-09-19_17-12-54.png
+?? submission/FlyReflex_技术报告.docx
+?? submission/FlyReflex_技术报告.pdf
+?? submission/FlyReflex_浏览器实录素材.mp4
+?? tools/codex_rollout_converter.py
+?? tools/deploy_guard_skill.py
+?? tools/real_openvela_integration.py
+?? web/telemetry.js
+?? web/tests/telemetry.test.mjs

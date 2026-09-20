@@ -22,7 +22,8 @@ prebuilts/build-tools/linux-x86_64/bin/kconfig-tweak --file "$config" \
   --enable SYSLOG_CONSOLE --set-val MQ_MAXMSGSIZE 4096 \
   --enable SYSTEM_POPEN --enable SCHED_CHILD_STATUS \
   --disable AI_AGENT_FEISHU --disable AI_AGENT_WEIXIN --disable AI_AGENT_MQTT \
-  --disable AI_AGENT_NODE --disable AI_AGENT_SKILL_SYNC
+  --disable AI_AGENT_NODE --disable AI_AGENT_SKILL_SYNC \
+  --disable LIB_FFMPEG
 set +eu # Upstream setup uses optional variables and nonzero read terminators.
 source build/envsetup.sh
 lunch vendor/openvela/boards/vela/configs/goldfish-arm64-v8a-ap cmake_out/vela_goldfish-arm64-v8a-ap

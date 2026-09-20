@@ -1,3 +1,5 @@
+> 旧版视频准备资料。当前录制使用 [FINAL_VIDEO_SCRIPT.md](FINAL_VIDEO_SCRIPT.md) 和 [FINAL_VIDEO_PREP.md](FINAL_VIDEO_PREP.md)。
+
 # FlyReflex 提交视频脚本
 
 状态：BLOCKED。用户人工录制和剪辑，此文件不是视频文件。目标时长 3 分 40 秒，

@@ -7,8 +7,22 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 spec = importlib.util.spec_from_file_location('bridge', Path(__file__).resolve().parents[1] / 'tools/web_bridge.py')
 bridge = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bridge)
+from interactive_bridge import validate_reply
 
 class BridgeTests(unittest.TestCase):
+    def test_control_reply_contract(self):
+        sample = dict(source='openvela', seq=7, agent_a='FORWARD', agent_b='FORWARD',
+                      action='ESCAPE', state='DANGER', lplc2=1000, lc4=1000,
+                      gf=1000, latency_ns=1000)
+        self.assertEqual(validate_reply(sample, 'openvela', 7), sample)
+        for key, value in [('source', 'host-reference'), ('seq', True), ('seq', 8),
+                           ('action', 'UNKNOWN'), ('agent_b', None), ('gf', True),
+                           ('state', 'unknown'), ('latency_ns', -1)]:
+            with self.subTest(key=key, value=value), self.assertRaises(OSError):
+                validate_reply({**sample, key: value}, 'openvela', 7)
+        with self.assertRaises(OSError):
+            validate_reply([], 'openvela', 7)
+
     def test_valid_sample_and_malformed_lines(self):
         sample = dict(schema=1, source='openvela', seq=1, cycle=0,
                       frame=1, count=16, latency_ns=1000,

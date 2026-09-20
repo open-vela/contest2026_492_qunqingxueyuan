@@ -2,7 +2,7 @@
 
 存放你在开发中与 AI 工具的对话日志，和作品代码一并提交。
 
-> 发布验收状态：BLOCKED。本目录只有人工开发摘要，没有 `sdh12312/manifest.json` 和官方工具生成的 JSONL 会话。`development_log.md` 不是原始 AI Coding 日志。禁止伪造日志或修改自动生成的会话正文。
+> 初始两次 Codex 会话已透明转换为赛事 JSONL，官方 validator ALL OK，最终凭据扫描 PASS。本次 release 会话需结束后追加；说明与唯一归档命令见 [AI_LOG_EXPORT_MANUAL](../docs/AI_LOG_EXPORT_MANUAL.md)。development_log.md 仅为工程摘要。
 
 ## 目录结构
 
@@ -15,6 +15,6 @@ logs/
 ```
 
 - `<tool>`：`claude-code` / `opencode` / `codex` / `kiro`
-- 每个 `.jsonl` 每行一个事件，由组委会提供的日志归集工具导出，**只提交 JSONL 本身**。
+- 每个 `.jsonl` 每行一个事件；本项目以公开 converter 兼容新 Codex rollout，并用官方 validator 校验。来源、格式限制与脱敏过程见 provenance 文档。
 
 导出与提交的完整步骤、字段定义见[《AI Coding 日志归集与提交手册》](https://github.com/open-vela/docs/blob/dev-ai-contest-2026/zh-cn/contest_2026/ai_coding_log_guide.md)。

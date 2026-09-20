@@ -1,0 +1,104 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-D",
+        "--",
+        "bash",
+        "-lc",
+        "cd /mnt/d/openvela && cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j4 && ctest --test-dir build --output-on-failure"
+      ],
+      "started_utc": "2026-09-20T01:58:41.932899+00:00",
+      "exit_code": 0,
+      "stdout": "-- Configuring done (0.1s)\n-- Generating done (0.6s)\n-- Build files have been written to: /mnt/d/openvela/build\n[ 55%] Built target flyreflex_core\n[ 77%] Built target test_flyreflex\n[100%] Built target flyreflex_host\nTest project /mnt/d/openvela/build\n    Start 1: flyreflex_core_tests\n1/1 Test #1: flyreflex_core_tests .............   Passed    0.01 sec\n\n100% tests passed, 0 tests failed out of 1\n\nTotal Test time (real) =   0.05 sec\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm.cmd",
+        "test",
+        "--prefix",
+        "web"
+      ],
+      "started_utc": "2026-09-20T01:58:43.778409+00:00",
+      "exit_code": 0,
+      "stdout": "\n> flyreflex-visual-story@1.0.0 test\n> node --test tests/*.test.mjs\n\n✔ C control comparison: default shot, zero-delay parity, multi-angle input (200.293ms)\n✔ swept collision catches fast particles crossing the entire core (0.9687ms)\n✔ one launch is shared by both lanes; off-target shots do not score (2.1827ms)\n✔ no ammunition cap and acceleration changes velocity (1.0456ms)\n✔ identical immediate commands have identical movement and outcomes (0.5127ms)\n✔ C replay contains an escape and returns to AI control (0.5454ms)\n✔ presentation follows action rather than inventing a GF threshold (0.0911ms)\n✔ host replay and disconnected samples cannot masquerade as live (0.7103ms)\n✔ replay holds closing state before repeating (0.1273ms)\n✔ reject malformed, stale and host telemetry in live mode (0.7779ms)\nℹ tests 10\nℹ suites 0\nℹ pass 10\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 303.4907\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_web_bridge.py"
+      ],
+      "started_utc": "2026-09-20T01:58:44.839038+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_finalize_last_codex_session.py"
+      ],
+      "started_utc": "2026-09-20T01:58:45.532774+00:00",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 1.219s\n\nOK\n"
+    },
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-D",
+        "--",
+        "python3",
+        "/mnt/d/openvela/tools/release_validation.py",
+        "/mnt/d/openvela/build/flyreflex_host",
+        "--output",
+        "/mnt/d/openvela/docs/evidence/final-release-synthetic.json"
+      ],
+      "started_utc": "2026-09-20T01:58:47.076480+00:00",
+      "exit_code": 0,
+      "stdout": "{\n  \"label\": \"SYNTHETIC SCENARIO VALIDATION\",\n  \"seed\": 492,\n  \"source\": \"host-reference\",\n  \"danger_scenarios\": 100,\n  \"safe_scenarios\": 100,\n  \"correct_triggers\": 100,\n  \"false_triggers\": 0,\n  \"missed_triggers\": 0,\n  \"trigger_rate\": 1.0,\n  \"false_positive_rate\": 0.0,\n  \"false_negative_rate\": 0.0,\n  \"limitation\": \"Hand-defined synthetic input families; not camera accuracy or generalization.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "skills/flyreflex-provenance/scripts/verify_provenance.py"
+      ],
+      "started_utc": "2026-09-20T01:58:47.569342+00:00",
+      "exit_code": 0,
+      "stdout": "FlyReflex provenance verified\ndataset=male-cns:v1.0 direct_edges=311\nLC4 -> DNp01: synapses=6362 body_pairs=126\nLPLC2 -> DNp01: synapses=4862 body_pairs=185\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "D:/openvela_official/.claude/skills/contest-log-collector/tools/validate-log.py",
+        "logs/"
+      ],
+      "started_utc": "2026-09-20T01:58:47.792786+00:00",
+      "exit_code": 0,
+      "stdout": "=== contest-log-upload validation ===\nLogs dir:       D:\\openvela\\logs\nFiles checked:  2\nEvents checked: 2080\n\n✅ ALL OK\n",
+      "stderr": ""
+    }
+  ]
+}

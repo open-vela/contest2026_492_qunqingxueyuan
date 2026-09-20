@@ -17,3 +17,12 @@ out/
 *.log
 !benchmark/final_*.log
 !logs/development_log.md
+
+# Local screenshots, superseded root draft, and competition upload artifacts.
+/mintty.2026-09-19_17-12-54.png
+/FlyReflex_项目介绍.docx
+/submission/FlyReflex_技术报告.docx
+/submission/FlyReflex_技术报告.pdf
+/submission/FlyReflex_浏览器实录素材.mp4
+/submission/final/
+/submission/*.zip

@@ -1,0 +1,1070 @@
+[
+  {
+    "project": "apps/system/flatbuffers/flatbuffers",
+    "revision": "dbfb86ab8ef220418c501272be51324cfa122e4f",
+    "upstream": "https://github.com/open-vela/apps_system_flatbuffers",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "apps/system/libuv/libuv",
+    "revision": "c6dfc6d3af3fd38cdbaac112cf62d8fb71c8eaef",
+    "upstream": "https://github.com/open-vela/apps_system_libuv",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "apps/testing/cmocka/cmocka",
+    "revision": "50f25ede3c3a29ca3c304240661d6b565ff9bc84",
+    "upstream": "https://github.com/open-vela/apps_testing_cmocka",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "apps/testing/fff/fff",
+    "revision": "20d36afa8d0c73d86e1c6ceabdbe8ce78436f271",
+    "upstream": "https://github.com/open-vela/apps_testing_fff",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "apps/testing/libc-test/libc-test",
+    "revision": "1e5ff08a5656b45319288ccb47a3385cac9cad59",
+    "upstream": "https://github.com/open-vela/apps_testing_libc-test",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "apps/testing/ltp/ltp",
+    "revision": "aab50c8395f380d3a4d639b3a08f5156876e7e94",
+    "upstream": "https://github.com/open-vela/apps_testing_ltp",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "apps/testing/mm/stressapptest/stressapptest",
+    "revision": "ccf1d4981d0b2974988080948fcb440ee3602b06",
+    "upstream": "https://github.com/open-vela/apps_testing_mm_stressapptest",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "apps/testing/unity/Unity",
+    "revision": "895ebac495d4741afddf3c34787f526e8e0efae3",
+    "upstream": "https://github.com/open-vela/apps_testing_unity_Unity",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/Ne10/Ne10",
+    "revision": "d1e389215c09f44708bea4062d605faa5a43de25",
+    "upstream": "https://github.com/open-vela/external_Ne10",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/aac/aac",
+    "revision": "cba4dfd48910f9d3c2150d9289a77bac91f1d39d",
+    "upstream": "https://github.com/open-vela/external_aac",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/abseil-cpp/abseil-cpp",
+    "revision": "980310667a0c8ccefcb65407cafa0548d3171b86",
+    "upstream": "https://github.com/open-vela/external_abseil-cpp",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/frameworks/native",
+    "revision": "ec3ba2a0fae265a0f725a5313f09d48865af1257",
+    "upstream": "https://github.com/open-vela/external_android_frameworks_native",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/hardware/interfaces",
+    "revision": "e6db26d0629568bd9b49771ed7ccaf13d427f860",
+    "upstream": "https://github.com/open-vela/external_android_hardware_interfaces",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/hardware/libhardware",
+    "revision": "7d68efa2db12167f76219bf6edabe7a323899ba7",
+    "upstream": "https://github.com/open-vela/external_android_hardware_libhardware",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/chre/chre",
+    "revision": "3b926126cfe2036ced3f9ebafdbff637d11a06e0",
+    "upstream": "https://github.com/open-vela/external_android_system_chre",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/chre/chre/host/nuttx",
+    "revision": "f33017caeee624a856c655736d34a891fbcdee36",
+    "upstream": "https://github.com/open-vela/external_android_system_chre_chre_host_nuttx",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/core",
+    "revision": "c62af19842dbb2af5be708f658ff61705e2bc8a8",
+    "upstream": "https://github.com/open-vela/external_android_system_core",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/keymaster",
+    "revision": "c5ab862dbab6a91a18099e2fe4ecb04397dad464",
+    "upstream": "https://github.com/open-vela/external_android_system_keymaster",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/libbase",
+    "revision": "cd2538ad3af094fde958ff2cc0a44f2930a62692",
+    "upstream": "https://github.com/open-vela/external_android_system_libbase",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/libcppbor",
+    "revision": "2715548b2addee65d8757a791015925cfc1ae114",
+    "upstream": "https://github.com/open-vela/external_android_system_libcppbor",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/libfmq",
+    "revision": "243df2711b791dce08c4262eb777a2ac9cd46893",
+    "upstream": "https://github.com/open-vela/external_android_system_libfmq",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/libhidl",
+    "revision": "d034303b5b49b8efd8327c610b3fd6c56e5b4103",
+    "upstream": "https://github.com/open-vela/external_android_system_libhidl",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/libhwbinder",
+    "revision": "f53ed5b771b3ab7383501cf2d5843967eb5024e7",
+    "upstream": "https://github.com/open-vela/external_android_system_libhwbinder",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/logging",
+    "revision": "530a025188baa485f5ec0cd6f31baf760abf8524",
+    "upstream": "https://github.com/open-vela/external_android_system_logging",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/security",
+    "revision": "4979b8befe9b26d55c9065c1f59b7e35b6d854e6",
+    "upstream": "https://github.com/open-vela/external_android_system_security",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/tools/aidl",
+    "revision": "c039ff9da152acedd84ba9dda7383892dae9b354",
+    "upstream": "https://github.com/open-vela/external_android_system_tools_aidl",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/android/system/tools/hidl",
+    "revision": "e824e10c635eb411dc777526a00270faab7ee056",
+    "upstream": "https://github.com/open-vela/external_android_system_tools_hidl",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/atomic_queue/atomic_queue",
+    "revision": "882138f5104f8c75538487c12cd2d5a0f47c1d14",
+    "upstream": "https://github.com/open-vela/external_atomic_queue",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/auto-pts/auto-pts",
+    "revision": "b381f26433da9dbd34251a0e19a7067cb155c10f",
+    "upstream": "https://github.com/open-vela/external_auto-pts",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/avb/avb",
+    "revision": "e1a9f5b92d9cea130b636601a546789e525e82d7",
+    "upstream": "https://github.com/open-vela/external_avb",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/bailian_sdk",
+    "revision": "2ce69272069480c9e28f4b202d73d94d9427c1a0",
+    "upstream": "https://github.com/open-vela/external_bailian_sdk",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/bzip2/bzip2",
+    "revision": "b9c5efb71038dc2fb701369b17fb77b7fbcc9708",
+    "upstream": "https://github.com/open-vela/external_bzip2",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/c-ares/c-ares",
+    "revision": "2826d12ce6cec3c65c3c8fc5a193d1a85b2d0258",
+    "upstream": "https://github.com/open-vela/external_c-ares",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/cAT/cAT",
+    "revision": "44e433680ac128ffc29d3949781a9b6c3fb3029d",
+    "upstream": "https://github.com/open-vela/external_cAT",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/cmark-gfm/cmark-gfm",
+    "revision": "e483e6ad1769150252f51ff685ebaf6a44a46c1f",
+    "upstream": "https://github.com/open-vela/external_cmark-gfm",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/cpuid/cpuid",
+    "revision": "700b8ee9fc9aae410766faa44a7cb103a601f323",
+    "upstream": "https://github.com/open-vela/external_cpuid",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/curl/curl",
+    "revision": "7d1e03473bb8c5d409a54df9bb522bc7bdb6d9d8",
+    "upstream": "https://github.com/open-vela/external_curl",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/dbus/dbus",
+    "revision": "567d917b5f4ff3524b138c645f7b57d052525867",
+    "upstream": "https://github.com/open-vela/external_dbus",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/ddelta/ddelta",
+    "revision": "bea23686a526157f198d91c42092a9c91f2a82f5",
+    "upstream": "https://github.com/open-vela/external_ddelta",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/enet/enet",
+    "revision": "9949fcfe3f0b80498dac7ec2a8181d3fc7d67ae2",
+    "upstream": "https://github.com/open-vela/external_enet",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/erpc/erpc",
+    "revision": "c41fdf3eb6d24bec7f30432e569ca25570b86abb",
+    "upstream": "https://github.com/open-vela/external_erpc",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/exfatprogs/exfatprogs",
+    "revision": "39a28c992c1d84ad71924d477dcdf561079196d1",
+    "upstream": "https://github.com/open-vela/external_exfatprogs",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/ffmpeg/ffmpeg",
+    "revision": "0700f7b436965e09babb08743f1ecbd872737915",
+    "upstream": "https://github.com/open-vela/external_ffmpeg",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/fluoride/fluoride",
+    "revision": "eac9bd3507e50504d25b20029c5dc7e3a9b2c387",
+    "upstream": "https://github.com/open-vela/external_fluoride",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/fmtlib/fmtlib",
+    "revision": "5e275da273272bc0a148493ee7480f7038ad3d72",
+    "upstream": "https://github.com/open-vela/external_fmtlib",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/freetype/freetype",
+    "revision": "54b2004daffa73238555d16e541e0e4ca7887e33",
+    "upstream": "https://github.com/open-vela/external_freetype",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/freetype/freetype/subprojects/dlg",
+    "revision": "97efd1124cac0ce97e7435d5f939577450988dd4",
+    "upstream": "https://github.com/open-vela/external_freetype_freetype_subprojects_dlg",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/glib/glib",
+    "revision": "aec1a7e47cac4f0ae69a700e1d68a99e0d4b10a7",
+    "upstream": "https://github.com/open-vela/external_glib",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/glib/glib/subprojects/gvdb",
+    "revision": "28c4ff6fa43c78660979ef901c586c07eb300121",
+    "upstream": "https://github.com/open-vela/external_glib_glib_subprojects_gvdb",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/googlebenchmark/googlebenchmark",
+    "revision": "a7501000d80fc03a18189275471caeb951856a78",
+    "upstream": "https://github.com/open-vela/external_googlebenchmark",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/googletest/googletest",
+    "revision": "b1e5e96608ae88c397e36985ff7f54ac0cd9a42e",
+    "upstream": "https://github.com/open-vela/external_googletest",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/harfbuzz/harfbuzz",
+    "revision": "abcccadc187e896cec3cec8b422a5f9304476968",
+    "upstream": "https://github.com/open-vela/external_harfbuzz",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/iperf2/iperf2",
+    "revision": "73d180d1ec9af2b6967bc9ec8c78652a2f144c81",
+    "upstream": "https://github.com/open-vela/external_iperf2",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/iperf3/iperf3",
+    "revision": "34a6ec719a5f7a1349c97df4cbb4885d1ebc3ee8",
+    "upstream": "https://github.com/open-vela/external_iperf3",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/json-c/json-c",
+    "revision": "3a791af38fc27b7f48b2264bab4516970bb70783",
+    "upstream": "https://github.com/open-vela/external_json-c",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/ldns/ldns",
+    "revision": "a1c6e68de49be9b154b54f238dc600c7fb1dbb72",
+    "upstream": "https://github.com/open-vela/external_ldns",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libchrome/modp_b64",
+    "revision": "63aac1024da82b98085e6d1596ab68444e51b627",
+    "upstream": "https://github.com/open-vela/external_libchrome_modp_b64",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libdivide/libdivide",
+    "revision": "aef37566589c4753d8edd9d730736ebc178f760d",
+    "upstream": "https://github.com/open-vela/external_libdivide",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libexpat/libexpat",
+    "revision": "8fa659ecda0f9502400bcada68df61d3b76c647e",
+    "upstream": "https://github.com/open-vela/external_libexpat",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libfluoride-sbc/libfluoride-sbc",
+    "revision": "7422eea54e62842b59c7ab3a1db14898bb088733",
+    "upstream": "https://github.com/open-vela/external_libfluoride-sbc",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libhelix-aac/libhelix-aac",
+    "revision": "ea7ef3079e978efe6554fce7db6c4e0bcce535d8",
+    "upstream": "https://github.com/open-vela/external_libhelix-aac",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libhelix-mp3/libhelix-mp3",
+    "revision": "851130f5495d8bb751fc2a3e7eba344902f78f03",
+    "upstream": "https://github.com/open-vela/external_libhelix-mp3",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libjpeg-turbo/libjpeg-turbo",
+    "revision": "02c22ecb49c0599bff03d247927d9389e3ad0b03",
+    "upstream": "https://github.com/open-vela/external_libjpeg-turbo",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/liblc3/liblc3",
+    "revision": "0e2d3fc8f2f6c526135a6c63f4594fa200101729",
+    "upstream": "https://github.com/open-vela/external_liblc3",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libldac/libldac",
+    "revision": "f5c0aa773240a6a3930a4da62fef7922dd6ea334",
+    "upstream": "https://github.com/open-vela/external_libldac",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libopencore-amr/libopencore-amr",
+    "revision": "c71109da828d2d4b6ca771ec0dc18f360164f438",
+    "upstream": "https://github.com/open-vela/external_libopencore-amr",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libpng/libpng",
+    "revision": "b177095eac387d072611e5d465604d542ae876b2",
+    "upstream": "https://github.com/open-vela/external_libpng",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libssh/libssh",
+    "revision": "92027298b24580a33f0565f56af973c575c039e4",
+    "upstream": "https://github.com/open-vela/external_libssh",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libtar/libtar",
+    "revision": "9fc496876558abf8b61dd47f1ab3115b28455cc5",
+    "upstream": "https://github.com/open-vela/external_libtar",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/libwebp/libwebp",
+    "revision": "b08da08520a4e7b72c0013686ee0943f00978b2f",
+    "upstream": "https://github.com/open-vela/external_libwebp",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/lz4/lz4",
+    "revision": "8819a7afd05ac29b77c731efdbfa0b797db3e91a",
+    "upstream": "https://github.com/open-vela/external_lz4",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/mdns/mdns",
+    "revision": "99708e952a2df3bca6135f08925bfd9f5ef5282a",
+    "upstream": "https://github.com/open-vela/external_mdns",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/mmc-utils/mmc-utils",
+    "revision": "40d984d6582cdd3a5b3dc1b6660345c9c87c553c",
+    "upstream": "https://github.com/open-vela/external_mmc-utils",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/mtp-responder/mtp-responder",
+    "revision": "aeab0233ebbb60db6f039ece3348ff577623444e",
+    "upstream": "https://github.com/open-vela/external_mtp-responder",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/nanopb/nanopb",
+    "revision": "0df20d17318678cc1ab61d49fc5fc5b50da93a36",
+    "upstream": "https://github.com/open-vela/external_nanopb",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/nghttp2/nghttp2",
+    "revision": "75349036a8c462e7490b95cd273a8cc9ab18601a",
+    "upstream": "https://github.com/open-vela/external_nghttp2",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/nng/nng",
+    "revision": "aacd92e7be390985f9019387aef51c6bad5ca4c7",
+    "upstream": "https://github.com/open-vela/external_nng",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/ofono/ell",
+    "revision": "4c719ebe72126f721a139916d7114261c2a9c41c",
+    "upstream": "https://github.com/open-vela/external_ofono_ell",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/ofono/ofono",
+    "revision": "dd83f417c56ee91d41773ae94b59afb6c2f5a739",
+    "upstream": "https://github.com/open-vela/external_ofono",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/optee/kmgk/kmgk",
+    "revision": "7a62ec676ad6584d4f35b76edcb37597b438aa2c",
+    "upstream": "https://github.com/open-vela/external_optee_kmgk",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/optee/optee_client/optee_client",
+    "revision": "e7ad6d638815881bbea131b7302387cfe9885f72",
+    "upstream": "https://github.com/open-vela/external_optee_optee_client",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/optee/optee_examples/optee_examples",
+    "revision": "5b963f463e820d8febb4a43f2564ce278d84ed76",
+    "upstream": "https://github.com/open-vela/external_optee_optee_examples",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/optee/optee_os/optee_os",
+    "revision": "ec1cc2a251ded6e836163b86384b1b6d883763c4",
+    "upstream": "https://github.com/open-vela/external_optee_optee_os",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/optee/optee_test/optee_test",
+    "revision": "f21cfe271a8e9a76fc23bb443af6c6a20959d8cf",
+    "upstream": "https://github.com/open-vela/external_optee_optee_test",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/opus/opus",
+    "revision": "527d25d8c3442a4f1b259b77717eca09e6c9ab63",
+    "upstream": "https://github.com/open-vela/external_opus",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/protobuf-c/protobuf-c",
+    "revision": "85b9bd10143c7e287a2e4f9f3b5119552863eda4",
+    "upstream": "https://github.com/open-vela/external_protobuf-c",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/protobuf/protobuf",
+    "revision": "d0701ea1a37c26b1e01b2befa54cf865dd6271cb",
+    "upstream": "https://github.com/open-vela/external_protobuf",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/quirc/quirc",
+    "revision": "7e7c4e462e0b37dc8250413f182edea43328d80d",
+    "upstream": "https://github.com/open-vela/external_quirc",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/rapidjson/rapidjson",
+    "revision": "8d8306b9850a1775310c5196b55e076096104ef7",
+    "upstream": "https://github.com/open-vela/external_rapidjson",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/ril/ril",
+    "revision": "8f7a97183a41555b473b1979f844af59d31a151b",
+    "upstream": "https://github.com/open-vela/external_ril",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/rlottie/rlottie",
+    "revision": "01a1855422da2764eb1d9d616ba11f40b4809543",
+    "upstream": "https://github.com/open-vela/external_rlottie",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/rtos-benchmark/rtos-benchmark",
+    "revision": "b48767085bfac74828460d38a240deb0cf0d5d2e",
+    "upstream": "https://github.com/open-vela/external_rtos-benchmark",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/silk-v3-decoder/silk-v3-decoder",
+    "revision": "292c8413e0f9c734d03116d29501a370993c84c6",
+    "upstream": "https://github.com/open-vela/external_silk-v3-decoder",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/sqlite/sqlite",
+    "revision": "219e4f674cc1a7682a1d0e67f5b61dff61adba17",
+    "upstream": "https://github.com/open-vela/external_sqlite",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/stress/stress",
+    "revision": "56b8b4bb921e26fa619a218dbae8af1be0324347",
+    "upstream": "https://github.com/open-vela/external_stress",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/sysklogd/sysklogd",
+    "revision": "7f8e7950c8bfa910b28e5c72be721857881fbd36",
+    "upstream": "https://github.com/open-vela/external_sysklogd",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/thorvg/thorvg",
+    "revision": "45482caa3aee6a91fac2851e461a539de1b41791",
+    "upstream": "https://github.com/open-vela/external_thorvg",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/tinyxml2/tinyxml2",
+    "revision": "9a03449e33faa2366b3db555a995510661e01177",
+    "upstream": "https://github.com/open-vela/external_tinyxml2",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/unqlite/unqlite",
+    "revision": "2bdd14826b0ff758648c1110340673bde395a440",
+    "upstream": "https://github.com/open-vela/external_unqlite",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/vector-sil/sil-kit",
+    "revision": "74cb5471ec7225fbdecf892853abf7c9c311cc95",
+    "upstream": "https://github.com/open-vela/external_vector-sil_sil-kit",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/vector-sil/sil-kit-adapters-qemu",
+    "revision": "791747321c3676ac5d1bae2d572b47f0b2728f76",
+    "upstream": "https://github.com/open-vela/external_vector-sil_sil-kit-adapters-qemu",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/vector-sil/sil-kit-adapters-vcan",
+    "revision": "3dad4774b96abb7725c41ba0cf048e2b9a0adca3",
+    "upstream": "https://github.com/open-vela/external_vector-sil_sil-kit-adapters-vcan",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/yoga/yoga",
+    "revision": "4d104004a04526fe1eafc1c7a766fa97b2b2de7c",
+    "upstream": "https://github.com/open-vela/external_yoga",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/zblue/zblue",
+    "revision": "2e5bddcc5284534aaca189346570d32f1a5509f3",
+    "upstream": "https://github.com/open-vela/external_zblue",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "external/zint/zint",
+    "revision": "5d8bcfde097561e90b9af90a05c856bdd4212b81",
+    "upstream": "https://github.com/open-vela/external_zint",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/connectivity",
+    "revision": "205dccf118647b759fcc7033f085c5f8933e73b7",
+    "upstream": "https://github.com/open-vela/frameworks_connectivity",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/connectivity/bluetooth",
+    "revision": "028b4ba7e39328acdf23fed0921b7c65aba2001a",
+    "upstream": "https://github.com/open-vela/frameworks_bluetooth",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/connectivity/telephony",
+    "revision": "bb012ca20aafe6be1f731fc9ba9d32751114be74",
+    "upstream": "https://github.com/open-vela/frameworks_connectivity_telephony",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/graphics",
+    "revision": "59f898a3ac5e9b16f79e0f8ee241210ba6b9570b",
+    "upstream": "https://github.com/open-vela/frameworks_graphics",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/graphics/gpu_tools",
+    "revision": "6c8ac158d9114329efba2ada5218a184ccde5fe1",
+    "upstream": "https://github.com/open-vela/frameworks_graphics_gpu_tools",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/graphics/uikit",
+    "revision": "7609f57e55f93dd252fcda8cf2c775cb5e142e7d",
+    "upstream": "https://github.com/open-vela/frameworks_graphics_uikit",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/multimedia",
+    "revision": "4f92457122ce5f3994204898d824d02827c5dcc9",
+    "upstream": "https://github.com/open-vela/frameworks_multimedia",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/multimedia/media",
+    "revision": "6700872e02752527f356abd81386a6017f150ae5",
+    "upstream": "https://github.com/open-vela/frameworks_multimedia_media",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/multimedia/media/pfw",
+    "revision": "ec61d3a7a1bc4eb8f7eb2de08c61df9ea5c1a1f3",
+    "upstream": "https://github.com/open-vela/frameworks_multimedia_media_pfw",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes",
+    "revision": "7f2c8d85d65c6645a8e1e7898866a9f775709f0e",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/ash",
+    "revision": "0018b6cfa6a016fa283f5309a084ecb2cc874198",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_ash",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/feature",
+    "revision": "fa5e43636ed38e9cefdca37d91cd655902b6cefa",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_feature",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/quickapp",
+    "revision": "4eecf624f1c8c7b0f17eb72918619da6f416d41a",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_quickapp",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/services",
+    "revision": "fc1098e90f7c8ab594e0c3e9c04fd5666432cefa",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_services",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/services/am",
+    "revision": "d2c638f37cf134d7a32b56b69f3c40f118d7be22",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_services_am",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/services/brightness",
+    "revision": "4fece8791bb09c3dbdd991fe8c68f878ae1f2293",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_services_brightness",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/services/pm",
+    "revision": "380cd048f3618385c845d9cea598c6170520786a",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_services_pm",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/services/system_server",
+    "revision": "2f41945917478cae568b09b8c5e8ad500f1ff889",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_services_system_server",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/services/wm",
+    "revision": "ec0390b2ee2987e3b0644e7b6d6612df1794ffc4",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_services_wm",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/services/xmsdemo",
+    "revision": "2bbd05996709e7d7e70f0e0d1732019c4773af0d",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_services_xmsdemo",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/typescript",
+    "revision": "475855d4711092ef113efc306dbbea094a5079ba",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_typescript",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/typescript/ts2native",
+    "revision": "e23f193b0bd1703c06cd74640ec95971adec9e44",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_typescript_ts2native",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/typescript/ts2wasm",
+    "revision": "9c917287ba55c6a34b199a2069e4093c70044349",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_typescript_ts2wasm",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/runtimes/wasm",
+    "revision": "71ae85fca3d5a29109ddc90b58ac4a55035c58a1",
+    "upstream": "https://github.com/open-vela/frameworks_runtimes_wasm",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/security",
+    "revision": "986ba5d72d92cb04827aa984afddbbf2def06597",
+    "upstream": "https://github.com/open-vela/frameworks_security",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/security/optee_vela",
+    "revision": "496d4f4eb26ff58ec125920b6337a0dc1946d262",
+    "upstream": "https://github.com/open-vela/frameworks_security_optee_vela",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system",
+    "revision": "0159e518e095759d16b073e9ddf2ce1b9b2f422c",
+    "upstream": "https://github.com/open-vela/frameworks_system",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/binder",
+    "revision": "08e9f0b395c25420fcdd58c9356c71d31f2a45ed",
+    "upstream": "https://github.com/open-vela/frameworks_system_binder",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/charger",
+    "revision": "a49a4668279d91391c571cad81a4796de63e0c39",
+    "upstream": "https://github.com/open-vela/frameworks_system_charger",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/healthd",
+    "revision": "764d6c0cdea139066e5fad82558031cb4df69c5d",
+    "upstream": "https://github.com/open-vela/frameworks_system_healthd",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/ota",
+    "revision": "b2c397bbc004cfe146f1e17779e0bad1876778c4",
+    "upstream": "https://github.com/open-vela/frameworks_system_ota",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/topics",
+    "revision": "7b0641123a205d7012959f2efad81e1ac39a0aee",
+    "upstream": "https://github.com/open-vela/frameworks_system_topics",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/utils",
+    "revision": "aae0efd0c89224c3b34e439f419d6a8736113430",
+    "upstream": "https://github.com/open-vela/frameworks_system_utils",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/utils/uv",
+    "revision": "e35e285309fcd4a13134a3495eac545750c59645",
+    "upstream": "https://github.com/open-vela/frameworks_system_utils_uv",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "frameworks/system/vibrator",
+    "revision": "bae02204c0af9ff7eaccf677ece6dee5af3e6ef8",
+    "upstream": "https://github.com/open-vela/frameworks_system_vibrator",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/drivers/mtd/dhara",
+    "revision": "2de34abb20859d194891727ca8dbfcda330e995c",
+    "upstream": "https://github.com/open-vela/nuttx_drivers_mtd_dhara",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/drivers/segger/SystemView",
+    "revision": "cc877e5c874f0766fb0a4d99c9d50dc4747a91e2",
+    "upstream": "https://github.com/open-vela/nuttx_drivers_segger_SystemView",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/fs/fatfs/fatfs",
+    "revision": "6e433f195f15e0f5d8a3b170f53694b9c4dc6f4b",
+    "upstream": "https://github.com/open-vela/nuttx_fs_fatfs",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/fs/littlefs/littlefs",
+    "revision": "70ab38f68bd97304647d938ffd5be904a22b9fab",
+    "upstream": "https://github.com/open-vela/nuttx_fs_littlefs_littlefs",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/fs/yaffs/yaffs",
+    "revision": "be92d28615e4203b2128a2752e481816624ca36a",
+    "upstream": "https://github.com/open-vela/nuttx_fs_yaffs",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libc/audio/libsrc/libsamplerate",
+    "revision": "f9a997dd9242cf00174a4f4429e67c5020b0eec7",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libc_audio_libsrc_libsamplerate",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libc/fdt/dtc",
+    "revision": "97a696bceadddc8828061ac905b773ef1e6b1dd3",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libc_fdt_dtc",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libc/gnssutils/minmea",
+    "revision": "5a33985ead6f2db557b69cf73053cba80e9ab7ea",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libc_gnssutils_minmea",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libm/libmcs/libmcs",
+    "revision": "53b8f0d8b8054188821106df04394ce0114cf2da",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libm_libmcs",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libm/newlib/newlib",
+    "revision": "91781fb08a58dde8dbc73433065df3d8da2a6079",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libm_newlib",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libm/openlibm/openlibm",
+    "revision": "76ed80012a23bb9b8ba141e144926ebe07baf353",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libm_openlibm",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libxx/libcxx/libcxx",
+    "revision": "920e06cf46707cb2ed7a8ce8cabf4728b22a708e",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libxx_libcxx",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libxx/libcxxabi/libcxxabi",
+    "revision": "3d27ac1876a09b61b5f6516b5e19d361571f6823",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libxx_libcxxabi",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/libs/libxx/libstdc++/libstdc++",
+    "revision": "43e48a2b29d7232d8d57bfd5550648335051bb87",
+    "upstream": "https://github.com/open-vela/nuttx_libs_libxx_libstdcpp",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/mm/tlsf/tlsf",
+    "revision": "596c37fbde53b5a051f93320d3ddd7f17c638454",
+    "upstream": "https://github.com/open-vela/nuttx_mm_tlsf",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/openamp/libmetal",
+    "revision": "82a914c1b474555172c2d63ab8458928accaf512",
+    "upstream": "https://github.com/open-vela/nuttx_openamp_libmetal",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "nuttx/openamp/open-amp",
+    "revision": "d6a4031adf64b10e192602f834d311f90a88a4d9",
+    "upstream": "https://github.com/open-vela/nuttx_openamp_open-amp",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "packages/apps",
+    "revision": "334f0930712cf2c7919dc8638399ad339283e11c",
+    "upstream": "https://github.com/open-vela/packages_apps",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "packages/fe/examples",
+    "revision": "ca8bfab1c1abe6adfd9b1f1c1f31626851afd379",
+    "upstream": "https://github.com/open-vela/packages_fe_examples",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/allwinnertech",
+    "revision": "1676386193f0e710121e710935f1757c0f34b662",
+    "upstream": "https://github.com/open-vela/vendor_allwinnertech",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/artinchip",
+    "revision": "4e1d473a6c5466c1ef9c5656a4fb91532b558aba",
+    "upstream": "https://github.com/open-vela/vendor_artinchip",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/beken",
+    "revision": "332d2f16615d0c86c7148a51f1200a678cb7c173",
+    "upstream": "https://github.com/open-vela/vendor_beken",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/bes",
+    "revision": "36465377d944a575ce8a0c7ba45259f5c6c61ea8",
+    "upstream": "https://github.com/open-vela/vendor_bes",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/espressif",
+    "revision": "afe1b8c5ec67ff76eda48ee84d9dd116df2814ba",
+    "upstream": "https://github.com/open-vela/vendor_espressif",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/flagchip",
+    "revision": "9e363edad8f731e48d176a363303d436bb3d8f35",
+    "upstream": "https://github.com/open-vela/vendor_flagchip",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/gigadevice",
+    "revision": "838aae8ecb474675e1f350528909ddedc7ac741a",
+    "upstream": "https://github.com/open-vela/vendor_gigadevice",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/gravityxr",
+    "revision": "8072ba79b219166c1ae023562dc269050bfc12c2",
+    "upstream": "https://github.com/open-vela/vendor_gravityxr",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/infineon",
+    "revision": "af3b806621e3a26572872f668b19d1302f41f4cd",
+    "upstream": "https://github.com/open-vela/vendor_infineon",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/infineon/chips/aurix/illd",
+    "revision": "537d7f70f5430d26c3ba13eca8b7622728d14d2c",
+    "upstream": "https://github.com/open-vela/vendor_infineon_chips_aurix_illd",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/infineon/chips/aurix/illd/tc4x/Libraries",
+    "revision": "aa7925cc07a88baacdc2967a72b40d22cce7156a",
+    "upstream": "https://github.com/open-vela/vendor_infineon_chips_aurix_illd_tc4x_Libraries",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/rockchip",
+    "revision": "8755815bf19995ce8de68a22d0d12b20c285f4ea",
+    "upstream": "https://github.com/open-vela/vendor_rockchip",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/sifli",
+    "revision": "af6f365eaa04a674af0467aa1a803bc4c77691ba",
+    "upstream": "https://github.com/open-vela/vendor_sifli",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/sifli/boards/sf32lb52/libs",
+    "revision": "635b0012605ab199eaad311d1ae16fc5ece6ab99",
+    "upstream": "https://github.com/open-vela/libs_sifli_sf32lb52",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/st",
+    "revision": "575a34c9bb2cfd0d1b3babd840b00b5e191c55a4",
+    "upstream": "https://github.com/open-vela/vendor_st",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/template",
+    "revision": "6ce6f873b33848e1e699577a6eebc4d49807c7d0",
+    "upstream": "https://github.com/open-vela/vendor_template",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/xiaomi",
+    "revision": "ef553b8a6870ce36258d44b3df686c8ddea5a98d",
+    "upstream": "https://github.com/open-vela/vendor_xiaomi",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/xiaomi/vela",
+    "revision": "c0a5090eb0c6d23e8d3f53ddbee89ed47adb68aa",
+    "upstream": "https://github.com/open-vela/vendor_xiaomi_vela",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  },
+  {
+    "project": "vendor/xiaomi/vela/pyxis",
+    "revision": "517a3dd282de09a0a4f4781d901d9c3f4a50cdb3",
+    "upstream": "https://github.com/open-vela/vendor_xiaomi_pyxis",
+    "method": "fresh Git checkout from local object cache; no build artifacts or working changes copied"
+  }
+]

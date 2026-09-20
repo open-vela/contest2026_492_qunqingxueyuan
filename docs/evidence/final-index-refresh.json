@@ -1,0 +1,87 @@
+[
+  {
+    "project": "frameworks",
+    "unchanged_files_refreshed": 3,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "nuttx",
+    "unchanged_files_refreshed": 4957,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "packages",
+    "unchanged_files_refreshed": 3,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "packages/ai_agent",
+    "unchanged_files_refreshed": 8,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/build-tools/windows-x86_64",
+    "unchanged_files_refreshed": 1,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/clang-wasm/linux-x86_64",
+    "unchanged_files_refreshed": 12,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/cmake/windows-x86_64",
+    "unchanged_files_refreshed": 1501,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/emulator/tools",
+    "unchanged_files_refreshed": 16,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/emulator/windows-x86_64",
+    "unchanged_files_refreshed": 2,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/gcc/windows-x86_64/aarch64-none-elf",
+    "unchanged_files_refreshed": 11,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/gcc/windows-x86_64/arm-none-eabi",
+    "unchanged_files_refreshed": 48,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/gcc/windows-x86_64/riscv-none-elf",
+    "unchanged_files_refreshed": 17,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/gcc/windows-x86_64/x86_64-none-elf",
+    "unchanged_files_refreshed": 10,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/qemu/windows-x86_64",
+    "unchanged_files_refreshed": 1,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "prebuilts/tools",
+    "unchanged_files_refreshed": 3267,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "tests",
+    "unchanged_files_refreshed": 46,
+    "index_tree_unchanged": true
+  },
+  {
+    "project": "vendor",
+    "unchanged_files_refreshed": 3,
+    "index_tree_unchanged": true
+  }
+]

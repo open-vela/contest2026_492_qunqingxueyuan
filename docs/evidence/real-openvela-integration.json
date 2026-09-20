@@ -1,0 +1,97 @@
+{
+  "target": "\u001b[Kuname -a\n\rNuttX  0.0.0 dd92bcf4257 Sep 19 2026 11:00:38 arm64 ap\n\rgoldfish-armv8a-ap> ",
+  "transport": "HTTP -> Telnet -> openvela",
+  "safe": {
+    "source": "openvela",
+    "seq": 0,
+    "agent_a": "FORWARD",
+    "agent_b": "FORWARD",
+    "action": "FORWARD",
+    "lplc2": 0,
+    "lc4": 0,
+    "gf": 0,
+    "state": "SAFE",
+    "latency_ns": 107168,
+    "restarted": true
+  },
+  "safe_guard": {
+    "interface": "flyreflex-guard",
+    "operation": "issue_agent_command",
+    "fresh": true,
+    "state": "SAFE",
+    "risk": 0,
+    "reflex": "IDLE",
+    "agent": "FORWARD",
+    "final": "FORWARD",
+    "decision": "AI",
+    "actuator": "simulation-only"
+  },
+  "danger": {
+    "source": "openvela",
+    "seq": 1,
+    "agent_a": "FORWARD",
+    "agent_b": "FORWARD",
+    "action": "ESCAPE",
+    "lplc2": 1000,
+    "lc4": 1000,
+    "gf": 1000,
+    "state": "DANGER",
+    "latency_ns": 11104,
+    "restarted": false
+  },
+  "danger_guard": {
+    "interface": "flyreflex-guard",
+    "operation": "issue_agent_command",
+    "fresh": true,
+    "state": "DANGER",
+    "risk": 1000,
+    "reflex": "ESCAPE",
+    "agent": "FORWARD",
+    "final": "ESCAPE",
+    "decision": "REFLEX_OVERRIDE",
+    "actuator": "simulation-only"
+  },
+  "invalid": {
+    "source": "openvela",
+    "seq": 2,
+    "agent_a": "STOP",
+    "agent_b": "STOP",
+    "action": "STOP",
+    "lplc2": 0,
+    "lc4": 0,
+    "gf": 0,
+    "state": "INVALID",
+    "latency_ns": 80000
+  },
+  "invalid_guard": {
+    "interface": "flyreflex-guard",
+    "operation": "issue_agent_command",
+    "fresh": true,
+    "state": "INVALID",
+    "risk": 0,
+    "reflex": "STOP",
+    "agent": "FORWARD",
+    "final": "STOP",
+    "decision": "FAILSAFE",
+    "actuator": "simulation-only"
+  },
+  "stale_guard": {
+    "interface": "flyreflex-guard",
+    "operation": "issue_agent_command",
+    "fresh": false,
+    "state": "INVALID",
+    "risk": 1000,
+    "reflex": "STOP",
+    "agent": "FORWARD",
+    "final": "STOP",
+    "decision": "FAILSAFE",
+    "actuator": "simulation-only"
+  },
+  "disconnected_http": {
+    "status": 503,
+    "body": {
+      "error": "DATA CONNECTION LOST"
+    }
+  },
+  "result": "PASS"
+}
