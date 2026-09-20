@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "host": "token-plan-cn.xiaomimimo.com",
+  "model": "mimo-v2.5",
+  "elapsed_seconds": 1.935,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 253,
+    "total_tokens": 255,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    }
+  },
+  "reply": "OK"
+}

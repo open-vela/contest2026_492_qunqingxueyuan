@@ -1,0 +1,8 @@
+{
+  "name": "flyreflex-visual-story",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "start": "python ../tools/web_bridge.py", "test": "node --test tests/*.test.mjs" },
+  "dependencies": { "three": "0.186.0" }
+}

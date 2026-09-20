@@ -12,4 +12,12 @@ lplc2_encoder,size_proxy,mapping,ENGINEERING_PARAMETER,Normalized angular-size p
 lc4_encoder,expansion_rate_proxy,mapping,ENGINEERING_PARAMETER,Normalized positive expansion-rate proxy mapped to LC4 activity based on paper-supported feature role
 danger_action,ESCAPE,command,ENGINEERING_PARAMETER,Product-level safe-action mapping rather than a biological motor simulation
 invalid_input_action,STOP,command,ENGINEERING_PARAMETER,Fail-safe action for out-of-range sensor input
-
+guard_freshness_limit,1500,ms,ENGINEERING_PARAMETER,Missing or older snapshots return STOP through the same arbiter
+web_step,25,ms,ENGINEERING_PARAMETER,Fixed simulation timestep independent of wall-clock network latency
+web_size_gain,650,proxy-metre,ENGINEERING_PARAMETER,Size proxy gain divided by projectile distance
+web_rate_gain,220,proxy-seconds,ENGINEERING_PARAMETER,Expansion proxy gain times speed divided by squared distance
+web_core_radius,0.34,m,ENGINEERING_PARAMETER,Identical target radius in both lanes
+web_particle_radius,0.16,m,ENGINEERING_PARAMETER,Identical projectile radius in both lanes
+web_motor_speed,3.6,m/s,ENGINEERING_PARAMETER,Identical target motor limit in both lanes
+web_motion_boundary,2.4,m,ENGINEERING_PARAMETER,Identical target radial boundary in both lanes
+web_agent_delay_default,350,ms,ENGINEERING_PARAMETER,Controlled latency model not a real LLM measurement

@@ -1,0 +1,112 @@
+
+NuttShell (NSH)
+goldfish-armv8a-ap> [K
+uname -a
+NuttX  0.0.0 dd92bcf4257 Sep 19 2026 11:00:38 arm64 ap
+goldfish-armv8a-ap> 
+[Kflyreflex demo safe
+[FlyReflex] scenario=safe frame=0 size=120 rate=0 LPLC2=120 LC4=0 GF=51 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=18256 end_to_end_ns=40240
+[FlyReflex] scenario=safe frame=1 size=120 rate=0 LPLC2=120 LC4=0 GF=68 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2704 end_to_end_ns=6480
+[FlyReflex] scenario=safe frame=2 size=121 rate=4 LPLC2=121 LC4=4 GF=77 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2256 end_to_end_ns=5696
+[FlyReflex] scenario=safe frame=3 size=120 rate=0 LPLC2=120 LC4=0 GF=77 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2352 end_to_end_ns=6112
+[FlyReflex] scenario=safe frame=4 size=119 rate=0 LPLC2=119 LC4=0 GF=77 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2736 end_to_end_ns=59232
+[FlyReflex] scenario=safe frame=5 size=120 rate=4 LPLC2=120 LC4=4 GF=80 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3168 end_to_end_ns=271552
+[FlyReflex] scenario=safe frame=6 size=121 rate=4 LPLC2=121 LC4=4 GF=82 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2256 end_to_end_ns=5664
+[FlyReflex] scenario=safe frame=7 size=120 rate=0 LPLC2=120 LC4=0 GF=79 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=32400 end_to_end_ns=80256
+[FlyReflex] scenario=safe frame=8 size=120 rate=0 LPLC2=120 LC4=0 GF=78 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=15840 end_to_end_ns=19680
+[FlyReflex] scenario=safe frame=9 size=119 rate=0 LPLC2=119 LC4=0 GF=78 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=12448 end_to_end_ns=148384
+[FlyReflex] scenario=safe frame=10 size=120 rate=4 LPLC2=120 LC4=4 GF=81 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=41120 end_to_end_ns=50240
+[FlyReflex] scenario=safe frame=11 size=120 rate=0 LPLC2=120 LC4=0 GF=79 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2416 end_to_end_ns=6224
+goldfish-armv8a-ap> 
+[Kflyreflex demo slow
+[FlyReflex] scenario=slow frame=0 size=100 rate=0 LPLC2=100 LC4=0 GF=43 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3664 end_to_end_ns=8800
+[FlyReflex] scenario=slow frame=1 size=125 rate=100 LPLC2=125 LC4=100 GF=125 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2848 end_to_end_ns=8848
+[FlyReflex] scenario=slow frame=2 size=150 rate=100 LPLC2=150 LC4=100 GF=164 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2768 end_to_end_ns=6496
+[FlyReflex] scenario=slow frame=3 size=180 rate=120 LPLC2=180 LC4=120 GF=202 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2256 end_to_end_ns=5824
+[FlyReflex] scenario=slow frame=4 size=215 rate=140 LPLC2=215 LC4=140 GF=242 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2480 end_to_end_ns=6544
+[FlyReflex] scenario=slow frame=5 size=250 rate=140 LPLC2=250 LC4=140 GF=271 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2288 end_to_end_ns=6432
+[FlyReflex] scenario=slow frame=6 size=290 rate=160 LPLC2=290 LC4=160 GF=310 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=156112 end_to_end_ns=171840
+[FlyReflex] scenario=slow frame=7 size=330 rate=160 LPLC2=330 LC4=160 GF=341 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2832 end_to_end_ns=8560
+[FlyReflex] scenario=slow frame=8 size=370 rate=160 LPLC2=370 LC4=160 GF=369 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3280 end_to_end_ns=56560
+[FlyReflex] scenario=slow frame=9 size=410 rate=160 LPLC2=410 LC4=160 GF=397 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2368 end_to_end_ns=5808
+[FlyReflex] scenario=slow frame=10 size=450 rate=160 LPLC2=450 LC4=160 GF=423 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=83296 end_to_end_ns=139424
+[FlyReflex] scenario=slow frame=11 size=490 rate=160 LPLC2=490 LC4=160 GF=450 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2448 end_to_end_ns=5824
+goldfish-armv8a-ap> 
+[Kflyreflex demo danger
+[FlyReflex] scenario=danger frame=0 size=100 rate=0 LPLC2=100 LC4=0 GF=43 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3856 end_to_end_ns=9472
+[FlyReflex] scenario=danger frame=1 size=115 rate=60 LPLC2=115 LC4=60 GF=98 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3872 end_to_end_ns=54448
+[FlyReflex] scenario=danger frame=2 size=145 rate=120 LPLC2=145 LC4=120 GF=164 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=4896 end_to_end_ns=40992
+[FlyReflex] scenario=danger frame=3 size=210 rate=260 LPLC2=210 LC4=260 GF=295 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2448 end_to_end_ns=7104
+[FlyReflex] scenario=danger frame=4 size=330 rate=480 LPLC2=330 LC4=480 GF=518 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=223600 end_to_end_ns=322448
+[FlyReflex] scenario=danger frame=5 size=510 rate=720 LPLC2=510 LC4=720 GF=810 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=80736 end_to_end_ns=129904
+[FlyReflex] scenario=danger frame=6 size=740 rate=920 LPLC2=740 LC4=920 GF=1125 state=DANGER ai=FORWARD reflex=ESCAPE final=ESCAPE decision=REFLEX_OVERRIDE reflex_ns=128240 end_to_end_ns=158160
+[FlyReflex] scenario=danger frame=7 size=960 rate=880 LPLC2=960 LC4=880 GF=1200 state=DANGER ai=FORWARD reflex=ESCAPE final=ESCAPE decision=REFLEX_OVERRIDE reflex_ns=10160 end_to_end_ns=35216
+goldfish-armv8a-ap> 
+[Kflyreflex demo recovery
+[FlyReflex] scenario=recovery frame=0 size=100 rate=0 LPLC2=100 LC4=0 GF=43 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3920 end_to_end_ns=9312
+[FlyReflex] scenario=recovery frame=1 size=120 rate=80 LPLC2=120 LC4=80 GF=112 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=12640 end_to_end_ns=16816
+[FlyReflex] scenario=recovery frame=2 size=165 rate=180 LPLC2=165 LC4=180 GF=212 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=126720 end_to_end_ns=136960
+[FlyReflex] scenario=recovery frame=3 size=260 rate=380 LPLC2=260 LC4=380 GF=402 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2592 end_to_end_ns=5856
+[FlyReflex] scenario=recovery frame=4 size=430 rate=680 LPLC2=430 LC4=680 GF=711 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3584 end_to_end_ns=141088
+[FlyReflex] scenario=recovery frame=5 size=680 rate=1000 LPLC2=680 LC4=1000 GF=1109 state=DANGER ai=FORWARD reflex=ESCAPE final=ESCAPE decision=REFLEX_OVERRIDE reflex_ns=3280 end_to_end_ns=58128
+[FlyReflex] scenario=recovery frame=6 size=940 rate=1000 LPLC2=940 LC4=1000 GF=1200 state=DANGER ai=FORWARD reflex=ESCAPE final=ESCAPE decision=REFLEX_OVERRIDE reflex_ns=3488 end_to_end_ns=158656
+[FlyReflex] scenario=recovery frame=7 size=700 rate=0 LPLC2=700 LC4=0 GF=723 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=33888 end_to_end_ns=39952
+[FlyReflex] scenario=recovery frame=8 size=460 rate=0 LPLC2=460 LC4=0 GF=452 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3600 end_to_end_ns=203120
+[FlyReflex] scenario=recovery frame=9 size=280 rate=0 LPLC2=280 LC4=0 GF=279 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2240 end_to_end_ns=5568
+[FlyReflex] scenario=recovery frame=10 size=170 rate=0 LPLC2=170 LC4=0 GF=170 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2784 end_to_end_ns=126224
+[FlyReflex] scenario=recovery frame=11 size=120 rate=0 LPLC2=120 LC4=0 GF=110 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=137600 end_to_end_ns=176928
+[FlyReflex] scenario=recovery frame=12 size=100 rate=0 LPLC2=100 LC4=0 GF=81 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=266032 end_to_end_ns=416912
+[FlyReflex] scenario=recovery frame=13 size=90 rate=0 LPLC2=90 LC4=0 GF=66 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2752 end_to_end_ns=6816
+[FlyReflex] scenario=recovery frame=14 size=90 rate=0 LPLC2=90 LC4=0 GF=61 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2672 end_to_end_ns=8416
+[FlyReflex] scenario=recovery frame=15 size=90 rate=0 LPLC2=90 LC4=0 GF=59 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2736 end_to_end_ns=51632
+goldfish-armv8a-ap> 
+[Kflyreflex demo danger
+[FlyReflex] scenario=danger frame=0 size=100 rate=0 LPLC2=100 LC4=0 GF=43 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3600 end_to_end_ns=8720
+[FlyReflex] scenario=danger frame=1 size=115 rate=60 LPLC2=115 LC4=60 GF=98 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2864 end_to_end_ns=10080
+[FlyReflex] scenario=danger frame=2 size=145 rate=120 LPLC2=145 LC4=120 GF=164 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3216 end_to_end_ns=56144
+[FlyReflex] scenario=danger frame=3 size=210 rate=260 LPLC2=210 LC4=260 GF=295 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3168 end_to_end_ns=126448
+[FlyReflex] scenario=danger frame=4 size=330 rate=480 LPLC2=330 LC4=480 GF=518 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2416 end_to_end_ns=6144
+[FlyReflex] scenario=danger frame=5 size=510 rate=720 LPLC2=510 LC4=720 GF=810 state=CAUTION ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2432 end_to_end_ns=5792
+[FlyReflex] scenario=danger frame=6 size=740 rate=920 LPLC2=740 LC4=920 GF=1125 state=DANGER ai=FORWARD reflex=ESCAPE final=ESCAPE decision=REFLEX_OVERRIDE reflex_ns=2800 end_to_end_ns=6624
+[FlyReflex] scenario=danger frame=7 size=960 rate=880 LPLC2=960 LC4=880 GF=1200 state=DANGER ai=FORWARD reflex=ESCAPE final=ESCAPE decision=REFLEX_OVERRIDE reflex_ns=3632 end_to_end_ns=282448
+goldfish-armv8a-ap> 
+[Kflyreflex guard query_flyreflex_status
+{"interface":"flyreflex-guard","operation":"query_flyreflex_status","fresh":true,"state":"DANGER","risk":1200,"reflex":"ESCAPE","agent":"FORWARD","final":"ESCAPE","decision":"REFLEX_OVERRIDE","actuator":"simulation-only"}
+goldfish-armv8a-ap> 
+[Kflyreflex guard issue_agent_command FORWARD
+{"interface":"flyreflex-guard","operation":"issue_agent_command","fresh":true,"state":"DANGER","risk":1200,"reflex":"ESCAPE","agent":"FORWARD","final":"ESCAPE","decision":"REFLEX_OVERRIDE","actuator":"simulation-only"}
+goldfish-armv8a-ap> 
+[Ksleep 2
+goldfish-armv8a-ap> 
+[Kflyreflex guard issue_agent_command FORWARD
+{"interface":"flyreflex-guard","operation":"issue_agent_command","fresh":false,"state":"INVALID","risk":1200,"reflex":"STOP","agent":"FORWARD","final":"STOP","decision":"FAILSAFE","actuator":"simulation-only"}
+goldfish-armv8a-ap> 
+[Kflyreflex demo safe
+[FlyReflex] scenario=safe frame=0 size=120 rate=0 LPLC2=120 LC4=0 GF=51 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=4464 end_to_end_ns=11152
+[FlyReflex] scenario=safe frame=1 size=120 rate=0 LPLC2=120 LC4=0 GF=68 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=154768 end_to_end_ns=308592
+[FlyReflex] scenario=safe frame=2 size=121 rate=4 LPLC2=121 LC4=4 GF=77 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3360 end_to_end_ns=8608
+[FlyReflex] scenario=safe frame=3 size=120 rate=0 LPLC2=120 LC4=0 GF=77 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=4096 end_to_end_ns=11280
+[FlyReflex] scenario=safe frame=4 size=119 rate=0 LPLC2=119 LC4=0 GF=77 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=4320 end_to_end_ns=41600
+[FlyReflex] scenario=safe frame=5 size=120 rate=4 LPLC2=120 LC4=4 GF=80 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2544 end_to_end_ns=49632
+[FlyReflex] scenario=safe frame=6 size=121 rate=4 LPLC2=121 LC4=4 GF=82 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2592 end_to_end_ns=44256
+[FlyReflex] scenario=safe frame=7 size=120 rate=0 LPLC2=120 LC4=0 GF=79 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2448 end_to_end_ns=6336
+[FlyReflex] scenario=safe frame=8 size=120 rate=0 LPLC2=120 LC4=0 GF=78 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=2640 end_to_end_ns=53792
+[FlyReflex] scenario=safe frame=9 size=119 rate=0 LPLC2=119 LC4=0 GF=78 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3616 end_to_end_ns=21248
+[FlyReflex] scenario=safe frame=10 size=120 rate=4 LPLC2=120 LC4=4 GF=81 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=3056 end_to_end_ns=58416
+[FlyReflex] scenario=safe frame=11 size=120 rate=0 LPLC2=120 LC4=0 GF=79 state=SAFE ai=FORWARD reflex=IDLE final=FORWARD decision=AI reflex_ns=4672 end_to_end_ns=40880
+goldfish-armv8a-ap> 
+[Kflyreflex guard issue_agent_command FORWARD
+{"interface":"flyreflex-guard","operation":"issue_agent_command","fresh":true,"state":"SAFE","risk":79,"reflex":"IDLE","agent":"FORWARD","final":"FORWARD","decision":"AI","actuator":"simulation-only"}
+goldfish-armv8a-ap> 
+[Kflyreflex bench 1000
+FlyReflex benchmark (measured locally with CLOCK_MONOTONIC)
+environment=openvela simulator/target iterations=1000 units=ns
+path,min,mean,median,p95,p99,max
+reflex_compute,1232,1439,1280,1360,2816,50368
+end_to_end,2224,2757,2320,2448,5312,126992
+goldfish-armv8a-ap> 
+[Kfree
+      total       used       free    maxused    maxfree  nused  nfree name
+      65536       1152      64384       1072      64384      2      1 binder_heap_10
+  104779584    2361248  102418336    2745280  102043520    393    175 Umem
+goldfish-armv8a-ap> 

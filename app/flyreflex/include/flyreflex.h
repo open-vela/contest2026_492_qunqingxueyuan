@@ -138,6 +138,10 @@ int flyreflex_run_scenario(enum flyreflex_scenario_e scenario, bool csv,
 int flyreflex_run_benchmark(size_t iterations,
                             struct flyreflex_stats_s *reflex_stats,
                             struct flyreflex_stats_s *end_to_end_stats);
+int flyreflex_stream(enum flyreflex_scenario_e scenario, unsigned int cycles);
+int flyreflex_control(void);
+void flyreflex_guard_publish(const struct flyreflex_output_s *output);
+int flyreflex_guard_command(bool issue_forward);
 void flyreflex_print_sample(const char *scenario,
                             const struct flyreflex_sample_s *sample, bool csv,
                             bool print_header);
@@ -155,4 +159,3 @@ int flyreflex_ui_run(void);
 #endif
 
 #endif /* FLYREFLEX_H */
-

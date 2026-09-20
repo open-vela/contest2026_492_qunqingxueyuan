@@ -1,0 +1,17 @@
+diff --git a/src/tools/tool_shell.c b/src/tools/tool_shell.c
+--- a/src/tools/tool_shell.c
++++ b/src/tools/tool_shell.c
+@@ -530,10 +530,11 @@ int tool_run_shell_execute(const char *input_json, char *output, size_t output_size)
+-    cJSON_Delete(root);
+-
+     if (ret != OK) {
+         snprintf(output, output_size, "{\"error\":\"Command failed: %s\"}", command);
++        cJSON_Delete(root);
+         free(cmd_buf);
+         return ERROR;
+     }
+ 
++    cJSON_Delete(root);
++
+     /* Build JSON result */
+     cJSON *result = cJSON_CreateObject();

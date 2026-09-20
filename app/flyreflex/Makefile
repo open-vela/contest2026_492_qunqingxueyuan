@@ -10,6 +10,6 @@ MODULE = $(CONFIG_FLYREFLEX)
 MAINSRC = src/flyreflex_main.c
 CSRCS = src/flyreflex_runtime.c src/looming_input.c src/reflex_engine.c
 CSRCS += src/safety_arbiter.c src/flyreflex_ui.c
-CFLAGS += ${INCDIR_PREFIX}$(APPDIR)/packages/demos/flyreflex/include
+CFLAGS += ${INCDIR_PREFIX}$(CURDIR)/include
 
 include $(APPDIR)/Application.mk

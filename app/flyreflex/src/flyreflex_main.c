@@ -14,11 +14,13 @@ static void print_usage(const char *program)
          "Usage:\n"
          "  %s demo [safe|slow|danger|recovery|noise|all] [--csv]\n"
          "  %s bench [iterations]\n"
+         "  %s stream [safe|slow|danger|recovery|noise] [cycles]\n"
+         "  %s control\n"
 #ifdef __NuttX__
          "  %s ui\n"
 #endif
          "\nAI command is a SIMULATED local FORWARD command.\n",
-         program, program
+         program, program, program, program
 #ifdef __NuttX__
          , program
 #endif
@@ -152,6 +154,43 @@ int main(int argc, char **argv)
       return run_benchmark(argc, argv);
     }
 
+  if (strcmp(argv[1], "stream") == 0)
+    {
+      enum flyreflex_scenario_e scenario = FLYREFLEX_SCENARIO_RECOVERY;
+      unsigned long cycles = 1;
+      char *end = NULL;
+      if (argc > 4 || (argc >= 3 && scenario_from_name(argv[2], &scenario) != 0))
+        {
+          return 1;
+        }
+      if (argc >= 4)
+        {
+          errno = 0;
+          cycles = strtoul(argv[3], &end, 10);
+          if (errno || end == argv[3] || *end || cycles < 1 || cycles > 10000)
+            {
+              return 1;
+            }
+        }
+      return flyreflex_stream(scenario, (unsigned int)cycles);
+    }
+
+  if (strcmp(argv[1], "control") == 0)
+    {
+      return flyreflex_control();
+    }
+
+  if (strcmp(argv[1], "guard") == 0)
+    {
+      if (argc == 3 && strcmp(argv[2], "query_flyreflex_status") == 0)
+        return flyreflex_guard_command(false);
+      if (argc == 4 && strcmp(argv[2], "issue_agent_command") == 0 &&
+          strcmp(argv[3], "FORWARD") == 0)
+        return flyreflex_guard_command(true);
+      fprintf(stderr, "guard: query_flyreflex_status | issue_agent_command FORWARD\n");
+      return 1;
+    }
+
 #ifdef __NuttX__
   if (strcmp(argv[1], "ui") == 0)
     {
@@ -162,4 +201,3 @@ int main(int argc, char **argv)
   print_usage(argv[0]);
   return 1;
 }
-

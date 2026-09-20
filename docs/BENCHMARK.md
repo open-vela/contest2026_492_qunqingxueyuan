@@ -37,6 +37,30 @@ Exact NSH output:
     reflex_compute,1152,1400,1200,2144,9776,17552
     end_to_end,2080,2565,2144,3904,12848,57872
 
+## Release candidate rerun
+
+The subsequent 1000-iteration openvela ARM64 simulator measurement is recorded
+in `evidence/target-runtime.txt`. It is a candidate-build measurement, not yet
+bound to a frozen release commit.
+
+| Path | Min ns | Mean ns | Median ns | P95 ns | P99 ns | Max ns |
+|---|---:|---:|---:|---:|---:|---:|
+| reflex_compute | 1232 | 1518 | 1264 | 1296 | 2528 | 112512 |
+| event_to_arbiter (`end_to_end`) | 2224 | 2791 | 2256 | 2304 | 5296 | 179120 |
+
+Neither measurement includes camera capture, network, browser rendering or
+motor response. A UI frame is one sample under a different workload; its value
+need not equal the benchmark median. Scheduling and simulator load can affect
+outliers. Guard snapshot publication is outside the measured core interval.
+
 ## AI latency
 
-P0 uses a simulated AI FORWARD command. No LLM round-trip measurement is included. Any future simulated delay must be labeled SIMULATED AI DELAY.
+2026-09-19 独立工作区候选固件（未冻结）补测：
+`evidence/fresh-target-runtime.txt`，1000 次，reflex_compute
+median/P95/P99=1152/1200/2096 ns；event_to_arbiter=2208/2272/4096 ns。
+这是修复 Agent shell 错误分支及退出状态配置前的固件，不替代修复后回归。
+
+The comparison uses a simulated AI command delay. It is not an LLM timing model.
+The separate host-side MiMo connectivity probe took 1.935 seconds and 255 tokens;
+see `evidence/mimo-connectivity.json`. This single short request does not measure
+Agent planning performance or enter the reflex statistics.

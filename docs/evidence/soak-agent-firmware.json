@@ -1,0 +1,249 @@
+{
+  "source": "openvela ARM64 simulator",
+  "started_utc": "2026-09-19T03:08:26.219485+00:00",
+  "requested_seconds": 1800,
+  "cycles": 589,
+  "memory_samples": [
+    {
+      "elapsed_seconds": 0.08,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 30.69,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 61.27,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 91.91,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 122.51,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 153.11,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 183.72,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 214.34,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 244.96,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 275.63,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 306.24,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 336.87,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 367.46,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 398.03,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 428.63,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 459.19,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 489.75,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 520.29,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 550.85,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 581.4,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 611.94,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 642.48,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 673.03,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 703.59,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 734.14,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 764.7,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 795.24,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 825.79,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 856.34,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 886.88,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 917.44,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 947.98,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 978.53,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1009.08,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1039.64,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1070.2,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1100.74,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1131.27,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1161.81,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1192.36,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1222.92,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1253.48,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1284.03,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1314.58,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1345.13,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1375.68,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1406.23,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1436.78,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1467.31,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1497.86,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1528.41,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1558.95,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1589.52,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1620.08,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1650.63,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1681.18,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1711.73,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1742.28,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    },
+    {
+      "elapsed_seconds": 1772.84,
+      "free_output": "\u001b[Kfree\n\r      total       used       free    maxused    maxfree  nused  nfree name\n\r      65536       1152      64384       1072      64384      2      1 binder_heap_10\n\r  104779584    2361248  102418336    2745280  102043520    393    175 Umem\n\rgoldfish-armv8a-ap> "
+    }
+  ],
+  "status": "PASS",
+  "scope": "NSH scenarios and target heap; not browser bridge soak",
+  "uname": "\u001b[Kuname -a\n\rNuttX  0.0.0 dd92bcf4257 Sep 19 2026 11:00:38 arm64 ap\n\rgoldfish-armv8a-ap> ",
+  "elapsed_seconds": 1800.28,
+  "finished_utc": "2026-09-19T03:38:26.504092+00:00"
+}

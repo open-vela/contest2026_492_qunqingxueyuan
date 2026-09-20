@@ -1,0 +1,504 @@
+{
+  "head": "484ad052c1fdf4e2a098a24ae4e07c3bd4f2ee7a",
+  "status": " M .gitignore\n D .gitignore.example\n M CMakeLists.txt\n M README.md\n M app/flyreflex/Makefile\n M app/flyreflex/include/flyreflex.h\n M app/flyreflex/src/flyreflex_main.c\n M app/flyreflex/src/flyreflex_runtime.c\n M app/flyreflex/src/flyreflex_ui.c\n M data/connectome/raw/neuprint_lplc2_lc4_to_dnp01.json\n M data/engineering/model_params.csv\n M docs/ARCHITECTURE.md\n M docs/BENCHMARK.md\n M logs/README.md\n?? \"FlyReflex_\\351\\241\\271\\347\\233\\256\\344\\273\\213\\347\\273\\215.docx\"\n?? THIRD_PARTY_NOTICES.md\n?? docs/AGENT_GUARD.md\n?? docs/AI_LOG_EXPORT_MANUAL.md\n?? docs/FINAL_ACCEPTANCE.md\n?? docs/FINAL_STATUS_BEFORE_RELEASE.md\n?? docs/VIDEO_RECORDING_CHECKLIST.md\n?? docs/VIDEO_SCRIPT.md\n?? docs/VIDEO_SHOTLIST.md\n?? docs/WEB_DEMO.md\n?? docs/evidence/\n?? logs/sdh12312/\n?? runtime_skills/\n?? \"submission/FlyReflex_\\346\\212\\200\\346\\234\\257\\346\\212\\245\\345\\221\\212.docx\"\n?? \"submission/FlyReflex_\\346\\212\\200\\346\\234\\257\\346\\212\\245\\345\\221\\212.pdf\"\n?? \"submission/FlyReflex_\\346\\265\\217\\350\\247\\210\\345\\231\\250\\345\\256\\236\\345\\275\\225\\347\\264\\240\\346\\235\\220.mp4\"\n?? tests/test_web_bridge.py\n?? tools/agent-guard-allowlist.patch\n?? tools/agent-shell-error-lifetime.patch\n?? tools/capture_target_acceptance.py\n?? tools/check_mimo.py\n?? tools/configure_agent_guard.sh\n?? tools/export_web_demo.py\n?? tools/interactive_bridge.py\n?? tools/refresh_demo_kconfig.py\n?? tools/release_inventory.py\n?? tools/release_validation.py\n?? tools/run_web_emulator.sh\n?? tools/soak_target.py\n?? tools/test_agent_guard.py\n?? tools/web_bridge.py\n?? web/\n",
+  "credential_pattern_findings": [],
+  "archive_members_not_scanned": [],
+  "scope": "Tracked/nonignored files, PDF decoded text/metadata, ZIP/Office recursively to depth 3 with 64 MiB per archive. Heuristic only; excludes Git history and ignored local caches. Any skipped member needs review. Arbitrary passwords cannot be reliably detected by patterns.",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/001_bug_report.yml",
+      "bytes": 4145,
+      "sha256": "4f718cab9b53f9ae0d4e9f51ba2848f892122114511d1a93f72d051bd7289585"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/002_feature_request.yml",
+      "bytes": 2465,
+      "sha256": "c8410d075c5c9dea1fa63b25d333953a2d356d2088d4db404bd45c8fbfd7b1f1"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/003_help.yml",
+      "bytes": 2285,
+      "sha256": "6836f58b30704da0a99db6abcea9a48d3bdf1148b04b6649990af312056974e4"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 29,
+      "sha256": "d6d81427cbfd6fb2c87462698c241fd6c31e47025c137498e50b8a01b228cb95"
+    },
+    {
+      "path": ".github/workflows/cla.yml",
+      "bytes": 553,
+      "sha256": "e1ea02c6744d40e188a47756563f78e9e5d1e24f3e10b7f437827c16764918a6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 195,
+      "sha256": "ddf865619fc2f95a5b9d5c4bd3ab03c5dc94bbbba7eadec46bc1429dd494b805"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 1123,
+      "sha256": "6006d4edc6cbfd0f6e20a8837371b0347566cf4e8673093cdbe0732d9d2627b6"
+    },
+    {
+      "path": "FlyReflex_项目介绍.docx",
+      "bytes": 43968,
+      "sha256": "06c5fbd5eea6f71195e9de38c4fa44351cf21c8c2adc740b496fca8bd5708988"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 527,
+      "sha256": "4e18fb5ddd25b5507640188caccf8174a92ba8f1f5b373caae4e79aed7d24bf0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14578,
+      "sha256": "86a79af3d0aabb777a1f28a3e0faa2cdd87c006b8c048069d218dddf5cda73b3"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1444,
+      "sha256": "5098659e2548a4fbc6bb208b6668114966281e4d522bd599da3fd845b538c687"
+    },
+    {
+      "path": "app/flyreflex/CMakeLists.txt",
+      "bytes": 487,
+      "sha256": "21cf1db4c3910e60a3f84ab8112948803536506b71f6f9d109c3ace5ba91165d"
+    },
+    {
+      "path": "app/flyreflex/Kconfig",
+      "bytes": 556,
+      "sha256": "f1e6e692abde4a6a95171f6a3d42d7bdc6b44af8148951a500be9d7e3fa942d2"
+    },
+    {
+      "path": "app/flyreflex/Makefile",
+      "bytes": 450,
+      "sha256": "a2feb91e210b5bb77b7d44d0f1a4500324df912486bea2947f9fe3ff21c99340"
+    },
+    {
+      "path": "app/flyreflex/include/flyreflex.h",
+      "bytes": 4013,
+      "sha256": "cb263d3712ae6d4768153ddab242fa932033205cc19aa2ff1013eb36b6f808c9"
+    },
+    {
+      "path": "app/flyreflex/src/flyreflex_main.c",
+      "bytes": 5122,
+      "sha256": "f9c21247327362bb983f38c42d761161103b5238bde1433d14d3252a0d30fb81"
+    },
+    {
+      "path": "app/flyreflex/src/flyreflex_runtime.c",
+      "bytes": 14087,
+      "sha256": "c1682c984c192f4a7f3d134cfa70c7aa35ab05d292926156fc336db21619d763"
+    },
+    {
+      "path": "app/flyreflex/src/flyreflex_ui.c",
+      "bytes": 18814,
+      "sha256": "6f8b150beaae8cec0c2dfb80d0fd18e56e62d5b35e5d6f87fcbc98c13d77a4b0"
+    },
+    {
+      "path": "app/flyreflex/src/looming_input.c",
+      "bytes": 2347,
+      "sha256": "7da50c98390d2af0cc87e31d9df9d06d13961d26298c36c05b7ae53a6174cd5a"
+    },
+    {
+      "path": "app/flyreflex/src/reflex_engine.c",
+      "bytes": 3089,
+      "sha256": "c004dba774c3f2ad457c69987def6aa08b95581dd2e128dc8fa9d9810965aaff"
+    },
+    {
+      "path": "app/flyreflex/src/safety_arbiter.c",
+      "bytes": 1155,
+      "sha256": "461b7cd037175b5a443849d80efec4b66f72d649faff5127aa311c02a4398746"
+    },
+    {
+      "path": "contest2026_492_qunqingxueyuan.xml",
+      "bytes": 603,
+      "sha256": "f1b03e5cb8091b3685c998319ec4a603bb1a7ed841b4f58b0eeb9460da87fa60"
+    },
+    {
+      "path": "data/connectome/processed/aggregate_edges.csv",
+      "bytes": 233,
+      "sha256": "58455677301e31f7b3ea6bd2c6eb5bce9e3ce774fa16a0b405c17e870adf1ebb"
+    },
+    {
+      "path": "data/connectome/processed/connectome_edges.csv",
+      "bytes": 61267,
+      "sha256": "892f86c171b6ef75074e265da9575b12d90573a8f7639deb74493f8ff26d905e"
+    },
+    {
+      "path": "data/connectome/provenance/neuprint_query.cypher",
+      "bytes": 404,
+      "sha256": "544860b8c8b5124adb3ad782069ad142f818bee3443ad7c7e622c3d8df7f4af1"
+    },
+    {
+      "path": "data/connectome/raw/neuprint_lplc2_lc4_to_dnp01.json",
+      "bytes": 45256,
+      "sha256": "f5b79c59ade97b5d48258e599079d40e3d1588268f4992c7c78cac7499faa6d9"
+    },
+    {
+      "path": "data/engineering/model_params.csv",
+      "bytes": 2539,
+      "sha256": "e4272ec43c98c5e59512322b3af397fce3c54c9b8fded29249f0d8d452cea2be"
+    },
+    {
+      "path": "docs/AGENT_GUARD.md",
+      "bytes": 3169,
+      "sha256": "aa5726c12f2bb965e329dbf3ec86d80a8f23c11a38f8e0bef5099c24901d1e7b"
+    },
+    {
+      "path": "docs/AI_LOG_EXPORT_MANUAL.md",
+      "bytes": 2954,
+      "sha256": "7f68cf7c54d3214a224262ea127ee117313e8152e0eae1c41718ee0ad84a6f67"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 3237,
+      "sha256": "c6781a35186234f1b47d1b29dee84e3c76fe956b32bc00f1f9fcdaf41fea1ca9"
+    },
+    {
+      "path": "docs/BENCHMARK.md",
+      "bytes": 2985,
+      "sha256": "635e445b9256c220d5f71042d32e37d594e2308f42bae74cb478a5b91177b305"
+    },
+    {
+      "path": "docs/DATA_PROVENANCE.md",
+      "bytes": 2222,
+      "sha256": "634e332c0cae36de261298677dbe288f0fbaa52414089b8f0cb65ce024a70700"
+    },
+    {
+      "path": "docs/DEMO.md",
+      "bytes": 2486,
+      "sha256": "ca0bc6273ec0c6e325d034c2b33c3cdec5067a94a903e50ebc56a2046676c9b5"
+    },
+    {
+      "path": "docs/DEVELOPMENT_NOTES.md",
+      "bytes": 2337,
+      "sha256": "271fab9241763a7982cdcf991a94210070d45298867424d6516536527991f47a"
+    },
+    {
+      "path": "docs/FINAL_ACCEPTANCE.md",
+      "bytes": 7254,
+      "sha256": "81389441d7b4aa60d677553ae62bf21bb2665e1d511f502185a91d5f5c7c4f25"
+    },
+    {
+      "path": "docs/FINAL_STATUS_BEFORE_RELEASE.md",
+      "bytes": 1684,
+      "sha256": "11463d74a1e0a2ef6a5ed3e0f7d0fa0d3dfc99a9faa62950790c9dab4852000e"
+    },
+    {
+      "path": "docs/SCIENTIFIC_BASIS.md",
+      "bytes": 3717,
+      "sha256": "f30b73633dffbc662cd167eee864f30fdba3773461c8575d6f857d946fc419a8"
+    },
+    {
+      "path": "docs/SUBMISSION_CHECKLIST.md",
+      "bytes": 1470,
+      "sha256": "ed6311b6323c60f572cb4d534d99799441bf9fd9020772836952197a591d2c9d"
+    },
+    {
+      "path": "docs/VIDEO_RECORDING_CHECKLIST.md",
+      "bytes": 1311,
+      "sha256": "eba48f579b74494b6569b49b14777781a205dc347740560788e48365022a3d7b"
+    },
+    {
+      "path": "docs/VIDEO_SCRIPT.md",
+      "bytes": 3254,
+      "sha256": "f27abbb7a77f3ada9f2ea84c73e96554832eabf5626ec457d1971d4019f45a95"
+    },
+    {
+      "path": "docs/VIDEO_SHOTLIST.md",
+      "bytes": 1594,
+      "sha256": "69ac112b27e8e2b0f45f42cc968a66e6bef02a0c43111e02eb2aad41b7deb05b"
+    },
+    {
+      "path": "docs/WEB_DEMO.md",
+      "bytes": 5094,
+      "sha256": "da9959df5d741552de80670a5b40c6cdcc80a79414dd451fcd46323861222672"
+    },
+    {
+      "path": "docs/evidence/agent-build-provenance.md",
+      "bytes": 2024,
+      "sha256": "8804a43ec785b4ce35ba2b09b307b8413e13f5355e757a57340d4f68fa0fab13"
+    },
+    {
+      "path": "docs/evidence/agent-firmware-runtime.txt",
+      "bytes": 14082,
+      "sha256": "5d154bd8d1433779b773b7c147dee1410b0c7952fb5587ce3c7f829ab11926e1"
+    },
+    {
+      "path": "docs/evidence/agent-guard-runtime.txt",
+      "bytes": 3171,
+      "sha256": "a27afa58d414631c56111f894289b9490874137f1176a6f7a92b2de2c863bbe9"
+    },
+    {
+      "path": "docs/evidence/agent-guard-serial.txt",
+      "bytes": 14778,
+      "sha256": "0828233512fde88a7cc842b5e8f1b12e804af3c257dd8e122a1aceaec4854f6e"
+    },
+    {
+      "path": "docs/evidence/agent-pclose-diagnostic.txt",
+      "bytes": 15861,
+      "sha256": "f8de95667973a7cb81e190bd523b19e6a0c1241fb1f966b744268ee4bc5e5a55"
+    },
+    {
+      "path": "docs/evidence/browser-live-acceptance.md",
+      "bytes": 1583,
+      "sha256": "e4330f8d4c0abcbdbb2fa55bdb7ca0f8042ce0237775cb37c133ba53ba1e340a"
+    },
+    {
+      "path": "docs/evidence/fresh-target-runtime.txt",
+      "bytes": 14104,
+      "sha256": "bc0be56c462adc6dc6b2c479a06f4d48866a4da9ab6656faabbdbcbf093b1c98"
+    },
+    {
+      "path": "docs/evidence/mimo-connectivity.json",
+      "bytes": 378,
+      "sha256": "eeed0a2dffd6a496dbc107cb8a6fcda5b5b973a46e1b25b0a3fc898d160476c6"
+    },
+    {
+      "path": "docs/evidence/soak-agent-firmware.json",
+      "bytes": 21369,
+      "sha256": "434102309f4fe6eaaae90956694470809dc8d50c1c06334bb2b5a29f5263a520"
+    },
+    {
+      "path": "docs/evidence/soak-target.json",
+      "bytes": 21362,
+      "sha256": "8549a721a01633dadc61a64d0ee1c0ce0d9baff7490af962ccf6f8caf3e25a5a"
+    },
+    {
+      "path": "docs/evidence/synthetic-validation.json",
+      "bytes": 16307,
+      "sha256": "5cf2246f1b68073674c1f2de4a03dc424184cad8629b2b1b668a1841d58e67cd"
+    },
+    {
+      "path": "docs/evidence/target-runtime.txt",
+      "bytes": 14091,
+      "sha256": "c045e15962d00de0e712497b9ae6ffb210921975adbc356a94be809c56a30235"
+    },
+    {
+      "path": "docs/images/biological-engineering-mapping.svg",
+      "bytes": 4079,
+      "sha256": "b16c053ef4bafa78452da4c861c54371bd3b5a48578781c6e8b28ed6d0f46294"
+    },
+    {
+      "path": "docs/images/system-architecture.svg",
+      "bytes": 3342,
+      "sha256": "2ba16122b6edaa0d2b074b34bf87bd2501aa979c587a0c8368859176171ca4b0"
+    },
+    {
+      "path": "logs/README.md",
+      "bytes": 1109,
+      "sha256": "3a0664b430d8a90125a0b90e70dde4ab9ebcda7a3b48812372dcb17e21fabc05"
+    },
+    {
+      "path": "logs/development_log.md",
+      "bytes": 2698,
+      "sha256": "189126b1377e7b5b98b3379c09d62f9e3f5e4cd927985531968458e72d94460b"
+    },
+    {
+      "path": "logs/sdh12312/README.md",
+      "bytes": 174,
+      "sha256": "9310283745242b7263076a4971cece7977342b475ccdd24b0793fb30f0f359a4"
+    },
+    {
+      "path": "openvela.xml",
+      "bytes": 23619,
+      "sha256": "0f7a5b28ac0b491931e820ae7f935b9c3f136159735d252753d57c5c24405b94"
+    },
+    {
+      "path": "runtime_skills/flyreflex-guard.md",
+      "bytes": 1376,
+      "sha256": "145c6baa65435c545eda8a870735901ec5338454df74b8672c0a2566a6ea0699"
+    },
+    {
+      "path": "skills/flyreflex-provenance/SKILL.md",
+      "bytes": 1411,
+      "sha256": "bf7a5a972e5a3e3e374af37a3e79bfc7624daf7a97b1fa50a93b252d3b358cef"
+    },
+    {
+      "path": "skills/flyreflex-provenance/agents/openai.yaml",
+      "bytes": 114,
+      "sha256": "3f651d3dd579df4ba601f794d6c73f122da20a18330d54e3d35c7b04ab0c4a03"
+    },
+    {
+      "path": "skills/flyreflex-provenance/scripts/verify_provenance.py",
+      "bytes": 2435,
+      "sha256": "d42562afc8d08b7e0980306f43d93a4421c3dd7f76663285c9e578e336fd979c"
+    },
+    {
+      "path": "submission/FlyReflex_技术报告.docx",
+      "bytes": 29107,
+      "sha256": "f9428e23def2c214729221e43795de1127945cb99e594a05d29417dd592433dd"
+    },
+    {
+      "path": "submission/FlyReflex_技术报告.pdf",
+      "bytes": 362570,
+      "sha256": "d24a2e978624e5b174d634e0b873bc24bbff492aadb6be98b9bcb300e6a57ac7"
+    },
+    {
+      "path": "submission/FlyReflex_浏览器实录素材.mp4",
+      "bytes": 1315615,
+      "sha256": "b51a1d17ed978c93008250f65861761a9ec70213da00d80a1e682fe7be4fef11"
+    },
+    {
+      "path": "submission/FlyReflex_项目介绍.docx",
+      "bytes": 43968,
+      "sha256": "06c5fbd5eea6f71195e9de38c4fa44351cf21c8c2adc740b496fca8bd5708988"
+    },
+    {
+      "path": "tests/test_flyreflex.c",
+      "bytes": 5519,
+      "sha256": "de2aab94e9d1622141fade6fb7d5cc0ecfd93d08f6cf6c2ecec986a5cd631b19"
+    },
+    {
+      "path": "tests/test_web_bridge.py",
+      "bytes": 1791,
+      "sha256": "6f591be94a284f3e5dcbc2f9f07bab37da6dd74cf6f3c73c72071b6024095370"
+    },
+    {
+      "path": "tools/agent-guard-allowlist.patch",
+      "bytes": 623,
+      "sha256": "2c555f54d1a0c5b26b2b0ba8b2134e4f825dc85116b372ca57d8049e1f811426"
+    },
+    {
+      "path": "tools/agent-shell-error-lifetime.patch",
+      "bytes": 546,
+      "sha256": "4366f5fc89053f8e946de2c46dc30d15ad0eac67fcfaa5538b9992a2b84a09f2"
+    },
+    {
+      "path": "tools/build_submission_doc.py",
+      "bytes": 18564,
+      "sha256": "3b95b305ec651ec028e796fc618725a28494755b9efb725b3f674c3f9c4ba7b3"
+    },
+    {
+      "path": "tools/capture_target_acceptance.py",
+      "bytes": 1754,
+      "sha256": "3cfcae71f8325e9da6cd9eb01a1c91ffbf54ce881a8cd39f61c2ae03535beb82"
+    },
+    {
+      "path": "tools/check_mimo.py",
+      "bytes": 1565,
+      "sha256": "078f729fd22350b0aa5c47f63c759be98c31b33aeefaa1090b46825e0812ec01"
+    },
+    {
+      "path": "tools/configure_agent_guard.sh",
+      "bytes": 1842,
+      "sha256": "973260a803859046d2adc3b960e95f7fa6fc26bc03117ab16e5a10d2627b6b27"
+    },
+    {
+      "path": "tools/connectome/fetch_malecns_reflex.py",
+      "bytes": 4772,
+      "sha256": "76be4d63e228819c54646e0865045e8761354b04b1ae9a008f1846077ea66c04"
+    },
+    {
+      "path": "tools/export_web_demo.py",
+      "bytes": 1339,
+      "sha256": "cbd6f3a4d1bf49f74549fc42b758067118fa40af53aba309c86dd3e77cc2f505"
+    },
+    {
+      "path": "tools/interactive_bridge.py",
+      "bytes": 5672,
+      "sha256": "85318cc1e4d970d1ec6dc91b49803b87b6096da276f1f18fd77a9f18b38f3685"
+    },
+    {
+      "path": "tools/refresh_demo_kconfig.py",
+      "bytes": 750,
+      "sha256": "bde58409a022c1fb198582689373d332364d6ada1b5e460ded3b123e8f62e476"
+    },
+    {
+      "path": "tools/release_inventory.py",
+      "bytes": 4556,
+      "sha256": "72aa3c1fc9fe4f1e98bd002be155661b4eb358622f2e1ecdf12a7841f8c8e698"
+    },
+    {
+      "path": "tools/release_validation.py",
+      "bytes": 2058,
+      "sha256": "85241b5a74c1aa60bc8196e7e6e9c2e0a78675f4bea58ef961d46077cb70ebd4"
+    },
+    {
+      "path": "tools/run_web_emulator.sh",
+      "bytes": 630,
+      "sha256": "0e99ea04f9d0a73afc41ca3eef919491634e40092f8fe18d4d63cd99cecc36f2"
+    },
+    {
+      "path": "tools/soak_target.py",
+      "bytes": 2488,
+      "sha256": "55ceedccef7a4d4bcd06e16c9657ae87e85be31eb247b5a46d8d044c6f40f6dc"
+    },
+    {
+      "path": "tools/test_agent_guard.py",
+      "bytes": 5534,
+      "sha256": "13c1009cefc99e4133cf6a036a3762aded0e33aa20e83ad9c9e5c6184a8f21ac"
+    },
+    {
+      "path": "tools/web_bridge.py",
+      "bytes": 7791,
+      "sha256": "3bf09bd81ed34888f926d9ad9d260fc20dc450b203102121efd201e82b3c54db"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 4233,
+      "sha256": "482f3deed1cb913ced64935a133b2029de99080901e2acc55464134127c5789d"
+    },
+    {
+      "path": "web/demo.json",
+      "bytes": 22953,
+      "sha256": "7c9295118bfc9df8cd2b4789b384f0860046581c8ae7c6ecc2a7f6c2acc7e666"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 4070,
+      "sha256": "c2782e49cb2e50bf0f70df61aed9bdfb36a662a9e5ffa650cb9196539d2c6a43"
+    },
+    {
+      "path": "web/package-lock.json",
+      "bytes": 545,
+      "sha256": "b47a6ed9e504526b77fd0243c2b2704b56bcc84d92d02c1c4204a462501470c9"
+    },
+    {
+      "path": "web/package.json",
+      "bytes": 241,
+      "sha256": "01dcd389855b4adfa228e5ae9b47cbda67ab15a803e12a921613d5c40c75a2f0"
+    },
+    {
+      "path": "web/physics.js",
+      "bytes": 2934,
+      "sha256": "65dd09ca8e5b38a18515e6e055760510d58da3fbde350bed3939e57d6fd00ea6"
+    },
+    {
+      "path": "web/scene.js",
+      "bytes": 4482,
+      "sha256": "f58f70fffb41556cec4d17bba860a5c86bf6dcff7b558074dea6361478dcb3fd"
+    },
+    {
+      "path": "web/story.js",
+      "bytes": 1755,
+      "sha256": "a7063e1651be1eccff1a1cf4373fd6b8b735a5788ada89f0d81e2bdfe9d4719a"
+    },
+    {
+      "path": "web/style.css",
+      "bytes": 4386,
+      "sha256": "a50d9be6810aa331faca5833c4d7b7963789a48946fb8abd55b43db0e5e44fda"
+    },
+    {
+      "path": "web/tests/control.test.mjs",
+      "bytes": 2090,
+      "sha256": "d51e627d8e7dede08899785a0832896af6cb124890cc7e2654db6ac2426af0fd"
+    },
+    {
+      "path": "web/tests/physics.test.mjs",
+      "bytes": 1357,
+      "sha256": "3ecb3e51ef9e3414eaa9e1784b9ce4d13c61f7f1939d79af89b8ea6d795c1b7a"
+    },
+    {
+      "path": "web/tests/story.test.mjs",
+      "bytes": 1369,
+      "sha256": "ef73c43d52b022f31bf9603863624cf748a2bb592d4ab1855df6ab53284f33a5"
+    }
+  ]
+}
